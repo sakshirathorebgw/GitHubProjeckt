@@ -1,0 +1,7 @@
+Management-Cluster: 10.32.141.9
+entwicklung: 10.32.142.180
+bgwstaging: 10.32.143.176
+bgwproduktion: 10.32.144.170
+coremediaentw: 10.32.30.170
+vbgstaging:10.32.50.169
+istiotest: 10.32.142.189

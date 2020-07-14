@@ -1,0 +1,7 @@
+#!/bin/bash
+harbor "1st test file"
+SecretName: "Harbor"
+hosts:
+      core: mgmt-registry1.tank.local
+      notary: mgmt-registry1.tank.local
+

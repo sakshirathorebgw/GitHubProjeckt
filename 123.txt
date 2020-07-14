@@ -1,0 +1,74 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            35:00:00:00:1f:92:7a:e7:0e:33:7b:f7:87:00:00:00:00:00:1f
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: DC = local, DC = tank, CN = tank-HXMGMT-08-CA
+        Validity
+            Not Before: Jun 25 08:27:41 2020 GMT
+            Not After : Jun  3 07:54:16 2021 GMT
+        Subject: C = DE, ST = Hamburg, L = Hamburg, O = BGW, OU = IT-Betrieb, CN = test2-harbor.tank.local, emailAddress = rene.fischer@bgw-online.de
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:d0:7e:54:c6:17:1f:0c:6a:60:dc:53:c1:59:9a:
+                    f0:06:e3:c4:fc:8f:1a:8f:d0:e4:0f:5c:e1:79:e1:
+                    e8:f0:9a:52:47:27:21:45:38:f2:28:f5:f2:cf:26:
+                    ca:f6:b7:67:e8:ed:16:89:87:4f:da:fd:a5:59:0c:
+                    50:e0:40:99:2a:43:24:aa:c8:7d:95:20:03:eb:06:
+                    b5:9b:7a:f8:9f:9a:55:b6:f0:81:4b:66:b3:2e:09:
+                    fb:cc:74:2c:1a:48:3c:ee:3f:9e:f7:cb:e1:54:f8:
+                    c9:28:6d:b4:5c:d1:8e:a0:27:00:1f:b5:00:96:3c:
+                    ca:0a:25:26:99:70:6f:09:33:f9:7d:28:e9:3d:05:
+                    ba:76:d6:7d:05:37:fc:46:98:01:de:6b:8c:e9:b3:
+                    95:62:f9:4b:0d:78:a3:98:8a:cc:6c:06:a1:71:7f:
+                    ce:f9:b4:5d:2e:f9:a1:70:91:92:5e:8e:54:23:4e:
+                    49:4b:b2:5b:9a:81:ad:cf:bf:f3:51:8f:31:0d:21:
+                    8a:cf:21:70:ff:af:15:0c:e6:9f:dd:f8:1d:1e:76:
+                    d7:14:55:15:5b:9e:03:a9:43:d9:09:d7:f8:d2:10:
+                    51:6d:ad:d6:a2:7e:97:e0:26:22:d6:96:e3:64:62:
+                    d7:55:2b:1f:de:85:9f:cd:64:4c:10:eb:ac:b2:29:
+                    ee:31
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            1.3.6.1.4.1.311.21.7: 
+                0/.'+.....7.....N......
+...?...G.....W...k..e...
+            X509v3 Subject Key Identifier: 
+                1F:E4:A0:67:D8:75:50:63:B2:B1:C0:4A:91:99:03:5D:F5:2C:E3:6E
+            X509v3 Authority Key Identifier: 
+                keyid:46:28:BF:B2:BC:97:66:EA:00:63:62:08:ED:A5:25:30:F4:86:9A:CC
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://HxMgmt-08.tank.local/CertEnroll/tank-HXMGMT-08-CA.crl
+
+            Authority Information Access: 
+                CA Issuers - URI:http://HxMgmt-08.tank.local/CertEnroll/HxMgmt-08.tank.local_tank-HXMGMT-08-CA.crt
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            1.3.6.1.4.1.311.21.10: 
+                0.0
+..+.......
+    Signature Algorithm: sha256WithRSAEncryption
+         63:6b:93:68:53:e2:2d:4d:c0:a0:1e:79:6d:d0:bc:83:30:ef:
+         01:9f:79:42:cb:48:e4:73:08:44:5a:3f:33:1b:8f:25:5e:75:
+         2c:13:23:84:c5:6b:d8:2e:ee:0b:4e:8b:49:3e:f1:5a:90:73:
+         bc:bf:ba:14:1c:70:1f:b5:a7:ee:4a:0f:1c:82:af:ce:08:c3:
+         d1:39:0d:3e:68:55:11:c7:cc:fc:6b:b7:ee:93:24:b1:8a:be:
+         27:b1:91:dd:a4:4a:c6:3a:32:91:23:f6:a5:96:4b:1d:70:58:
+         8f:a0:3f:a0:2b:9b:29:00:72:09:52:5a:b3:ee:cd:10:b7:ba:
+         0f:bc:85:55:5a:16:e4:95:b5:09:ad:86:65:df:94:86:d9:5b:
+         dd:30:d1:62:e4:a4:1f:e0:3c:c3:1b:22:a1:d1:c6:41:7f:25:
+         21:6b:87:0b:ce:1e:eb:52:07:84:c9:1a:3c:77:21:f3:b5:5f:
+         d8:d5:f3:4f:53:c0:a3:af:94:42:04:e4:1c:d2:b6:78:a1:43:
+         8f:ce:7c:f2:de:20:31:15:28:db:20:59:20:78:bc:8d:e1:0c:
+         fa:ea:bc:96:78:d0:5f:bd:6b:58:b2:35:49:36:51:2f:e2:7a:
+         25:27:26:73:b8:a2:1f:69:bb:39:e2:de:d1:48:a7:8c:d8:25:
+         24:1e:24:f4
