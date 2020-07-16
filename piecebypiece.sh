@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #ssh key path set
-SSHKEY_PATH=/c/Users/D35N/Downloads/GitHubProjeckt/Automation/newharbortestkey
+SSHKEY_PATH=/c/Users/D35N/Downloads/GitHubProjeckt/Automation/GitHubProjeckt
  export SSHKEY_PATH=$SSHKEY_PATH
  echo "path for ssh key is" $SSHKEY_PATH
 
