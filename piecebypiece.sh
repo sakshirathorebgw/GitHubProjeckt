@@ -69,13 +69,13 @@ echo "address for certificate is :" $CN_ADDRESS
  #sed -i "s/secretName: ""/$REPLACE3/g" values.yaml
 
  #copy files to the server
-scp -i $SSHKEY_PATH $CERT_PATH ccpuser@10.32.141.38:/home/ccpuser
-scp -i $SSHKEY_PATH $KEY_FILE ccpuser@10.32.141.38:/home/ccpuser
-scp -i $SSHKEY_PATH $CRT_FILE ccpuser@10.32.141.38:/home/ccpuser
-scp -i $SSHKEY_PATH ./check.sh ccpuser@10.32.141.38:/home/ccpuser
-scp -i $SSHKEY_PATH ./old_server.sh ccpuser@10.32.141.38:/home/ccpuser
-scp -i $SSHKEY_PATH ./cert_status1.sh ccpuser@10.32.141.38:/home/ccpuser
-scp -i $SSHKEY_PATH ./new_server_cert.sh ccpuser@10.32.141.38:/home/ccpuser
+scp -i $SSHKEY_PATH $CERT_PATH ccpuser@10.32.141.39:/home/ccpuser
+scp -i $SSHKEY_PATH $KEY_FILE ccpuser@10.32.141.39:/home/ccpuser
+scp -i $SSHKEY_PATH $CRT_FILE ccpuser@10.32.141.39:/home/ccpuser
+scp -i $SSHKEY_PATH ./check.sh ccpuser@10.32.141.39:/home/ccpuser
+scp -i $SSHKEY_PATH ./old_server.sh ccpuser@10.32.141.39:/home/ccpuser
+scp -i $SSHKEY_PATH ./cert_status1.sh ccpuser@10.32.141.39:/home/ccpuser
+scp -i $SSHKEY_PATH ./new_server_cert.sh ccpuser@10.32.141.39:/home/ccpuser
 
 sed -i -e 's/\r$//' ./check.sh
 sed -i -e 's/\r$//' ./old_server.sh
@@ -86,7 +86,7 @@ sed -i -e 's/\r$//' ./new_server_cert.sh
 
 echo "check1"
 
-ssh -i $SSHKEY_PATH ccpuser@10.32.141.38 /bin/bash <<EOF
+ssh -i $SSHKEY_PATH ccpuser@10.32.141.39 /bin/bash <<EOF
 pwd;
 hostname;
 ls;
