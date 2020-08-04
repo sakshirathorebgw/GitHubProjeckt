@@ -103,7 +103,7 @@ ls;
 echo "further run"
 chmod +x check.sh
 echo "execute check.sh now"
-#./check.sh
+./check.sh
 
 
 EOF
