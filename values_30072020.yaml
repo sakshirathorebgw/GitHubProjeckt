@@ -26,7 +26,7 @@ expose:
     commonName: ""
   ingress:
     hosts:
-      core: core.harbor.domain
+      core: harbor123456789.local 
       notary: notary.harbor.domain
     # set to the type of ingress controller if it has specific requirements.
     # leave as `default` for most ingress controllers.

@@ -34,11 +34,12 @@ recipients="Sakshi.Rathore@bgw-online.de"
 #fi
  
 # Check if a second parameter is given; if yes, use that as warning_days. If not, use 30 days as default
+#cp ./old_server.sh harbor
 cd harbor
 
 if [ -z "$2" ]
 then
-   warning_days="30"
+   warning_days="400"
 else
    warning_days=$2
 fi
@@ -87,7 +88,9 @@ then
     subject="$hostName - SSL Certificate has expired"
     body="ATTENTION: The certificate of $hostName has expired on $expirationdate!"
     echo "edit properties file and run the job to install the new certs"
-    chmod +x ./old_server.sh
+    cd ..
+    mv harbor harbor_bkp.$date
+    chmod +x old_server.sh
     ./old_server.sh
 else
     # Report WARNING as the certificate will expire within warning_days.
@@ -98,7 +101,9 @@ else
     subject="$hostName - SSL Certificate expires in $numberOfDays days"
     body="ATTENTION: The certificate of $hostName expires on $expirationdate which is in $numberOfDays days from now!, issue new certificate and install new harbor certificate on the server"
     echo "edit properties file and run the job to install the new cert"
-    chmod +x ./old_server.sh
+    cd ..
+    mv harbor harbor_bkp
+    chmod +x old_server.sh
     ./old_server.sh
 fi
  

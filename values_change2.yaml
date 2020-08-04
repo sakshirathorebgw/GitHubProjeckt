@@ -16,7 +16,7 @@ expose:
     # "ca.crt" - the certificate of CA (optional), this enables the download
     # link on portal to download the certificate of CA
     # These files will be generated automatically if the "secretName" is not set
-    secretName: ""
+.*    secretName:.*
     # By default, the Notary service will use the same cert and key as
     # described above. Fill the name of secret if you want to use a
     # separated one. Only needed when the type is "ingress".
@@ -115,7 +115,7 @@ internalTLS:
   # core related cert configuration
   core:
     # secret name for core's tls certs
-    secretName: ""
+.*    secretName:.*
     # Content of core's TLS cert file, only available when `certSource` is "manual"
     crt: ""
     # Content of core's TLS key file, only available when `certSource` is "manual"
@@ -123,7 +123,7 @@ internalTLS:
   # jobservice related cert configuration
   jobservice:
     # secret name for jobservice's tls certs
-    secretName: ""
+.*    secretName:.*
     # Content of jobservice's TLS key file, only available when `certSource` is "manual"
     crt: ""
     # Content of jobservice's TLS key file, only available when `certSource` is "manual"
@@ -131,7 +131,7 @@ internalTLS:
   # registry related cert configuration
   registry:
     # secret name for registry's tls certs
-    secretName: ""
+.*    secretName:.*
     # Content of registry's TLS key file, only available when `certSource` is "manual"
     crt: ""
     # Content of registry's TLS key file, only available when `certSource` is "manual"
@@ -139,7 +139,7 @@ internalTLS:
   # portal related cert configuration
   portal:
     # secret name for portal's tls certs
-    secretName: ""
+.*    secretName:.*
     # Content of portal's TLS key file, only available when `certSource` is "manual"
     crt: ""
     # Content of portal's TLS key file, only available when `certSource` is "manual"
@@ -147,7 +147,7 @@ internalTLS:
   # chartmuseum related cert configuration
   chartmuseum:
     # secret name for chartmuseum's tls certs
-    secretName: ""
+.*    secretName:.*
     # Content of chartmuseum's TLS key file, only available when `certSource` is "manual"
     crt: ""
     # Content of chartmuseum's TLS key file, only available when `certSource` is "manual"
@@ -155,7 +155,7 @@ internalTLS:
   # clair related cert configuration
   clair:
     # secret name for clair's tls certs
-    secretName: ""
+.*    secretName:.*
     # Content of clair's TLS key file, only available when `certSource` is "manual"
     crt: ""
     # Content of clair's TLS key file, only available when `certSource` is "manual"
@@ -163,7 +163,7 @@ internalTLS:
   # trivy related cert configuration
   trivy:
     # secret name for trivy's tls certs
-    secretName: ""
+.*    secretName:.*
     # Content of trivy's TLS key file, only available when `certSource` is "manual"
     crt: ""
     # Content of trivy's TLS key file, only available when `certSource` is "manual"

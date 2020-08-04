@@ -1,20 +1,24 @@
 #!/bin/bash
 
- 
-#to create secret 
-# var1= harbor
-kubectl delete namespace harbor
 helm repo add harbor https://helm.goharbor.io
 helm fetch harbor/harbor --untar
 
+ #to create namespace
+#kubectl create namespace harbor
+
 cd harbor
-		cp ../*.pfx .
-		cp ../*.crt .
-		cp ../*.key .
-	ls -lrt
+#to create secret 
+# var1= harbor
+cp ../*.pfx .
+cp ../*.crt .
+cp ../*.key .
+ls -lrt
+ #to create namespace
 kubectl create namespace harbor
 
-CERT_PATH=$(find ./ -type f -name "*pfx" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
+ kubectl create secret tls $TLS_NAME --key $KEY_FILENAME --cert $CRT_FILENAME --namespace harbor
+ 
+ CERT_PATH=$(find ./ -type f -name "*pfx" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
  export CERT_PATH=$CERT_PATH
  echo $CERT_PATH "is certpath"
   BASENAME=$(basename $CERT_PATH .pfx)
@@ -35,34 +39,8 @@ echo "key filename is" $KEY_FILENAME
 CRT_FILENAME=$(basename $CRT_FILE)
 echo "crt filename is" $CRT_FILENAME
 
-#kubectl create secret tls $TLS_NAME --key $KEY_FILENAME --cert $CRT_FILENAME --namespace harbor
-#CN_ADDRESS=$(openssl x509 -noout -subject -in test2-harbor.crt | awk '{ print $18 }' | sed 's/.$//' 2>&1)
-        #SEARCH1="core: core.harbor.domain"
-       # echo $SEARCH1
-      #  REPLACE1="core: $CN_ADDRESS"
-     #   echo $REPLACE1
 
- #sed -i "s/${SEARCH1}/${REPLACE1}/g" values.yaml
-        SEARCH2="notary: notary.harbor.domain"
-    #    echo $SEARCH2
-   #     REPLACE2="notary: $CN_ADDRESS"
-  #       echo $REPLACE2
-
-# sed -i "s/${SEARCH2}/${REPLACE2}/g" values.yaml
- #       SEARCH3="secretName: """
-#		echo $SEARCH3
-#		REPLACE3="secretName: $TLS_NAME"
-#		echo $REPLACE3
-# sed -i "s/${SEARCH3}/${REPLACE3}/g" values.yaml
- 
- 
- #sed -i "s/${SEARCH1}/${REPLACE1}/g" values1.yaml
- #sed -i "s/${SEARCH2}/${REPLACE2}/g" values1.yaml
- #sed -i "s/${SEARCH3}/${REPLACE3}/g" values1.yaml
- 
- #sed -i 's/secretName: ""/secretName: "Harbor"/g' values.yaml
-
-  CN_ADDRESS=$(openssl x509 -noout -subject -in $CRT_FILENAME | awk '{ print $18 }' | sed 's/.$//' 2>&1)
+ CN_ADDRESS=$(openssl x509 -noout -subject -in $CRT_FILENAME | awk '{ print $18 }' | sed 's/.$//' 2>&1)
       #  SEARCH1="core: core.harbor.domain"
       #  echo $SEARCH1
         REPLACE1="core: $CN_ADDRESS"
@@ -78,15 +56,21 @@ echo "crt filename is" $CRT_FILENAME
 
 # sed -i "s/${SEARCH2}/${REPLACE2}/g" values.yaml
        # SEARCH3="secretName: """
-        #       echo $SEARCH3
-                REPLACE3="secretName: $TLS_NAME"
-                echo $REPLACE3
+	#	echo $SEARCH3
+		REPLACE3="secretName: $TLS_NAME"
+		echo $REPLACE3
  sed -i "s/secretName:.*/${REPLACE3}/g" values.yaml
+
+# sed -i "s/${SEARCH3}/${REPLACE3}/g" values.yaml
  
- echo "values.yaml is updated"
-
-kubectl create secret tls $TLS_NAME --key $KEY_FILENAME --cert $CRT_FILENAME --namespace harbor
-
+ 
+ #sed -i "s/${SEARCH1}/${REPLACE1}/g" values1.yaml
+ #sed -i "s/${SEARCH2}/${REPLACE2}/g" values1.yaml
+ #sed -i "s/${SEARCH3}/${REPLACE3}/g" values1.yaml
+ 
+ #sed -i 's/secretName: ""/secretName: "Harbor"/g' values.yaml
+ 
  helm install harbor . -n harbor
  
  echo "Harbor certificate isntallation done"
+ 
