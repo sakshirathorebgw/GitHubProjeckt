@@ -23,7 +23,7 @@ SSHKEY_PATH=/c/Users/D35N/Downloads/GitHubProjeckt/Automation/GitHubProjeckt/new
   
    #generate .crt and .key files
 /usr/bin/openssl pkcs12 -in $CERT_PATH -nodes -out $BASENAME.key  -password pass:$PASSWORD_VALUE
-/usr/bin/openssl pkcs12 -in $CERT_PATH -nokeys -out $BASENAME.crt  -password pass:$PASSWORD_VALUE
+q/usr/bin/openssl pkcs12 -in $CERT_PATH -nokeys -out $BASENAME.crt  -password pass:$PASSWORD_VALUE
 
 # to get key and crt file path
 KEY_FILE=$(find ./ -type f -name "*key" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1)
@@ -79,7 +79,7 @@ echo "address for certificate is :" $CN_ADDRESS
 
 scp $CERT_PATH ccpuser@10.32.141.35:/home/ccpuser
 scp $KEY_FILE ccpuser@10.32.141.35:/home/ccpuser
-scp $CRT_FILE ccpuser@10.32.141.35:/home/ccpuser
+scp $CRT_FILE ccpuser@10.32.141.35:/home/ccpuse
 scp ./check.sh ccpuser@10.32.141.35:/home/ccpuser
 scp ./old_server.sh ccpuser@10.32.141.35:/home/ccpuser
 scp ./cert_status1.sh ccpuser@10.32.141.35:/home/ccpuser
