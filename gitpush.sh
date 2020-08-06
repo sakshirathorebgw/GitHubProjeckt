@@ -1,3 +1,6 @@
+git config --global user.email "Sakshi.Rathore@bgw-online.de"
+git config --global user.name "Sakshi Rathore"
+
 git add .
 
 commitMessage="commiting the new file"
