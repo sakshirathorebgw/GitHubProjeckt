@@ -11,8 +11,11 @@ branch=master
 echo $branch
 #read branch
 
-git push origin $branch
+git push origin master
 
-read
+sleep 10
+echo "execute piecebypiece now"
 
 ./piecebypiece.sh
+
+echo "script execution done"
