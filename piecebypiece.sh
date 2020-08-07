@@ -2,9 +2,15 @@
 
 #ssh key path set
 #SSHKEY_PATH=/c/Users/D35N/Downloads/GitHubProjeckt/Automation/GitHubProjeckt/newharbortestkey
+<<<<<<< HEAD
 # export SSHKEY_PATH=$SSHKEY_PATH
 # echo "path for ssh key is" $SSHKEY_PATH
 source inputfile.txt
+=======
+ #export SSHKEY_PATH=$SSHKEY_PATH
+ #echo "path for ssh key is" $SSHKEY_PATH
+
+>>>>>>> 14d1c1db0e1ab46dbb36609ae19b83051ee7c027
 #certificate file name pfx one and location
  CERT_PATH=$(find $DIR -type f -name "*pfx" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
  export CERT_PATH=$CERT_PATH
