@@ -5,7 +5,7 @@
 
 # export SSHKEY_PATH=$SSHKEY_PATH
 # echo "path for ssh key is" $SSHKEY_PATH
-#source inputfile.txt
+source inputfile.txt
  #export SSHKEY_PATH=$SSHKEY_PATH
  #echo "path for ssh key is" $SSHKEY_PATH
 
