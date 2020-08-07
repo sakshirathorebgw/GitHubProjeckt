@@ -2,15 +2,14 @@
 
 #ssh key path set
 #SSHKEY_PATH=/c/Users/D35N/Downloads/GitHubProjeckt/Automation/GitHubProjeckt/newharbortestkey
-<<<<<<< HEAD
+
 # export SSHKEY_PATH=$SSHKEY_PATH
 # echo "path for ssh key is" $SSHKEY_PATH
-source inputfile.txt
-=======
+#source inputfile.txt
  #export SSHKEY_PATH=$SSHKEY_PATH
  #echo "path for ssh key is" $SSHKEY_PATH
 
->>>>>>> 14d1c1db0e1ab46dbb36609ae19b83051ee7c027
+
 #certificate file name pfx one and location
  CERT_PATH=$(find $DIR -type f -name "*pfx" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
  export CERT_PATH=$CERT_PATH
@@ -22,7 +21,7 @@ source inputfile.txt
    echo $TLS_NAME "is new secret name for harbor"
    
   #certificate password fetch
-  PASSWORD_FILE=$(find ./ -type f -name "readme.txt" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
+  PASSWORD_FILE=$(find $DIR -type f -name "readme.txt" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
   PASSWORD_VALUE=$(cat $PASSWORD_FILE)
   export PASSWORD_VALUE=$PASSWORD_VALUE
   echo "this is password " $PASSWORD_VALUE 
@@ -85,7 +84,7 @@ echo "address for certificate is :" $CN_ADDRESS
 
 scp $CERT_PATH ccpuser@10.32.141.35:/home/ccpuser
 scp $KEY_FILE ccpuser@10.32.141.35:/home/ccpuser
-scp $CRT_FILE ccpuser@10.32.141.35:/home/ccpuse
+scp $CRT_FILE ccpuser@10.32.141.35:/home/ccpuser
 scp ./check.sh ccpuser@10.32.141.35:/home/ccpuser
 scp ./old_server.sh ccpuser@10.32.141.35:/home/ccpuser
 scp ./cert_status1.sh ccpuser@10.32.141.35:/home/ccpuser
