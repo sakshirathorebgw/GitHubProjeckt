@@ -1,14 +1,14 @@
 #!/bin/bash
 
 #ssh key path set
-#SSHKEY_PATH=/c/Users/D35N/Downloads/GitHubProjeckt/Automation/GitHubProjeckt/newharbortestkey
-# export SSHKEY_PATH=$SSHKEY_PATH
-# echo "path for ssh key is" $SSHKEY_PATH
-source inputfile.txt
+SSHKEY_PATH=/c/Users/D35N/Downloads/GitHubProjeckt/Automation/GitHubProjeckt/newharbortestkey
+ export SSHKEY_PATH=$SSHKEY_PATH
+ echo "path for ssh key is" $SSHKEY_PATH
+
 #certificate file name pfx one and location
- CERT_PATH=$(find $DIR -type f -name "*pfx" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
+ CERT_PATH=$(find ./ -type f -name "*pfx" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
  export CERT_PATH=$CERT_PATH
- echo $CERT_PATH "first is certpath"
+ echo $CERT_PATH "is certpath"
   BASENAME=$(basename $CERT_PATH .pfx)
   export BASENAME=$BASENAME
   echo $BASENAME "is basename"
@@ -79,7 +79,7 @@ echo "address for certificate is :" $CN_ADDRESS
 
 scp $CERT_PATH ccpuser@10.32.141.35:/home/ccpuser
 scp $KEY_FILE ccpuser@10.32.141.35:/home/ccpuser
-scp $CRT_FILE ccpuser@10.32.141.35:/home/ccpuse
+scp $CRT_FILE ccpuser@10.32.141.35:/home/ccpuser
 scp ./check.sh ccpuser@10.32.141.35:/home/ccpuser
 scp ./old_server.sh ccpuser@10.32.141.35:/home/ccpuser
 scp ./cert_status1.sh ccpuser@10.32.141.35:/home/ccpuser
