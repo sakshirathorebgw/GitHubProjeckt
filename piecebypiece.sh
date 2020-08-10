@@ -82,13 +82,13 @@ echo "address for certificate is :" $CN_ADDRESS
 #scp -i $SSHKEY_PATH ./cert_status1.sh ccpuser@10.32.141.35:/home/ccpuser
 #scp -i $SSHKEY_PATH ./new_server_cert.sh ccpuser@10.32.141.35:/home/ccpuser
 
-scp $CERT_PATH ccpuser@10.32.141.35:/home/ccpuser
-scp $KEY_FILE ccpuser@10.32.141.35:/home/ccpuser
-scp $CRT_FILE ccpuser@10.32.141.35:/home/ccpuser
-scp ./check.sh ccpuser@10.32.141.35:/home/ccpuser
-scp ./old_server.sh ccpuser@10.32.141.35:/home/ccpuser
-scp ./cert_status1.sh ccpuser@10.32.141.35:/home/ccpuser
-scp ./new_server_cert.sh ccpuser@10.32.141.35:/home/ccpuser
+scp $CERT_PATH ccpuser@$HOST_NAME:/home/ccpuser
+scp $KEY_FILE ccpuser@$HOST_NAME:/home/ccpuser
+scp $CRT_FILE ccpuser@$HOST_NAME:/home/ccpuser
+scp ./check.sh ccpuser@$HOST_NAME:/home/ccpuser
+scp ./old_server.sh ccpuser@$HOST_NAME:/home/ccpuser
+scp ./cert_status1.sh ccpuser@$HOST_NAME:/home/ccpuser
+scp ./new_server_cert.sh ccpuser@$HOST_NAME:/home/ccpuser
 
 sed -i -e 's/\r$//' ./check.sh
 sed -i -e 's/\r$//' ./old_server.sh
