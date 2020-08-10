@@ -1,2 +1,2 @@
-DIR="/home/ccpuser/harbor_bkp/automation/test-harbor_Testzertifikate"
+DIR="/home/ccpuser/harbor_bkp/automation_bkp/test-harbor_Testzertifikate"
 echo $DIR
