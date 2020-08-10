@@ -1,5 +1,18 @@
 source inputfile.txt
 cp -r $DIR .
+#ssh-add $SSH_KEYPATH ~/.ssh/id_rsa
+
+#ssh-keygen -y -f ~/.ssh/harbortest > ~/.ssh/harbortest_com.pub
+#ssh-keygen -i -f ~/.ssh/harbortest_com.pub > ~/.ssh/harbortest.pub
+#ssh-copy-id -i ~/.ssh/harbortest.pub
+#ssh-copy-id -f -i ~/.ssh/harbortest.pub ccpuser@10.32.141.35
+
+sudo chmod 700 ~/.ssh/
+sudo chmod 600 ~/.ssh/*
+
+scp $SSH_KEYPATH ccpuser@$HOST_NAME:/home/ccpuser/.ssh
+
+
 git config --global user.email "Sakshi.Rathore@bgw-online.de"
 git config --global user.name "Sakshi Rathore"
 
