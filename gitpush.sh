@@ -27,7 +27,7 @@ echo $commitMessage
 
 #git commit -m "$commitMessage"
 #git branch -mv origin master
-git remote set-url origin https://Sakshi.Rathore%40bgw-online.de:Sherlock%40107@github.com/sakshirathorebgw/GitHubProjeckt.git
+#git remote set-url origin https://Sakshi.Rathore%40bgw-online.de:Sherlock%40107@github.com/sakshirathorebgw/GitHubProjeckt.git
 #git remote set-url https://github.com/sakshirathorebgw/GitHubProjeckt.git 
 #branch=master
 #echo $branch
