@@ -33,6 +33,8 @@ echo $branch
 
 git push origin master --force
 
+git pull
+
 sleep 10
 echo "execute piecebypiece now"
 
