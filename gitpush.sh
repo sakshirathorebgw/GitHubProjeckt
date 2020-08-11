@@ -1,6 +1,7 @@
 #!/bin/bash
 . inputfile.txt
 cp -r $DIR .
+echo "new file"
 #ssh-add $SSH_KEYPATH ~/.ssh/id_rsa
 
 #ssh-keygen -y -f ~/.ssh/harbortest > ~/.ssh/harbortest_com.pub
