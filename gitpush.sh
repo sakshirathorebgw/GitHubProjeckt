@@ -15,9 +15,9 @@ echo "new file"
 #scp $SSH_KEYPATH ccpuser@$HOST_NAME:/home/ccpuser/.ssh
 
 
-git config --global user.email "Sakshi.Rathore@bgw-online.de"
-git config --global user.name "Sakshi Rathore"
-
+#git config --global user.email "Sakshi.Rathore@bgw-online.de"
+#git config --global user.name "Sakshi Rathore"
+git status
 git add .
 
 commitMessage="commiting the new file"
