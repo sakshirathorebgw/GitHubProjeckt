@@ -35,9 +35,10 @@ git remote set-url origin https://Sakshi.Rathore%40bgw-online.de:Sherlock%40107@
 
 git commit -m "$commitMessage"
 
-git push origin master --force
+#git push origin master --force
 
 #git pull
+echo "check new files"
 
 sleep 10
 echo "execute piecebypiece now"
