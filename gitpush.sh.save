@@ -15,19 +15,19 @@ echo "new file"
 #scp $SSH_KEYPATH ccpuser@$HOST_NAME:/home/ccpuser/.ssh
 
 
-git config --global user.email "Sakshi.Rathore@bgw-online.de"
-git config --global user.name "Sakshi Rathore"
+#git config --global user.email "Sakshi.Rathore@bgw-online.de"
+#git config --global user.name "Sakshi Rathore"
 git status
 git add .
 
 commitMessage="commiting the new file"
 echo $commitMessage
 
-#read commitMessage
+q#read commitMessage
 
 #git commit -m "$commitMessage"
 #git branch -mv origin master
-git remote set-url origin https://Sakshi.Rathore%40bgw-online.de:Sherlock%40107@github.com/sakshirathorebgw/GitHubProjeckt.git
+#git remote set-url origin https://Sakshi.Rathore%40bgw-online.de:Sherlock%40107@github.com/sakshirathorebgw/GitHubProjeckt.git
 #git remote set-url https://github.com/sakshirathorebgw/GitHubProjeckt.git 
 #branch=master
 #echo $branch
