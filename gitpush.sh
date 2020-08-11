@@ -8,8 +8,8 @@ cp -r $DIR .
 #ssh-copy-id -i ~/.ssh/harbortest.pub
 #ssh-copy-id -f -i ~/.ssh/harbortest.pub ccpuser@10.32.141.35
 
-sudo chmod 700 ~/.ssh/
-sudo chmod 600 ~/.ssh/*
+#chmod 700 ~/.ssh/
+#chmod 600 ~/.ssh/*
 
 #scp $SSH_KEYPATH ccpuser@$HOST_NAME:/home/ccpuser/.ssh
 
