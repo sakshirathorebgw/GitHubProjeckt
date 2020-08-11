@@ -1,4 +1,5 @@
-source inputfile.txt
+#!/bin/bash
+. inputfile.txt
 cp -r $DIR .
 #ssh-add $SSH_KEYPATH ~/.ssh/id_rsa
 
