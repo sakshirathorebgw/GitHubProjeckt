@@ -25,12 +25,14 @@ echo $commitMessage
 
 #read commitMessage
 
-git commit -m "$commitMessage"
+#git commit -m "$commitMessage"
 #git branch -mv origin master
 git remote set-url origin https://Sakshi.Rathore%40bgw-online.de:Sherlock%40107@github.com/sakshirathorebgw/GitHubProjeckt.git
 #branch=master
 #echo $branch
 #read branch
+
+git commit -m "$commitMessage"
 
 git push origin master --force
 
