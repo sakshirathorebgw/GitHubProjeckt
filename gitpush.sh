@@ -30,7 +30,7 @@ branch=master
 echo $branch
 #read branch
 
-git push origin master
+git push origin master --force
 
 sleep 10
 echo "execute piecebypiece now"
