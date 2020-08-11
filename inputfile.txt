@@ -2,4 +2,4 @@ DIR="/home/ccpuser/harbor_bkp/automation_bkp/test-harbor_Testzertifikate"
 echo $DIR
 HOST_NAME="10.32.141.35"
 echo $HOST_NAME
-SSH_KEYPATH="/home/ccpuser/harbor_bkp/automation_bkp/"
+SSH_KEYPATH="/home/ccpuser/harbor_bkp/automation_bkp/harbortestnew"

@@ -10,7 +10,7 @@ cp -r $DIR .
 sudo chmod 700 ~/.ssh/
 sudo chmod 600 ~/.ssh/*
 
-scp $SSH_KEYPATH ccpuser@$HOST_NAME:/home/ccpuser/.ssh
+#scp $SSH_KEYPATH ccpuser@$HOST_NAME:/home/ccpuser/.ssh
 
 
 git config --global user.email "Sakshi.Rathore@bgw-online.de"
