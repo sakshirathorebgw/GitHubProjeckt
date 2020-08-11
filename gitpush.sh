@@ -37,7 +37,7 @@ git commit -m "$commitMessage"
 
 git push origin master --force
 
-git pull
+#git pull
 
 sleep 10
 echo "execute piecebypiece now"
