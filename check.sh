@@ -5,8 +5,8 @@ if [ -z "$NAMESPACE_OUTPUT" ]
 
 then
       echo  " "$NAMESPACE_OUTPUT" is NULL"
-	  chmod +x new_server_cert.sh
-    ./new_server_cert.sh
+	  chmod +x new_server_cert_sed.sh
+    ./new_server_cert_sed.sh
 else
      echo " "$NAMESPACE_OUTPUT" is NOT NULL"
 	 chmod +x cert_status1.sh

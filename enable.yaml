@@ -1,7 +1,0 @@
-"secretName: "harbor""
-"secretName: "harbor"harbor"
-core:
-  notary:
-    "secretName: "harbor""
-    core:
-      "secretName: "harbor""
