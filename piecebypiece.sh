@@ -105,7 +105,7 @@ pwd;
 hostname;
 ls;
 #kubectl get namespace | fgrep harbor
-echo "further run1 "
+echo "further run "
 chmod +x check.sh
 echo "execute check.sh now"
 ./check.sh
