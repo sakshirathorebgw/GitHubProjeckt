@@ -89,7 +89,7 @@ then
     body="ATTENTION: The certificate of $hostName has expired on $expirationdate!"
     echo "edit properties file and run the job to install the new certs"
     cd ..
-    mv harbor harbor_bkp.$date
+    mv harbor harbor_bkp.%Yr%-%Mon%-%Day%_(%Hr%-%Min%-%Sec%)
     chmod +x old_server.sh
     ./old_server.sh
 else
@@ -102,7 +102,7 @@ else
     body="ATTENTION: The certificate of $hostName expires on $expirationdate which is in $numberOfDays days from now!, issue new certificate and install new harbor certificate on the server"
     echo "edit properties file and run the job to install the new cert"
     cd ..
-    mv harbor harbor_bkp
+    mv harbor harbor_%Yr%-%Mon%-%Day%_(%Hr%-%Min%-%Sec%)
     chmod +x old_server.sh
     ./old_server.sh
 fi
