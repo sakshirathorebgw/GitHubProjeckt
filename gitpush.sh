@@ -7,10 +7,10 @@ echo "new file"
 #ssh-keygen -y -f ~/.ssh/harbortest > ~/.ssh/harbortest_com.pub
 #ssh-keygen -i -f ~/.ssh/harbortest_com.pub > ~/.ssh/harbortest.pub
 #ssh-copy-id -i ~/.ssh/harbortest.pub
-#ssh-copy-id -f -i ~/.ssh/harbortest.pub ccpuser@10.32.141.35
+#ssh-copy-id -f -i ~/.ssh/harbortest.pub ccpuser@$HOST_NAME
 
-#chmod 700 ~/.ssh/
-#chmod 600 ~/.ssh/*
+chmod 700 ~/.ssh/
+chmod 600 ~/.ssh/*
 
 #scp $SSH_KEYPATH ccpuser@$HOST_NAME:/home/ccpuser/.ssh
 
@@ -43,6 +43,6 @@ echo "check new files"
 sleep 10
 echo "execute piecebypiece now"
 
-./piecebypiece.sh
+#./piecebypiece.sh
 
-echo "script execution done"
+#echo "script execution done"
