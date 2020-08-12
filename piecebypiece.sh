@@ -99,7 +99,7 @@ sed -i -e 's/\r$//' ./new_server_cert.sh
 
 echo "check1"
 
-ssh ccpuser@10.32.141.35 /bin/bash <<EOF
+ssh ccpuser@$HOST_NAME /bin/bash <<EOF
 #ssh -i $SSHKEY_PATH ccpuser@10.32.141.35 /bin/bash <<EOF
 pwd;
 hostname;
