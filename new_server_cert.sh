@@ -1,10 +1,25 @@
 #!/bin/bash
 
+#helm repo add harbor https://helm.goharbor.io
+#helm fetch harbor/harbor --untar
+
+#to create namespace
+#kubectl create namespace harbor
+var1=$(pwd)
+
+cd /usr/local/share/ca-certificates/
+sudo cp $var1/*.pfx .
+sudo cp $var1/*.crt .
+sudo cp $var1/*.key .
+
+sudo chmod -R 644 /usr/local/share/ca-certificates/
+sudo update-ca-certificates
+
+cd 
+
 helm repo add harbor https://helm.goharbor.io
 helm fetch harbor/harbor --untar
 
- #to create namespace
-#kubectl create namespace harbor
 
 cd harbor
 #to create secret 
@@ -71,6 +86,6 @@ echo "crt filename is" $CRT_FILENAME
  #sed -i 's/secretName: ""/secretName: "Harbor"/g' values.yaml
  
  helm install harbor . -n harbor
- 
+ helm upgrade harbor -n harbor 
  echo "Harbor certificate isntallation done"
  

@@ -6,6 +6,7 @@
 # export SSHKEY_PATH=$SSHKEY_PATH
 # echo "path for ssh key is" $SSHKEY_PATH
 source inputfile.txt
+source server.txt
  #export SSHKEY_PATH=$SSHKEY_PATH
  #echo "path for ssh key is" $SSHKEY_PATH
 
@@ -82,24 +83,37 @@ echo "address for certificate is :" $CN_ADDRESS
 #scp -i $SSHKEY_PATH ./cert_status1.sh ccpuser@10.32.141.35:/home/ccpuser
 #scp -i $SSHKEY_PATH ./new_server_cert.sh ccpuser@10.32.141.35:/home/ccpuser
 
-scp $CERT_PATH ccpuser@$HOST_NAME:/home/ccpuser
-scp $KEY_FILE ccpuser@$HOST_NAME:/home/ccpuser
-scp $CRT_FILE ccpuser@$HOST_NAME:/home/ccpuser
-scp ./check.sh ccpuser@$HOST_NAME:/home/ccpuser
-scp ./old_server.sh ccpuser@$HOST_NAME:/home/ccpuser
-scp ./cert_status1.sh ccpuser@$HOST_NAME:/home/ccpuser
-scp ./new_server_cert.sh ccpuser@$HOST_NAME:/home/ccpuser
+
+#echo $HOST_NAME
+source server.txt
+for server in $(cat server.txt)
+do
+scp $CERT_PATH ccpuser@$server:/home/ccpuser
+scp $KEY_FILE ccpuser@$server:/home/ccpuser
+scp $CRT_FILE ccpuser@$server:/home/ccpuser
+scp ./check.sh ccpuser@$server:/home/ccpuser
+scp ./old_server.sh ccpuser@$server:/home/ccpuser
+scp ./cert_status1.sh ccpuser@$server:/home/ccpuser
+scp ./new_server_cert.sh ccpuser@$server:/home/ccpuser
+scp ./server.txt ccpuser@$server:/home/ccpuser
+scp ./server1.txt ccpuser@$server:/home/ccpuser
 
 sed -i -e 's/\r$//' ./check.sh
 sed -i -e 's/\r$//' ./old_server.sh
 sed -i -e 's/\r$//'  ./cert_status1.sh
 sed -i -e 's/\r$//' ./old_server.sh
 sed -i -e 's/\r$//' ./new_server_cert.sh
+sed -i -e 's/\r$//' server.txt
+sed -i -e 's/\r$//' server1.txt
 
-
+done 
 echo "check1"
-
-ssh ccpuser@$HOST_NAME /bin/bash <<EOF
+#for x in `cat inputfile.txt
+#	do host $HOST_NAME  ` 
+for server in $(cat server.txt)
+do
+echo $server
+ssh ccpuser@$server /bin/bash <<EOF
 #ssh -i $SSHKEY_PATH ccpuser@10.32.141.35 /bin/bash <<EOF
 pwd;
 hostname;
@@ -110,5 +124,16 @@ chmod +x check.sh
 echo "execute check.sh now"
 ./check.sh
 
+EOF
+done
+
+for server in $(cat server1.txt)
+do
+	echo $server
+	ssh ccpuser@$server /bin/bash <<EOF
+ls
+chmod +x cert_update.sh
+./cert_update.sh
 
 EOF
+done
