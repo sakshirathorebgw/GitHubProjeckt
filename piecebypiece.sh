@@ -97,6 +97,7 @@ scp ./cert_status1.sh ccpuser@$server:/home/ccpuser
 scp ./new_server_cert.sh ccpuser@$server:/home/ccpuser
 scp ./server.txt ccpuser@$server:/home/ccpuser
 scp ./server1.txt ccpuser@$server:/home/ccpuser
+scp ./cert_update.sh ccpuser@$server:/home/ccpuser
 
 sed -i -e 's/\r$//' ./check.sh
 sed -i -e 's/\r$//' ./old_server.sh
@@ -105,6 +106,7 @@ sed -i -e 's/\r$//' ./old_server.sh
 sed -i -e 's/\r$//' ./new_server_cert.sh
 sed -i -e 's/\r$//' server.txt
 sed -i -e 's/\r$//' server1.txt
+sed -i -e 's/\r$//' ./cert_update.sh
 
 done 
 echo "check1"
