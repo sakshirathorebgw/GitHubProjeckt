@@ -1,4 +1,4 @@
-DIR="/home/ccpuser/harbor_bkp/automation_bkp/test-harbor_Testzertifikate"
+DIR="/home/ccpuser/harbor_bkp/automation/test-harbor_Testzertifikate"
 echo $DIR
 HOST_NAME="10.32.141.35 10.32.30.161 10.32.141.1"
 #HOST_NAME="10.32.141.35"
