@@ -87,6 +87,6 @@ echo "crt filename is" $CRT_FILENAME
 
 kubectl create secret tls $TLS_NAME --key $KEY_FILENAME --cert $CRT_FILENAME --namespace harbor
 
- helm install harbor . -n harbor
+# helm install harbor . -n harbor
 helm upgrade harbor -n harbor 
  echo "Harbor certificate isntallation done"
