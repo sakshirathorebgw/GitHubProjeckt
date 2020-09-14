@@ -31,7 +31,7 @@ ls -lrt
  #to create namespace
 kubectl create namespace harbor
 
- kubectl create secret tls $TLS_NAME --key $KEY_FILENAME --cert $CRT_FILENAME --namespace harbor
+# kubectl create secret tls $TLS_NAME --key $KEY_FILENAME --cert $CRT_FILENAME --namespace harbor
  
  CERT_PATH=$(find ./ -type f -name "*pfx" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
  export CERT_PATH=$CERT_PATH
@@ -85,6 +85,8 @@ echo "crt filename is" $CRT_FILENAME
  
  #sed -i 's/secretName: ""/secretName: "Harbor"/g' values.yaml
  
+ kubectl create secret tls $TLS_NAME --key $KEY_FILENAME --cert $CRT_FILENAME --namespace harbor
+
  helm install harbor . -n harbor
  helm upgrade harbor -n harbor 
  echo "Harbor certificate isntallation done"

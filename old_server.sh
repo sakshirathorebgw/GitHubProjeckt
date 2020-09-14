@@ -85,7 +85,9 @@ echo "crt filename is" $CRT_FILENAME
  
  echo "values.yaml is updated"
 
-kubectl create secret tls $TLS_NAME --key $KEY_FILENAME --cert $CRT_FILENAME --namespace harbor
+ output=$(kubectl create secret tls $TLS_NAME --key $KEY_FILENAME --cert $CRT_FILENAME --namespace harbor)
+ echo $output
+
 
 # helm install harbor . -n harbor
 helm upgrade harbor -n harbor 
