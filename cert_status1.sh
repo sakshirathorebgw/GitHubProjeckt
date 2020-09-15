@@ -39,7 +39,7 @@ cd harbor
 
 if [ -z "$2" ]
 then
-   warning_days="10"
+   warning_days="265"
 else
    warning_days=$2
 fi
