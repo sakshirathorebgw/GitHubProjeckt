@@ -7,14 +7,16 @@
 #helm repo add harbor https://helm.goharbor.io
 
 #helm fetch harbor/harbor --untar
-rm -rf harbor
+#rm -rf harbor
+mv "/home/ccpuser/harbor "* "/home/ccpuser/Harbor_Backup `date '+%b-%d-%Y'`
+
 unzip -o harbor.zip
 cd harbor
 		cp ../*.pfx .
 		cp ../*.crt .
 		cp ../*.key .
 	ls -lrt
-kubectl create namespace harbor
+#kubectl create namespace harbor
 
 CERT_PATH=$(find ./ -type f -name "*pfx" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
  export CERT_PATH=$CERT_PATH
