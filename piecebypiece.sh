@@ -161,7 +161,7 @@ sed -i -e 's/\r$//' inputfile.txt
 sed -i -e 's/\r$//' harbor.zip
 
 	echo $server
-#	ssh ccpuser@$server /bin/bash <<EOF
+	ssh ccpuser@$server /bin/bash <<EOF
 ls
 sed -i -e 's/\r$//' cert_update.sh
 chmod +x cert_update.sh
