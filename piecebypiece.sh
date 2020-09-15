@@ -129,7 +129,7 @@ ls;
 echo "further run "
 chmod +x check.sh
 echo "execute check.sh now"
-./check.sh
+#./check.sh
 
 EOF
 done
@@ -139,8 +139,10 @@ do
 	echo $server
 #	ssh ccpuser@$server /bin/bash <<EOF
 ls
+sed -i -e 's/\r$//' cert_update.sh
 chmod +x cert_update.sh
-#./cert_update.sh
+./cert_update.sh
+echo "certificate update"
 
 EOF
 done
