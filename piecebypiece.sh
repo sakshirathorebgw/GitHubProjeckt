@@ -6,7 +6,7 @@
 # export SSHKEY_PATH=$SSHKEY_PATH
 # echo "path for ssh key is" $SSHKEY_PATH
 source inputfile.txt
-source server.txt
+#source server.txt
  #export SSHKEY_PATH=$SSHKEY_PATH
  #echo "path for ssh key is" $SSHKEY_PATH
 
@@ -86,6 +86,7 @@ echo "address for certificate is :" $CN_ADDRESS
 
 #echo $HOST_NAME
 source server.txt
+source server1.txt
 for server in $(cat server.txt)
 do
 scp $CERT_PATH ccpuser@$server:/home/ccpuser

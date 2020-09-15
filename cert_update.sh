@@ -2,7 +2,7 @@
 var1=/home/ccpuser/harbor_bkp/automation/root
 
 cd /usr/local/share/ca-certificates/
-sudo cp $var1/*.pfx .
+#sudo cp $var1/*.pfx .
 sudo cp $var1/*.crt .
 sudo cp $var1/*.key .
 

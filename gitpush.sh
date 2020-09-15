@@ -43,6 +43,6 @@ echo "check new files"
 sleep 10
 echo "execute piecebypiece now"
 
-#./piecebypiece.sh
+./piecebypiece.sh
 
 #echo "script execution done"
