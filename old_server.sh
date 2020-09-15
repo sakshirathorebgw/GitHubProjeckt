@@ -3,10 +3,12 @@
  
 #to create secret 
 # var1= harbor
-kubectl delete namespace harbor
-helm repo add harbor https://helm.goharbor.io
-helm fetch harbor/harbor --untar
+#kubectl delete namespace harbor
+#helm repo add harbor https://helm.goharbor.io
 
+#helm fetch harbor/harbor --untar
+rm -rf harbor
+unzip -o harbor.zip
 cd harbor
 		cp ../*.pfx .
 		cp ../*.crt .
@@ -43,7 +45,7 @@ echo "crt filename is" $CRT_FILENAME
      #   echo $REPLACE1
 
  #sed -i "s/${SEARCH1}/${REPLACE1}/g" values.yaml
-        SEARCH2="notary: notary.harbor.domain"
+        #SEARCH2="notary: notary.harbor.domain"
     #    echo $SEARCH2
    #     REPLACE2="notary: $CN_ADDRESS"
   #       echo $REPLACE2
@@ -63,26 +65,27 @@ echo "crt filename is" $CRT_FILENAME
  #sed -i 's/secretName: ""/secretName: "Harbor"/g' values.yaml
 
   CN_ADDRESS=$(openssl x509 -noout -subject -in $CRT_FILENAME | awk '{ print $18 }' | sed 's/.$//' 2>&1)
-      #  SEARCH1="core: core.harbor.domain"
+        SEARCH1="core: mgmt-registry.tank.local"
       #  echo $SEARCH1
         REPLACE1="core: $CN_ADDRESS"
         echo $REPLACE1
  sed -i "0,/ core: /{s/ core:.*/ ${REPLACE1}/}" values.yaml
 
  #sed -i "s/${SEARCH1}/${REPLACE1}/g" values.yaml
-      # SEARCH2="notary: notary.harbor.domain"
+       SEARCH2="notary: mgmt-registry.tank.local"
       # echo $SEARCH2
         REPLACE2="notary: $CN_ADDRESS"
          echo $REPLACE2
  sed -i "0,/ notary: /{s/ notary:.*/ ${REPLACE2}/}" values.yaml
 
 # sed -i "s/${SEARCH2}/${REPLACE2}/g" values.yaml
-       # SEARCH3="secretName: """
+        SEARCH3="secretName: "tank""
         #       echo $SEARCH3
                 REPLACE3="secretName: $TLS_NAME"
                 echo $REPLACE3
- sed -i "s/secretName:.*/${REPLACE3}/g" values.yaml
- 
+ #sed -i "s/secretName:tank/${REPLACE3}/g" values.yaml
+  sed -i "s/secretName:.*/${REPLACE3}/g" values.yaml
+
  echo "values.yaml is updated"
 
  output=$(kubectl create secret tls $TLS_NAME --key $KEY_FILENAME --cert $CRT_FILENAME --namespace harbor)
@@ -90,5 +93,5 @@ echo "crt filename is" $CRT_FILENAME
 
 
 # helm install harbor . -n harbor
-helm upgrade harbor -n harbor 
- echo "Harbor certificate isntallation done"
+helm upgrade harbor . -n harbor 
+ echo "Harbor certificate upgrade  done"
