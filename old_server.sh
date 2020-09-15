@@ -9,9 +9,9 @@
 #helm fetch harbor/harbor --untar
 #rm -rf harbor
 #mv "/home/ccpuser/harbor "* "/home/ccpuser/Harbor_Backup `date '+%b-%d-%Y'`
-mv /home/ccpuser/harbor /home/ccpuser/harbor_`date '+%b-%d-%Y-%H-%M-%S'`
+#mv /home/ccpuser/harbor /home/ccpuser/harbor_`date '+%b-%d-%Y-%H-%M-%S'`
 
-unzip -o harbor.zip
+#unzip -o harbor.zip
 cd harbor
 		cp ../*.pfx .
 		cp ../*.crt .

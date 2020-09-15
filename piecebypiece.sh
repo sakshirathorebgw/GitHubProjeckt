@@ -137,10 +137,10 @@ done
 for server in $(cat server1.txt)
 do
 	echo $server
-	ssh ccpuser@$server /bin/bash <<EOF
+#	ssh ccpuser@$server /bin/bash <<EOF
 ls
 chmod +x cert_update.sh
-./cert_update.sh
+#./cert_update.sh
 
 EOF
 done
