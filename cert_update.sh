@@ -1,5 +1,5 @@
 #!/bin/bash
-var1=$pwd
+var1=/home/ccpuser
 
 cd /usr/local/share/ca-certificates/
 #sudo cp $var1/*.pfx .
