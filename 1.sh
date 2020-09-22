@@ -86,7 +86,7 @@ echo "address for certificate is :" $CN_ADDRESS
 
 #echo $HOST_NAME
 source server.txt
-#source server1.txt
+source server1.txt
 for server in $(cat server.txt)
 do
 scp $CERT_PATH ccpuser@$server:/home/ccpuser
@@ -129,14 +129,15 @@ ls;
 echo "further run "
 chmod +x check.sh
 echo "execute check.sh now"
-./check.sh
-
+#./check.sh
+echo $server
+hostname
 EOF
 done
 
 #for server in $(cat server1.txt)
 #do
-#scp $CERT_PATH ccpuser@$server:/home/ccpuser
+#	scp $CERT_PATH ccpuser@$server:/home/ccpuser
 #scp $KEY_FILE ccpuser@$server:/home/ccpuser
 #scp $CRT_FILE ccpuser@$server:/home/ccpuser
 #scp ./check.sh ccpuser@$server:/home/ccpuser
@@ -162,13 +163,12 @@ done
 
 #	echo $server
 #	ssh ccpuser@$server /bin/bash <<EOF
-
+#ls
 #sed -i -e 's/\r$//' cert_update.sh
 #chmod +x cert_update.sh
 #./cert_update.sh
-#echo "certificate update"
-#ls -lrt
-#echo hostname -i
-
+echo "certificate update"
+hostname -i
+hostname
 #EOF
 #done
