@@ -101,7 +101,7 @@ scp ./server1.txt ccpuser@$server:/home/ccpuser
 scp ./cert_update.sh ccpuser@$server:/home/ccpuser
 scp ./inputfile.txt ccpuser@$server:/home/ccpuser
 scp ./harbor.zip ccpuser@$server:/home/ccpuser
-
+scp $DIR/ca.crt ccpuser@$server:/home/ccpuser
 sed -i -e 's/\r$//' ./check.sh
 sed -i -e 's/\r$//' ./old_server.sh
 sed -i -e 's/\r$//'  ./cert_status1.sh
@@ -112,6 +112,7 @@ sed -i -e 's/\r$//' server1.txt
 sed -i -e 's/\r$//' ./cert_update.sh
 sed -i -e 's/\r$//' inputfile.txt
 sed -i -e 's/\r$//' harbor.zip
+sed -i -e 's/\r$//' ca.crt
 
 done 
 echo "check1"

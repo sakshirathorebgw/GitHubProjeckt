@@ -16,7 +16,8 @@ cd harbor
 		cp ../*.pfx .
 		cp ../*.crt .
 		cp ../*.key .
-	ls -lrt
+		cp ../ca.crt .
+		ls -lrt
 #kubectl create namespace harbor
 
 CERT_PATH=$(find ./ -type f -name "*pfx" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
@@ -91,9 +92,9 @@ echo "crt filename is" $CRT_FILENAME
 
  echo "values.yaml is updated"
 
- output=$(kubectl create secret tls $TLS_NAME --key $KEY_FILENAME --cert $CRT_FILENAME --namespace harbor)
- echo $output
-
+ #output=$(kubectl create secret tls $TLS_NAME --key $KEY_FILENAME --cert $CRT_FILENAME --namespace harbor)
+ #echo $output
+ kubectl create secret tls $TLS_NAME --key $KEY_FILENAME --cert $CRT_FILENAME --cert ca.crt --namespace harbor
 
 # helm install harbor . -n harbor
 helm upgrade harbor . -n harbor 
