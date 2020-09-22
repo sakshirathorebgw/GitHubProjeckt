@@ -88,7 +88,7 @@ then
     subject="$hostName - SSL Certificate has expired"
     body="ATTENTION: The certificate of $hostName has expired on $expirationdate!"
     echo "edit properties file and run the job to install the new certs"
-    cd ..
+    cd 
     #mv harbor harbor_bkp
     chmod +x old_server.sh
     ./old_server.sh
@@ -101,7 +101,7 @@ else
     subject="$hostName - SSL Certificate expires in $numberOfDays days"
     body="ATTENTION: The certificate of $hostName expires on $expirationdate which is in $numberOfDays days from now!, issue new certificate and install new harbor certificate on the server"
     echo "edit properties file and run the job to install the new cert"
-    cd ..
+    cd 
     #mv harbor harbor_bkp
     chmod +x old_server.sh
     ./old_server.sh
