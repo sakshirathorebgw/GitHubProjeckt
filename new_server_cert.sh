@@ -27,7 +27,7 @@ cd harbor
 cp ../*.pfx .
 cp ../*.crt .
 cp ../*.key .
-cp ../ca.crt .
+#cp ../ca.crt .
 ls -lrt
  #to create namespace
 kubectl create namespace harbor
