@@ -28,8 +28,8 @@ source inputfile.txt
   echo "this is password " $PASSWORD_VALUE 
   
    #generate .crt and .key files
-/usr/bin/openssl pkcs12 -in $CERT_PATH -nodes -out $BASENAME.key  -password pass:$PASSWORD_VALUE > /root
-/usr/bin/openssl pkcs12 -in $CERT_PATH -nokeys -out $BASENAME.crt  -password pass:$PASSWORD_VALUE >/root
+/usr/bin/openssl pkcs12 -in $CERT_PATH -nodes -out $BASENAME.key  -password pass:$PASSWORD_VALUE 
+/usr/bin/openssl pkcs12 -in $CERT_PATH -nokeys -out $BASENAME.crt  -password pass:$PASSWORD_VALUE 
 
 # to get key and crt file path
 KEY_FILE=$(find ./ -type f -name "*key" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1)
@@ -168,6 +168,7 @@ source server.txt
 #source server1.txt
 for server in $(cat server.txt)
 do
+#	find . -name "*.crt" -type f -delete
 scp $CERT_PATH ccpuser@$server:/home/ccpuser
 scp $KEY_FILE ccpuser@$server:/home/ccpuser
 scp $CRT_FILE ccpuser@$server:/home/ccpuser
@@ -194,7 +195,8 @@ sed -i -e 's/\r$//' inputfile.txt
 sed -i -e 's/\r$//' harbor.zip
 sed -i -e 's/\r$//' ca.crt
 
-done 
+done
+ls -lrt
 echo "check1"
 #for x in `cat inputfile.txt
 #	do host $HOST_NAME  ` 
@@ -205,12 +207,15 @@ ssh ccpuser@$server /bin/bash <<EOF
 #ssh -i $SSHKEY_PATH ccpuser@10.32.141.35 /bin/bash <<EOF
 pwd;
 hostname;
-ls;
+#find . -name "*.crt" -type f  -mmin -20 -delete
+#find . -name "*.key" -type f  -mmin -20 -delete
+#find . -name "*.pfx" -type f  -mmin -20 -delete
+ls -lrt;
 #kubectl get namespace | fgrep harbor
 echo "further run "
 chmod +x check.sh
 echo "execute check.sh now"
-#./check.sh
+./check.sh
 
 EOF
 done

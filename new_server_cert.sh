@@ -24,10 +24,10 @@ helm fetch harbor/harbor --untar
 cd harbor
 #to create secret 
 # var1= harbor
-cp ../*.pfx .
-cp ../*.crt .
-cp ../*.key .
-cp ../ca.crt .
+cp -p ../*.pfx .
+cp -p ../*.crt .
+cp -p ../*.key .
+cp -p ../ca.crt .
 ls -lrt
  #to create namespace
 kubectl create namespace harbor

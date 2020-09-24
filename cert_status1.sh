@@ -44,7 +44,7 @@ else
    warning_days=$2
 fi
 
-OLD_CERTFILE=$(find $DIR -type f -name "*.crt" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
+OLD_CERTFILE=$(find ./ -type f -name "*.crt" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
 		export OLD_CERTFILE=$OLD_CERTFILE
 		echo $OLD_CERTFILE
 	OLD_CERTFILENAME=$(basename $OLD_CERTFILE)
