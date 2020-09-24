@@ -102,11 +102,12 @@ echo "crt filename is" $CRT_FILENAME
  kubectl create secret tls $TLS_NAME --key $KEY_FILENAME --cert $CRT_FILENAME --namespace harbor
  kubectl get secret $TLS_NAME -n harbor -o yaml > ca.crt.yaml
 
- sed -i '/data:/r ca.crt.txt' ca.crt.yaml
+ #sed -i '/data:/r ca.crt.txt' ca.crt.yaml
+ awk 'FNR==3{system("cat ca.crt.txt")} 1' ca.crt.yaml > ca.crt_final.yaml
 
  #kubectl apply -f ca.crt.yaml
 
 # helm install harbor . -n harbor
 helm upgrade harbor . -n harbor 
  echo "Harbor certificate upgrade  done"
- kubectl apply -f ca.crt.yaml
+ kubectl apply -f ca.crt_final.yaml
