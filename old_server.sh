@@ -104,8 +104,9 @@ echo "crt filename is" $CRT_FILENAME
 
  sed -i '/data:/r ca.crt.txt' ca.crt.yaml
 
- kubectl apply -f ca.crt.yaml
+ #kubectl apply -f ca.crt.yaml
 
 # helm install harbor . -n harbor
 helm upgrade harbor . -n harbor 
  echo "Harbor certificate upgrade  done"
+ kubectl apply -f ca.crt.yaml
