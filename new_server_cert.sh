@@ -27,7 +27,7 @@ cd harbor
 cp ../*.pfx .
 cp ../*.crt .
 cp ../*.key .
-#cp ../ca.crt .
+cp ../ca.crt .
 ls -lrt
  #to create namespace
 kubectl create namespace harbor
@@ -105,4 +105,4 @@ sed -i 's/$/\n/' ca.crt.txt
  helm install harbor . -n harbor
  #helm upgrade harbor -n harbor 
  echo "Harbor certificate isntallation done"
-  #kubectl apply -f ca.crt_final.yaml
+  kubectl apply -f ca.crt_final.yaml
