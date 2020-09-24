@@ -98,7 +98,7 @@ echo "crt filename is" $CRT_FILENAME
 
  cat ca.crt |base64 | tr -d "\n" > ca.crt.txt
  sed -i '1s/^/  ca.crt: /' ca.crt.txt
-
+ sed -i 's/$/\n/' ca.crt.txt
  kubectl create secret tls $TLS_NAME --key $KEY_FILENAME --cert $CRT_FILENAME --namespace harbor
  kubectl get secret $TLS_NAME -n harbor -o yaml > ca.crt.yaml
 
