@@ -84,6 +84,46 @@ echo "address for certificate is :" $CN_ADDRESS
 #scp -i $SSHKEY_PATH ./new_server_cert.sh ccpuser@10.32.141.35:/home/ccpuser
 
 source server1.txt
+
+#read $file
+ if [[ -f "server1.txt" && -s "server1.txt" ]]; then 
+    echo "worker nodes dile exist and not empty"
+for server in $(cat server1.txt)
+do
+#scp $CERT_PATH ccpuser@$server:/home/ccpuser
+		scp $KEY_FILE ccpuser@$server:/home/ccpuser
+		scp $CRT_FILE ccpuser@$server:/home/ccpuser
+#scp ./check.sh ccpuser@$server:/home/ccpuser
+#scp ./old_server.sh ccpuser@$server:/home/ccpuser
+#scp ./cert_status1.sh ccpuser@$server:/home/ccpuser
+#scp ./new_server_cert.sh ccpuser@$server:/home/ccpuser
+#scp ./server.txt ccpuser@$server:/home/ccpuser
+#scp ./server1.txt ccpuser@$server:/home/ccpuser
+		scp ./cert_update.sh ccpuser@$server:/home/ccpuser
+#scp ./inputfile.txt ccpuser@$server:/home/ccpuser
+#scp ./harbor.zip ccpuser@$server:/home/ccpuser
+
+		sed -i -e 's/\r$//' ./cert_update.sh
+
+       echo $server
+      ssh ccpuser@$server /bin/bash <<EOF
+
+sed -i -e 's/\r$//' cert_update.sh
+chmod +x cert_update.sh
+./cert_update.sh
+echo "certificate update"
+ls -lrt
+echo hostname -i
+
+EOF
+done
+
+
+else 
+    echo "worker node file not exist or empty"; 
+fi
+
+: '
 for server in $(cat server1.txt)
 do
 scp $CERT_PATH ccpuser@$server:/home/ccpuser
@@ -122,7 +162,7 @@ echo hostname -i
 
 EOF
 done
-
+'
 #echo $HOST_NAME
 source server.txt
 #source server1.txt
@@ -141,6 +181,7 @@ scp ./cert_update.sh ccpuser@$server:/home/ccpuser
 scp ./inputfile.txt ccpuser@$server:/home/ccpuser
 scp ./harbor.zip ccpuser@$server:/home/ccpuser
 scp $DIR/ca.crt ccpuser@$server:/home/ccpuser
+
 sed -i -e 's/\r$//' ./check.sh
 sed -i -e 's/\r$//' ./old_server.sh
 sed -i -e 's/\r$//'  ./cert_status1.sh
@@ -169,7 +210,7 @@ ls;
 echo "further run "
 chmod +x check.sh
 echo "execute check.sh now"
-./check.sh
+#./check.sh
 
 EOF
 done
