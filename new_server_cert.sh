@@ -147,3 +147,5 @@ sed -i 's/$/\n/' ca.crt.txt
  #helm upgrade harbor -n harbor 
  echo "Harbor certificate isntallation done"
   kubectl apply -f ca.crt_final.yaml
+
+  rm ca.crt
