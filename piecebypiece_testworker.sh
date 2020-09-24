@@ -28,8 +28,8 @@ source inputfile.txt
   echo "this is password " $PASSWORD_VALUE 
   
    #generate .crt and .key files
-/usr/bin/openssl pkcs12 -in $CERT_PATH -nodes -out $BASENAME.key  -password pass:$PASSWORD_VALUE
-/usr/bin/openssl pkcs12 -in $CERT_PATH -nokeys -out $BASENAME.crt  -password pass:$PASSWORD_VALUE
+/usr/bin/openssl pkcs12 -in $CERT_PATH -nodes -out $BASENAME.key  -password pass:$PASSWORD_VALUE > /root
+/usr/bin/openssl pkcs12 -in $CERT_PATH -nokeys -out $BASENAME.crt  -password pass:$PASSWORD_VALUE >/root
 
 # to get key and crt file path
 KEY_FILE=$(find ./ -type f -name "*key" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1)
@@ -110,7 +110,7 @@ do
 
 sed -i -e 's/\r$//' cert_update.sh
 chmod +x cert_update.sh
-./cert_update.sh
+#./cert_update.sh
 echo "certificate update"
 ls -lrt
 echo hostname -i
@@ -155,7 +155,7 @@ sed -i -e 's/\r$//' harbor.zip
 
 sed -i -e 's/\r$//' cert_update.sh
 chmod +x cert_update.sh
-./cert_update.sh
+#./cert_update.sh
 echo "certificate update"
 ls -lrt
 echo hostname -i
@@ -210,7 +210,7 @@ ls;
 echo "further run "
 chmod +x check.sh
 echo "execute check.sh now"
-./check.sh
+#./check.sh
 
 EOF
 done

@@ -13,13 +13,14 @@
 
 #unzip -o harbor.zip
 cd harbor
-	#	cp ../*.pfx .
-	#	cp ../*.crt .
-	#	cp ../*.key .
+		cp ../*.pfx .
+		cp ../*.crt .
+		cp ../*.key .
 		cp ../ca.crt .
 	
 		ls -lrt
 #kubectl create namespace harbor
+: '
 source inputfile.txt
 
  CERT_PATH=$(find $DIR -type f -name "*pfx" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
@@ -56,9 +57,9 @@ echo "crt filename is" $CRT_FILENAME
 
 CN_ADDRESS=$(openssl x509 -noout -subject -in $CRT_FILENAME | awk '{ print $18 }' | sed 's/.$//' 2>&1)
 echo "address for certificate is :" $CN_ADDRESS
+'
 
 
-: '
 CERT_PATH=$(find ./ -type f -name "*pfx" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
  export CERT_PATH=$CERT_PATH
  echo $CERT_PATH "is certpath"
@@ -108,7 +109,7 @@ echo "crt filename is" $CRT_FILENAME
  #sed -i 's/secretName: ""/secretName: "Harbor"/g' values.yaml
 
   CN_ADDRESS=$(openssl x509 -noout -subject -in $CRT_FILENAME | awk '{ print $18 }' | sed 's/.$//' 2>&1)
-'   
+   
   SEARCH1="core: mgmt-registry.tank.local"
       #  echo $SEARCH1
         REPLACE1="core: $CN_ADDRESS"
