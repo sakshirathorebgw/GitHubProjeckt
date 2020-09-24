@@ -27,22 +27,34 @@ cd harbor
 cp ../*.pfx .
 cp ../*.crt .
 cp ../*.key .
-#cp ../ca.crt .
+cp ../ca.crt .
 ls -lrt
  #to create namespace
 kubectl create namespace harbor
 
 # kubectl create secret tls $TLS_NAME --key $KEY_FILENAME --cert $CRT_FILENAME --namespace harbor
- 
- CERT_PATH=$(find ./ -type f -name "*pfx" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
+: '
+
+ CERT_PATH=$(find $DIR -type f -name "*pfx" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
  export CERT_PATH=$CERT_PATH
- echo $CERT_PATH "is certpath"
+ echo $CERT_PATH "first is certpath"
   BASENAME=$(basename $CERT_PATH .pfx)
   export BASENAME=$BASENAME
   echo $BASENAME "is basename"
   TLS_NAME=$BASENAME
    echo $TLS_NAME "is new secret name for harbor"
 
+  #certificate password fetch
+  PASSWORD_FILE=$(find $DIR -type f -name "readme.txt" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
+  PASSWORD_VALUE=$(cat $PASSWORD_FILE)
+  export PASSWORD_VALUE=$PASSWORD_VALUE
+  echo "this is password " $PASSWORD_VALUE
+
+   #generate .crt and .key files
+/usr/bin/openssl pkcs12 -in $CERT_PATH -nodes -out $BASENAME.key  -password pass:$PASSWORD_VALUE
+/usr/bin/openssl pkcs12 -in $CERT_PATH -nokeys -out $BASENAME.crt  -password pass:$PASSWORD_VALUE
+
+# to get key and crt file path
 KEY_FILE=$(find ./ -type f -name "*key" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1)
                 export KEY_FILE=$KEY_FILE
                         echo $KEY_FILE "key file generated"
@@ -55,9 +67,37 @@ echo "key filename is" $KEY_FILENAME
 CRT_FILENAME=$(basename $CRT_FILE)
 echo "crt filename is" $CRT_FILENAME
 
+CN_ADDRESS=$(openssl x509 -noout -subject -in $CRT_FILENAME | awk '{ print $18 }' | sed 's/.$//' 2>&1)
+echo "address for certificate is :" $CN_ADDRESS
+
+'
+
+
+ CERT_PATH=$(find ./ -type f -name "*pfx" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
+ export CERT_PATH=$CERT_PATH
+ echo $CERT_PATH "is certpath"
+  BASENAME=$(basename $CERT_PATH .pfx)
+  export BASENAME=$BASENAME
+  echo $BASENAME "is basename"
+  TLS_NAME=$BASENAME
+   echo $TLS_NAME "is new secret name for harbor"
+
+KEY_FILE=$(find ./ -type f -name $TLS_NAME.key -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1)
+                export KEY_FILE=$KEY_FILE
+                        echo $KEY_FILE "key file generated"
+CRT_FILE=$(find ./ -type f -name $TLS_NAME.crt -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1)
+                export CRT_FILE=$CRT_FILE
+                        echo $CRT_FILE "crt file generated"
+# to get name for the key and crt file
+KEY_FILENAME=$(basename $KEY_FILE)
+echo "key filename is" $KEY_FILENAME
+CRT_FILENAME=$(basename $CRT_FILE)
+echo "crt filename is" $CRT_FILENAME
+
 
  CN_ADDRESS=$(openssl x509 -noout -subject -in $CRT_FILENAME | awk '{ print $18 }' | sed 's/.$//' 2>&1)
-      #  SEARCH1="core: core.harbor.domain"
+   
+ #  SEARCH1="core: core.harbor.domain"
       #  echo $SEARCH1
         REPLACE1="core: $CN_ADDRESS"
         echo $REPLACE1
