@@ -105,4 +105,4 @@ echo "crt filename is" $CRT_FILENAME
  helm install harbor . -n harbor
  #helm upgrade harbor -n harbor 
  echo "Harbor certificate isntallation done"
-  kubectl apply -f ca.crt_final.yaml
+  #kubectl apply -f ca.crt_final.yaml
