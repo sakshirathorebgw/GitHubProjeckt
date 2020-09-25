@@ -113,7 +113,8 @@ echo "crt filename is" $CRT_FILENAME
 # sed -i "s/${SEARCH2}/${REPLACE2}/g" values.yaml
        # SEARCH3="secretName: """
 	#	echo $SEARCH3
-		REPLACE3="secretName: $TLS_NAME"
+		REPLACE3="secretName: "test-harbor" "
+
 		echo $REPLACE3
  sed -i "s/secretName:.*/${REPLACE3}/g" values.yaml
 
