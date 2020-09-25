@@ -147,11 +147,13 @@ echo "crt filename is" $CRT_FILENAME
  #sed -i '/data:/r ca.crt.txt' ca.crt.yaml
  awk 'FNR==3{system("cat ca.crt.txt")} 1' ca.crt.yaml > ca.crt_final.yaml
 
+ kubectl delete $TLS_NAME -n harbor 
+kubectl apply -f ca.crt_final.yaml
  #kubectl apply -f ca.crt.yaml
 
 # helm install harbor . -n harbor
 helm upgrade harbor . -n harbor 
  echo "Harbor certificate upgrade  done"
- kubectl apply -f ca.crt_final.yaml
+# kubectl apply -f ca.crt_final.yaml
 
  rm ca.crt

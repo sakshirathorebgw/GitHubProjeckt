@@ -141,11 +141,13 @@ sed -i 's/$/\n/' ca.crt.txt
  awk 'FNR==3{system("cat ca.crt.txt")} 1' ca.crt.yaml > ca.crt_final.yaml
 
 # kubectl apply -f ca.crt.yaml
+kubectl delete secret $TLS_NAME -n harbor
+kubectl apply -f ca.crt_final.yaml
 
 
  helm install harbor . -n harbor
  #helm upgrade harbor -n harbor 
  echo "Harbor certificate isntallation done"
-  kubectl apply -f ca.crt_final.yaml
+ # kubectl apply -f ca.crt_final.yaml
 
   rm ca.crt
