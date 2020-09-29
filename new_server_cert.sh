@@ -123,12 +123,14 @@ kubectl apply -f ca.crt_final.yaml
  sed -i "0,/ notary: /{s/ notary:.*/ ${REPLACE2}/}" values.yaml
 
 # sed -i "s/${SEARCH2}/${REPLACE2}/g" values.yaml
-       # SEARCH3="secretName: """
-	#	echo $SEARCH3
-		REPLACE3="secretName: "test-harbor" "
+        SEARCH3="secretName: "tank""
+        #       echo $SEARCH3
+                REPLACE3="secretName: $TLS_NAME"
+                echo $REPLACE3
+ #sed -i "s/secretName:tank/${REPLACE3}/g" values.yaml
+  sed -i "s/secretName:.*/${REPLACE3}/g" values.yaml
 
-		echo $REPLACE3
- sed -i "s/secretName:.*/${REPLACE3}/g" values.yaml
+ echo "values.yaml is updated"
 
 # sed -i "s/${SEARCH3}/${REPLACE3}/g" values.yaml
  
