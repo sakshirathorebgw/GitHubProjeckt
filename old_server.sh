@@ -163,5 +163,5 @@ helm upgrade harbor . -n harbor
 
  sleep 1m 20s
 
-echo "scale up
-kubectl get deploy -n harbor -o name | xargs -I % kubectl scale % --replicas=1 -n harbor"
+echo "scale up"
+kubectl get deploy -n harbor -o name | xargs -I % kubectl scale % --replicas=1 -n harbor
