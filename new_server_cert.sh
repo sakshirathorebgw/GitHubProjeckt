@@ -17,8 +17,8 @@
 
 cd 
 
-helm repo add harbor https://helm.goharbor.io
-helm fetch harbor/harbor --untar
+#helm repo add harbor https://helm.goharbor.io
+#helm fetch harbor/harbor --untar
 
 
 cd harbor
@@ -99,14 +99,14 @@ echo "crt filename is" $CRT_FILENAME
    
 
   kubectl create secret tls $TLS_NAME --key $KEY_FILENAME --cert $CRT_FILENAME --namespace harbor
- kubectl get secret $TLS_NAME -n harbor -o yaml > ca.crt.yaml
+ #kubectl get secret $TLS_NAME -n harbor -o yaml > ca.crt.yaml
 
- #sed -i '/data:/r ca.crt.txt' ca.crt.yaml
- awk 'FNR==3{system("cat ca.crt.txt")} 1' ca.crt.yaml > ca.crt_final.yaml
+ #####sed -i '/data:/r ca.crt.txt' ca.crt.yaml
+ #awk 'FNR==3{system("cat ca.crt.txt")} 1' ca.crt.yaml > ca.crt_final.yaml
 
-# kubectl apply -f ca.crt.yaml
-kubectl delete secret $TLS_NAME -n harbor
-kubectl apply -f ca.crt_final.yaml
+###### kubectl apply -f ca.crt.yaml
+#kubectl delete secret $TLS_NAME -n harbor
+#kubectl apply -f ca.crt_final.yaml
 
 
  #  SEARCH1="core: core.harbor.domain"
