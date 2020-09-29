@@ -168,3 +168,9 @@ sleep 5
  # kubectl apply -f ca.crt_final.yaml
 
   rm ca.crt
+
+  cd
+  rm *.crt
+  rm *.key
+  rm *.pfx
+
