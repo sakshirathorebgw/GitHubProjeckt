@@ -180,7 +180,7 @@ scp ./server.txt ccpuser@$server:/home/ccpuser
 scp ./server1.txt ccpuser@$server:/home/ccpuser
 scp ./cert_update.sh ccpuser@$server:/home/ccpuser
 scp ./inputfile.txt ccpuser@$server:/home/ccpuser
-scp ./harbor.zip ccpuser@$server:/home/ccpuser
+scp harbor ccpuser@$server:/home/ccpuser
 scp $DIR/ca.crt ccpuser@$server:/home/ccpuser
 
 sed -i -e 's/\r$//' ./check.sh
