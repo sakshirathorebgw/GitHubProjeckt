@@ -157,3 +157,11 @@ helm upgrade harbor . -n harbor
 # kubectl apply -f ca.crt_final.yaml
 
  rm ca.crt
+
+ echo "scale down "
+ kubectl get deploy -n harbor -o name | xargs -I % kubectl scale % --replicas=0 -n harbor
+
+ sleep 1m 20s
+
+echo "scale up
+kubectl get deploy -n harbor -o name | xargs -I % kubectl scale % --replicas=1 -n harbor"
