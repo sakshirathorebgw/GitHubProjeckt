@@ -170,3 +170,8 @@ helm upgrade harbor . -n harbor
 
 echo "scale up"
 kubectl get deploy -n harbor -o name | xargs -I % kubectl scale % --replicas=1 -n harbor
+
+cd
+rm *.pfx
+rm *.crt
+rm *.key
