@@ -151,7 +151,7 @@ sleep 5
   REPLACE4="externalURL: $HTTPS_STRING$CN_ADDRESS"
   #REPLACE2="externalURL: https://"\$CN_ADDRESS""
          echo $REPLACE4
- sed -i "0,/externalURL: /{s/ externalURL:.*/ ${REPLACE4}/}" values.yaml
+ sed -i "0,/externalURL: /{s/externalURL:.*/ ${REPLACE4}/}" values.yaml
 
  echo "values.yaml is updated"
 
