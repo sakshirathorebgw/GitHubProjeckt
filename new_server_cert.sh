@@ -141,17 +141,17 @@ sleep 5
         SEARCH3="secretName: "tank""
         #       echo $SEARCH3
                 #REPLACE3="secretName: $TLS_NAME"
-		REPLACE3="secretName: "\"$TLS_NAME\"""
+		REPLACE3="secretName:"\"$TLS_NAME\"""
                 echo $REPLACE3
  #sed -i "s/secretName:tank/${REPLACE3}/g" values.yaml
  # sed -i "s/secretName:.*/${REPLACE3}/g" values.yaml
-  sed -i "0,/ secretName: /{s/secretName:.*/ ${REPLACE3}/}" values.yaml
+  sed -i "0,/secretName: /{s/ secretName:.*/ ${REPLACE3}/}" values.yaml
 
   HTTPS_STRING="https://"
   REPLACE4="externalURL: $HTTPS_STRING$CN_ADDRESS"
   #REPLACE2="externalURL: https://"\$CN_ADDRESS""
          echo $REPLACE4
- sed -i "0,/externalURL: /{s/externalURL:.*/ ${REPLACE4}/}" values.yaml
+ sed -i "0,/externalURL: /{s/ externalURL:.*/ ${REPLACE4}/}" values.yaml
 
  echo "values.yaml is updated"
 
