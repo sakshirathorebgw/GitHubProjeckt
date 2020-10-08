@@ -27,7 +27,7 @@ cd harbor
 cp -p ../*.pfx .
 cp -p ../*.crt .
 cp -p ../*.key .
-#cp -p ../ca.crt .
+cp -p ../ca.crt .
 ls -lrt
  #to create namespace
 kubectl create namespace harbor
@@ -97,24 +97,24 @@ echo "crt filename is" $CRT_FILENAME
 
  CN_ADDRESS=$(openssl x509 -noout -subject -in $CRT_FILENAME | awk '{ print $18 }' | sed 's/.$//' 2>&1)
    
-#cat ca.crt |base64 | tr -d "\n" > ca.crt.txt
-# sed -i '1s/^/  ca.crt: /' ca.crt.txt
-# sed -i 's/$/\n/' ca.crt.txt
-# kubectl create secret tls $TLS_NAME --key $KEY_FILENAME --cert $CRT_FILENAME --namespace harbor
-#sleep 5
-# kubectl get secret $TLS_NAME -n harbor -o yaml > ca.crt.yaml
-#sleep 5
- #sed -i '/data:/r ca.crt.txt' ca.crt.yaml
-# awk 'FNR==3{system("cat ca.crt.txt")} 1' ca.crt.yaml > ca.crt_final.yaml
-#sleep 5
-# kubectl delete secret $TLS_NAME -n harbor
-#sleep 5
+cat ca.crt |base64 | tr -d "\n" > ca.crt.txt
+ sed -i '1s/^/  ca.crt: /' ca.crt.txt
+ sed -i 's/$/\n/' ca.crt.txt
+ kubectl create secret tls $TLS_NAME --key $KEY_FILENAME --cert $CRT_FILENAME --namespace harbor
+sleep 5
+ kubectl get secret $TLS_NAME -n harbor -o yaml > ca.crt.yaml
+sleep 5
+ sed -i '/data:/r ca.crt.txt' ca.crt.yaml
+ awk 'FNR==3{system("cat ca.crt.txt")} 1' ca.crt.yaml > ca.crt_final.yaml
+sleep 5
+ kubectl delete secret $TLS_NAME -n harbor
+sleep 5
  #kubectl apply -f ca.crt_final.yaml
-# kubectl apply -f ca.crt_final.yaml
+ kubectl apply -f ca.crt_final.yaml
 
 
-  kubectl create secret tls $TLS_NAME --key $KEY_FILENAME --cert $CRT_FILENAME --namespace harbor
- #kubectl get secret $TLS_NAME -n harbor -o yaml > ca.crt.yaml
+#  kubectl create secret tls $TLS_NAME --key $KEY_FILENAME --cert $CRT_FILENAME --namespace harbor
+# kubectl get secret $TLS_NAME -n harbor -o yaml > ca.crt.yaml
 
  #####sed -i '/data:/r ca.crt.txt' ca.crt.yaml
  #awk 'FNR==3{system("cat ca.crt.txt")} 1' ca.crt.yaml > ca.crt_final.yaml

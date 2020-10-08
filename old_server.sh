@@ -139,7 +139,7 @@ sleep 5
         REPLACE2="notary: $CN_ADDRESS"
          echo $REPLACE2
  sed -i "0,/ notary: /{s/ notary:.*/ ${REPLACE2}/}" values.yaml
-
+: '
 # sed -i "s/${SEARCH2}/${REPLACE2}/g" values.yaml
         SEARCH3="secretName: "tank""
         #       echo $SEARCH3
@@ -149,6 +149,30 @@ sleep 5
   sed -i "s/secretName:.*/${REPLACE3}/g" values.yaml
 
  echo "values.yaml is updated"
+'
+# sed -i "s/${SEARCH2}/${REPLACE2}/g" values.yaml
+        SEARCH3="secretName: "tank""
+        #       echo $SEARCH3
+#                REPLACE3="secretName: $TLS_NAME"
+                REPLACE3="secretName: "\"$TLS_NAME\"""
+                echo $REPLACE3
+ #sed -i "s/secretName:tank/${REPLACE3}/g" values.yaml
+ # sed -i "s/secretName:.*/${REPLACE3}/g" values.yaml
+  sed -i "0,/secretName: /{s/ secretName:.*/ ${REPLACE3}/}" values.yaml
+
+  HTTPS_STRING="https://"
+  REPLACE4="externalURL: $HTTPS_STRING$CN_ADDRESS"
+  #REPLACE2="externalURL: https://"\$CN_ADDRESS""
+        echo $REPLACE4
+SEARCH4=$(less values.yaml | grep externalURL)
+echo $SEARCH4
+
+sed -i -- "s#$SEARCH4#$REPLACE4#g" values.yaml
+
+ #sed -i "0,/ externalURL: /{s/ externalURL:.*/ ${REPLACE4}/}" values.yaml
+
+ echo "values.yaml is updated"
+
 
  #output=$(kubectl create secret tls $TLS_NAME --key $KEY_FILENAME --cert $CRT_FILENAME --namespace harbor)
  #echo $output
