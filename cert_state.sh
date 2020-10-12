@@ -48,8 +48,8 @@ else
    warning_days=$2
 fi
 
-#OLD_CERTFILE=$(find /home/ccpuser/harbor -type f -name "*.crt" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
-OLD_CERTFILE=$(find ./ -type f -name "*.crt"  -printf '%TY-%Tm-%Td %TH:%TM: %Tz %p\n'| sort -n | tail -n1)
+OLD_CERTFILE=$(find /home/ccpuser/harbor -maxdepth 1  -type f -name "*.crt" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
+#OLD_CERTFILE=$(find ./ -type f --name 'cert' -prune -o -name "*.crt"  -printf '%TY-%Tm-%Td %TH:%TM: %Tz %p\n'| sort -n | tail -n1)
 export OLD_CERTFILE=$OLD_CERTFILE
 		echo $OLD_CERTFILE
 	OLD_CERTFILENAME=$(basename $OLD_CERTFILE)
