@@ -2,7 +2,7 @@
 
 # Define some variables
 
-#ssh ccpuser@10.32.141.54 /bin/bash 
+#ssh ccpuser@10.32.141.54 /bin/bash << EOF
 errorCode=0
  
 # Sender Address
@@ -39,7 +39,7 @@ recipients="Sakshi.Rathore@bgw-online.de"
 #cp ./old_server.sh harbor
 #ssh ccpuser@10.32.141.54 /bin/bash <<EOF
 
-cd harbor
+#cd harbor
 
 if [ -z "$2" ]
 then
@@ -48,8 +48,9 @@ else
    warning_days=$2
 fi
 
-OLD_CERTFILE=$(find ./ -type f -name "*.crt" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
-		export OLD_CERTFILE=$OLD_CERTFILE
+#OLD_CERTFILE=$(find /home/ccpuser/harbor -type f -name "*.crt" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
+OLD_CERTFILE=$(find ./ -type f -name "*.crt"  -printf '%TY-%Tm-%Td %TH:%TM: %Tz %p\n'| sort -n | tail -n1)
+export OLD_CERTFILE=$OLD_CERTFILE
 		echo $OLD_CERTFILE
 	OLD_CERTFILENAME=$(basename $OLD_CERTFILE)
 		export OLD_CERTFILENAME=$OLD_CERTFILENAME
@@ -95,7 +96,7 @@ then
     cd 
     #mv harbor harbor_bkp
     chmod +x old_server.sh
-    ./old_server.sh
+  #  ./old_server.sh
 else
     # Report WARNING as the certificate will expire within warning_days.
     echo " "
@@ -108,7 +109,7 @@ else
     cd 
     #mv harbor harbor_bkp
     chmod +x old_server.sh
-    ./old_server.sh
+   # ./old_server.sh
 fi
  
 if [ "$errorCode" -eq 0 ]; then 
@@ -122,3 +123,5 @@ else
     echo " "
     exit $errorCode
 fi
+
+
