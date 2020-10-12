@@ -34,11 +34,17 @@ echo "crt filename is" $CRT_FILENAME
 
 cd /usr/local/share/ca-certificates/
 #sudo cp $var1/*.pfx .
-sudo cp $CRT .
-sudo cp $KEY .
+sudo cp *.crt .
+sudo cp *.key .
 
 
 
-sudo chmod  644 /usr/local/share/ca-certificates/*.crt
-sudo chmod  644 /usr/local/share/ca-certificates/*.key
+sudo chmod -R 644  *
+#sudo chmod  644 /usr/local/share/ca-certificates/*.key
 sudo update-ca-certificates
+
+
+cd $var1
+ #rm *.crt
+ #rm *.key
+
