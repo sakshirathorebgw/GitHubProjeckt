@@ -110,7 +110,7 @@ do
 
 sed -i -e 's/\r$//' cert_update.sh
 chmod +x cert_update.sh
-#./cert_update.sh
+./cert_update.sh
 echo "certificate update"
 ls -lrt
 echo hostname -i
