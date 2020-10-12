@@ -7,7 +7,8 @@ var1=/home/ccpuser/
 CRT_FILE=$(find ./ -maxdepth 1  -type f -name "*.crt" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
 KEY_FILE=$(find ./ -maxdepth 1  -type f -name "*.key" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
 
-
+CRT=$(basename $CRT_FILE)
+KEY=$(basename $KEY_FILE)
 : '
 CERT_PATH=$(find ./ -type f -name "*pfx" -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1 )
  export CERT_PATH=$CERT_PATH
@@ -33,8 +34,8 @@ echo "crt filename is" $CRT_FILENAME
 
 cd /usr/local/share/ca-certificates/
 #sudo cp $var1/*.pfx .
-sudo cp $CRT_FILE .
-sudo cp $KEY_FILE .
+sudo cp $CRT .
+sudo cp $KEY .
 
 
 
