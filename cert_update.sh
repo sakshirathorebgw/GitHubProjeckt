@@ -32,12 +32,12 @@ CRT_FILENAME=$(basename $CRT_FILE)
 echo "crt filename is" $CRT_FILENAME
 '
 
-cd /usr/local/share/ca-certificates/
+#cd /usr/local/share/ca-certificates/
 #sudo cp $var1/*.pfx .
-sudo cp *.crt .
-sudo cp *.key .
+sudo cp $CRT /usr/local/share/ca-certificates/
+sudo cp $KEY /usr/local/share/ca-certificates/
 
-
+cd /usr/local/share/ca-certificates/
 
 sudo chmod -R 644  *
 #sudo chmod  644 /usr/local/share/ca-certificates/*.key
