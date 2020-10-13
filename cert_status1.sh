@@ -117,7 +117,7 @@ if [ "$errorCode" -eq 0 ]; then
 else
     # Send notification mail
     #echo -e $body | /bin/mailx -v -s "$subject" -S smtp=smtp://$smtpmx  -r "$sender" $recipients  >/dev/null 2>&1
-    echo -e $body | mail -s "certtificate installation alert" Sakshi.Rathore@bgw-online.de
+   # echo -e $body | mail -s "certtificate installation alert" Sakshi.Rathore@bgw-online.de
     echo "Mail notification sent"
     echo " "
     exit $errorCode
