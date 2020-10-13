@@ -45,6 +45,6 @@ sudo update-ca-certificates
 
 
 cd $var1
- #rm *.crt
- #rm *.key
+ rm *.crt
+ rm *.key
 
