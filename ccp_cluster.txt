@@ -1,0 +1,1574 @@
+[
+    {
+        "id": "06ad0372-8d68-4bf8-b844-468488652598",
+        "type": "vsphere",
+        "name": "istiotest",
+        "provider": "642af8ae-e764-4b86-9191-569c33d26213",
+        "status": "READY",
+        "kubernetes_version": "",
+        "kubeconfig": "apiVersion: v1\nclusters:\n- cluster:\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01EWXlOREV5TWpZME5Wb1hEVE13TURZeU1qRXlNalkwTlZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTFo4Cmk2S1R3b2NkUlE2YzZ2eFJjOHdKOFJGbldGZHBpeHJpZlZjVTRpcDRYODVwTDFLNytEYlVQcmR2TjZMVjM2TDIKNVFQcklSa3I2VXVXSlhleWJXQTEyc1hTTjdkb0dRWlBlUFVXZnMzK2JwOTNZQWI2NWlkVnBHbFJvQnkwM3hJNwpUUlpqZ2hyWGYweU1lanNaam1BazhNT2VSeHUyWm91TW9VYmlLWGZTRklLNGpUYmRJOE1GWDczTzB4c1MraVNTCm1DUlFodW5WbGdncUp6UytKeDU4a3FXSGQwblgvd3ZwalBsd05NRjZXWWRFR3RQNDhVRTBtMmp4RUVIWC8xbEkKeVRwRlRtNm4vSENmSERha0tSZXR6ZU1LOUFoOEVaYUJYbmlvNnZ6MXZib1FvT0NPcVF5bGJaUmpTOG9QWDhvTwpZS05OZmpCbEVtRmRUdk5JM2g4Q0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFITGoyY1VGaldRekNHYWZaQi9oK2RocDZiM28KWTZpTGk5cnI4V0VURHAwWlhuWGpLSHFjRExZOWVGRDk4VVpZWmw5RktXRjk3dVdUMTBNT1J2TEdmc01HanVVdwp1NGQrRFVrQVBaUVNkZlljVFgrV1lVUzV4NFJ3anp2bFdjRFF2RzByanhDWTg0TlVabzRrY3lpaXpJVXJWa0JHCnRJZnc5aGVPT3huTnlXbXd4MjY0OURDbHkrKzBvRjBUWXpPMmx1aGFxUkNzMVZsQXJJbXZmYmQwNUowNGN3SnAKWlFFc2k4Q0tqbXZWUjhLVGo5UEorSi9qL2s1MnIzaTM3bTVUT1MxOXhWdXlwUUgzeUdSeXdCM21Pd0RkZnlMZApGYXBqSmx1Wng2UnZ4all3b1VEWjZybDVxNFVjc1hSMmp1WllYemE3bUR6MnhiZFZ2ME5zWnhSY08yYz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    server: https://10.32.142.183:6443\n  name: istiotest\ncontexts:\n- context:\n    cluster: istiotest\n    user: admin\n  name: admin@istiotest\ncurrent-context: admin@istiotest\nkind: Config\npreferences: {}\nusers:\n- name: admin\n  user:\n    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM4akNDQWRxZ0F3SUJBZ0lJUG1oOUhNUUx2czh3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TURBMk1qUXhNakkyTkRWYUZ3MHlNVEEyTWpReE1qSTJORFphTURReApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sa3dGd1lEVlFRREV4QnJkV0psY201bGRHVnpMV0ZrCmJXbHVNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQTdJYkpMcGJwdDlCazRaSXcKWUh3QW9uVnMrTFF6Y2xvVEpOOU5CSUU4YlhZSG5BcllBSmhrdkw1UUE0VUNJaHRjeG5vb29NK0JVK25sYWd3Rgo1Z3FyOFFhUzZxNjM1MVgwYVJJTk8rYXJQbUVjVnAxWDJ4QUZWQ05GellITjltbGNrZDZva1lzVzJFS1ZsSVArCndOZ2JBMmswL1oyQzZZMGhSN01NVURUb2wwWWhxQ1pIS1R5bUZ2ZnNORGdOVDJ6TjVTR0p4bnA2ZmdHaGNzZnIKR3F5UzRxSjZLOEpORHkyempMTE1rYlJEU1F3RWQwVDduZUUzeFVneVVTTm9UbU1wb3RqLytMVlhDR080MnVycQpVYkIySlNjS0l1eGpSQWltbTJyTXFXcmhpRnBZd0swRVdSOGl5dWdJU3pNdGhteFhPR3ZsbW1jTWlzWitmR3JvCm5OM1VqUUlEQVFBQm95Y3dKVEFPQmdOVkhROEJBZjhFQkFNQ0JhQXdFd1lEVlIwbEJBd3dDZ1lJS3dZQkJRVUgKQXdJd0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFCWkFMamxDUkZJdThnYTlJZTVmaW1GRDN6MTVxbXM1M21SSAo3WFFtYVV6WXltR0R4MVJiZjVMZkRZYjlhMDBSOUZNV3haWTdMOHVUVDhYUXRCT0QxRG00Q1paZklLWDMxTEIrCkxvbFhTSVFPY1lmZjBCb0tocklGOWVXN0c0RFVsYVNDN1hZZ2JxRy9JVjhGbzZ5RGRtcytmQVR0bDRKZE1hc0cKRmVxaG5CdERHV0liNElLVG5pK2hYV2EwbTNwZEdVUXk4cUFLSFFFY056SGtnSEJaV3kzKzNNY0ozaEJxK2I2MApVM3J3bDZBQWhMNE9OSDhEUm9Bb0xRcFoyYmJBVXZidlpkM3hBYXJxL0ZqU0RtQ21jbEk2MGdVY1k0K1BqaXNOClkrdEpBaFJjSElxL2dLblZ2QVdFc2ZRY2k5bG5INFcvU1ArSUJFUjNiWEFSK1ZUOHhzWT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcEFJQkFBS0NBUUVBN0liSkxwYnB0OUJrNFpJd1lId0FvblZzK0xRemNsb1RKTjlOQklFOGJYWUhuQXJZCkFKaGt2TDVRQTRVQ0lodGN4bm9vb00rQlUrbmxhZ3dGNWdxcjhRYVM2cTYzNTFYMGFSSU5PK2FyUG1FY1ZwMVgKMnhBRlZDTkZ6WUhOOW1sY2tkNm9rWXNXMkVLVmxJUCt3TmdiQTJrMC9aMkM2WTBoUjdNTVVEVG9sMFlocUNaSApLVHltRnZmc05EZ05UMnpONVNHSnhucDZmZ0doY3NmckdxeVM0cUo2SzhKTkR5MnpqTExNa2JSRFNRd0VkMFQ3Cm5lRTN4VWd5VVNOb1RtTXBvdGovK0xWWENHTzQydXJxVWJCMkpTY0tJdXhqUkFpbW0yck1xV3JoaUZwWXdLMEUKV1I4aXl1Z0lTek10aG14WE9HdmxtbWNNaXNaK2ZHcm9uTjNValFJREFRQUJBb0lCQVFDK1VBVjRVejFqQlc3bQpnVFlqckNMbWxRMUZYOWsxWFh5aDRucVo4VktwMEpwMjE5TE5SOUZtZk1yc3lnelpYS0xkb0ZVb2IwNWtNb0xCClBVTlJ3YXh2bHhhSGRtWEs0Y0p5K0c5bGowaWlQSWtNdURXRXNmTlhxN255alVzbnhjY1NKOUlDcWFPTUJxZE0KaEpocW1uZkIydGtrWjZSNlAzQlR2S0ZmdC9LZUkrZlVoYmhUNG5MVkZOMUZtTGZyL3lYT3hGdE5oUlZHUWpMRApYNzVpQnFEUGhTM204RUNaUGdMVTJ3Mk9OWFpKVjZjam9uc1hmMCsvQ1c2K2JqV3BLNWsxR0V4WUNEVjdyQjU3CmNDNDFqNS9PaThyd1ZUY0EvamtJUW5WNkk2d0hhR2t0S3lhSExqWkgwQjZ4Tzg0RlBiQkRuL3hnMDE0Um5LTG8KdExrNFZqeVJBb0dCQVBNMmJiaUVyc2FoRmxTTWN5bG1kNXNzQ2wyOXBHbkxxSWFvTUVQcUgwMHlickNHdnpqWQpsTWQweTBHUnhQNTB1VUhXeVhtb2V1dmFCb1BYWXVzc0pMWVBmUVNQclpFZllzcy9PWkQrbGwvZk9iV2NNazBECnR3K3ZoUHJRaEZNdWlhWDRMbW0yVktIZzUyZlVud2NpWkRyeVNBclJBc09xN2U4eWJZNUlBQ2FqQW9HQkFQajIKWFQ3RHppTHNsem5Qb0dVSzR5RTNuU2NYem11RnROcXVpZzBoYTJsRjFjWU5MeW1ITEY2MW9xdnlsRVR1cWxaZQpwUFF3ejFaYTN2ZGsrQkM5ZmdsM2xUamVvUHN5UTNkb1BUSTV6ejFmVkRsVzBkSHhyM2htK2oxeDI2dkJicjhSClZWd1RmcmxIQnVnSTdWMCtoQVAwZ0dmRHFoVHNpR1ZSY3NVWGZEc1BBb0dBZTR1YmdzN0xwWlN3cmpSR1Q3S0EKY1crV3VIV2NMaTNKSnRZSzVvVG9iNk45dk9oRi9NOXdERDNVL2pMWkdkVWJRa21rUU11SDNZVDhLRDdpUGNwSAp2Ny93WnIvQmtHV2NIdGk0R21KbzZyeVBLU1QySEU4Vno3NytVeFpYRVpZalVBN1pMTlAwKytJdVNuMGtaMUJlCkQ5K0JIeFY3VFAvb0s4aTNCRDZvN1BjQ2dZRUFtSkZSdno3N09rZkd2UFRTRkZuQnF2K0wzUU1ueXBpYnBrL0QKNWh3TzJPcWxBTVBmblJGclRYYitBMldiRzBzdk05SzRQN1VSdXBmaGY3WnVsc09wVTEvbklIeStKbkk5Q2hYbApPcnhXbGdPdmQ1d081UnU1TG8zYzJIN0g0YytlY0pUTXZLcHR4RmtVa0dtNEhLWk0vS2QvY1JkbFNZRlNiTlNuCkFzVkxxbDBDZ1lBRUZuQzhlWVB5bDBISXdPU1pLWFdjb1pxZlJSbnFkNHdFVVZUeUdOb2RzSnV0YmN2K0R5NTcKLzd6T1U5bWxBc3pUcEZ1bGpCcU1hZWRJVjk1ZUVuSHAwMm9zOGp2aENMUzY4RmljWCs4bmE1RGYrN1g3bVFtYwpkVEp4OTY5a1pYcmx1cXhzTFg4WlJwQjFKK3JPTmZEeDhrellGK2JKV0ZIMWdDVHVqcFdYSHc9PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=\n",
+        "ip_allocation_method": "ccpnet",
+        "master_vip": "10.32.142.183",
+        "load_balancer_num": 3,
+        "subnet_id": "35fdb2cc-b81a-4fbf-8e8c-eba07f7c24ab",
+        "ntp_pools": [],
+        "ntp_servers": [
+            "ntp.bgw-online.de"
+        ],
+        "root_ca_registries": [
+            "-----BEGIN CERTIFICATE-----\nMIIE/zCCA+egAwIBAgITNQAAAByBCdZqRwKC0gAAAAAAHDANBgkqhkiG9w0BAQsF\nADBJMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxFDASBgoJkiaJk/IsZAEZFgR0YW5r\nMRowGAYDVQQDExF0YW5rLUhYTUdNVC0wOC1DQTAeFw0yMDA2MjMwOTI5MDJaFw0y\nMTA2MDMwNzU0MTZaMIGiMQswCQYDVQQGEwJERTEQMA4GA1UECBMHSGFtYnVyZzEQ\nMA4GA1UEBxMHSGFtYnVyZzEMMAoGA1UEChMDQkdXMRMwEQYDVQQLEwpJVC1CZXRy\naWViMSEwHwYDVQQDExhtZ210LXJlZ2lzdHJ5LnRhbmsubG9jYWwxKTAnBgkqhkiG\n9w0BCQEWGnJlbmUuZmlzY2hlckBiZ3ctb25saW5lLmRlMIIBIjANBgkqhkiG9w0B\nAQEFAAOCAQ8AMIIBCgKCAQEAw7eMuqwbqB1w1eq3uQUvN5S9iCtZOuXj4CjhiCBe\n2eYXd8rrtXMjdmb9dZ/56QGrQEDqVYE1KordV39dVV6J54nmRl+v6sxGsV20Z4ga\n101zMOhvJxWWwa29MJevhwyeDJiWZdjSLPtVlo82ahaGQddRHkGz3ir86uJOttJV\nElP9OpkhPGhowyIkfXToYJyfmVo26qhCO3l5TPu3/niIjuKUo37ZsuPmAdK3oMWm\nmjuOonu0n1CFU9bwoIK3heBCmiUQMvqhfMNCfdW8k1IJXsyF+Rd/qeneLwdxVSf3\nhT/Cf+VZYiHHayVmz9W6gscU+9dQgy2q+QpgdOmqvA0IQQIDAQABo4IBhDCCAYAw\nDgYDVR0PAQH/BAQDAgWgMD4GCSsGAQQBgjcVBwQxMC8GJysGAQQBgjcVCIOek06B\nqJkNhs2XCoLp+D+DvpxHgRCB0eFXhNDmawIBZQIBCzAdBgNVHQ4EFgQUmQQ46jWS\nfE6IiiGTjfJfU6wiNeYwHwYDVR0jBBgwFoAURii/sryXZuoAY2II7aUlMPSGmsww\nTQYDVR0fBEYwRDBCoECgPoY8aHR0cDovL0h4TWdtdC0wOC50YW5rLmxvY2FsL0Nl\ncnRFbnJvbGwvdGFuay1IWE1HTVQtMDgtQ0EuY3JsMG0GCCsGAQUFBwEBBGEwXzBd\nBggrBgEFBQcwAoZRaHR0cDovL0h4TWdtdC0wOC50YW5rLmxvY2FsL0NlcnRFbnJv\nbGwvSHhNZ210LTA4LnRhbmsubG9jYWxfdGFuay1IWE1HTVQtMDgtQ0EuY3J0MBMG\nA1UdJQQMMAoGCCsGAQUFBwMBMBsGCSsGAQQBgjcVCgQOMAwwCgYIKwYBBQUHAwEw\nDQYJKoZIhvcNAQELBQADggEBAHI+oRwmBHpEKXqD2EcW4NbMXqPG5Lm8xLKzImh4\ntCijCQUB2SmOreaiC9szuyTU2ryX22vM7lk5fdVEzKeKTlUZR0Lj6w65X7gp1v9i\nN7NDG67zYaGUdOaxy/v/N9xAO4Kfqx21P87/7OKAzm9E1Bvwe1JAJiLru7TuwTL2\nB9oRM/Qrjq2RpIkhZmy0GcIThIGo4GtTharEl3xEQZghJbIqRSnJ3Ycd2YdnJ3Gb\nXIcNtdx2MRH8aFVQ9JoLPinXrKhnamLQOwtECGozgDfQ6vki3gL2VujoafawUwwz\nZyigIhcUWhbM3zC1HQFU7Gv0r7/GJjm5bPJP2auYZAaTQT4=\n-----END CERTIFICATE-----",
+            "-----BEGIN CERTIFICATE-----\nMIIC9TCCAd2gAwIBAgIRANz10/jA0ZQV/lhRCQT/fpcwDQYJKoZIhvcNAQELBQAw\nFDESMBAGA1UEAxMJaGFyYm9yLWNhMB4XDTE5MDgyMzA2NTAyMVoXDTIwMDgyMjA2\nNTAyMVowFDESMBAGA1UEAxMJaGFyYm9yLWNhMIIBIjANBgkqhkiG9w0BAQEFAAOC\nAQ8AMIIBCgKCAQEAyfs1zXgn73zPdGP8sOFZrx6paPOraQz+bkRURZKX04izwZg2\n9BKkjAE24Zww2WX9B68OZvbuHajE8tN2CKrPslwi1lv6xntJ29QuiCDuD/7ennFp\nRxdx3sX304/SCVcaDugbDACeT2bFEdZPlLtg2lHav2ZIXJaWAfyXNc12e7/+22t3\nyKGlzRVy4Z+lMHAWpggwUDb48LqmurUiae75osOaBR/6+7tgqkIfrzhq6SS7oZiN\nfJNfVJ8RM8rrx82H4G/b1MmB8WDJSxu2NVNjox8OU8pYm+0iLGSlVClVfEGF0L+l\nIA3YlJ1ZHzIvM3HMVxC7Pt5wqqMSc/2OK/g4kwIDAQABo0IwQDAOBgNVHQ8BAf8E\nBAMCAqQwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMA8GA1UdEwEB/wQF\nMAMBAf8wDQYJKoZIhvcNAQELBQADggEBABMr7kmwzyO32uv1dAfdp7e26dzul5hb\nYFMDamQYMJeLgkZRWWEfwRgsW26w2eKTJgqbJsSu6AmrEcjl631RiMmYHbDkP3J6\ntyal94aNyA+TQj4tDJGVToPvru8kV6DXGrtr7Z/MlkPzBRFj1AE1v6vbRordXt7t\njSBMjelnUVrTftBdd0iAxUStAyZ1/BEmOGBKVIKp9V+3KrIwG9jgjM3qdqHnRGkd\ndnj0HPJRyULB53wZ8kv9IHvHbmlC0grSah+LbQG7G0cIEW+NCojb9/53CZzwIFpe\nybuIpB0ClhZLyS1tM6twvDw6OE7KKE0bhhn39UnxntqbjFqYWd8nNLI=\n-----END CERTIFICATE-----"
+        ],
+        "self_signed_registries": {},
+        "insecure_registries": [],
+        "docker_http_proxy": "",
+        "docker_https_proxy": "",
+        "docker_bip": "",
+        "vsphere_infra": {
+            "datacenter": "HX-Datacenter",
+            "datastore": "HxCluster-DS05",
+            "networks": [
+                "K8S_Network_851"
+            ],
+            "cluster": "HX-Cluster"
+        },
+        "master_group": {
+            "name": "master-group",
+            "size": 3,
+            "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+            "vcpus": 2,
+            "memory_mb": 16384,
+            "gpus": [],
+            "ssh_user": "ccpuser",
+            "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDQvmnnj7uatOVsh2P4Kgb8bd9vXWyqkWVa6Ek4RZTJ4 ed25519-key-20200504",
+            "nodes": [
+                {
+                    "name": "istiotest-master-gro-9beb39b26a",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.142.184",
+                    "public_ip": "10.32.142.184"
+                },
+                {
+                    "name": "istiotest-master-gro-b6bd247493",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.142.185",
+                    "public_ip": "10.32.142.185"
+                },
+                {
+                    "name": "istiotest-master-gro-ee47efde16",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.142.186",
+                    "public_ip": "10.32.142.186"
+                }
+            ],
+            "kubernetes_version": "1.16.3"
+        },
+        "node_groups": [
+            {
+                "name": "node-group",
+                "size": 2,
+                "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+                "vcpus": 2,
+                "memory_mb": 16384,
+                "gpus": [],
+                "ssh_user": "ccpuser",
+                "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDQvmnnj7uatOVsh2P4Kgb8bd9vXWyqkWVa6Ek4RZTJ4 ed25519-key-20200504",
+                "nodes": [
+                    {
+                        "name": "istiotest-node-group-c9d58383aa",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.142.187",
+                        "public_ip": "10.32.142.187"
+                    },
+                    {
+                        "name": "istiotest-node-group-d84c2affc3",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.142.188",
+                        "public_ip": "10.32.142.188"
+                    }
+                ],
+                "kubernetes_version": "1.16.3"
+            }
+        ],
+        "network_plugin_profile": {
+            "details": {
+                "pod_cidr": "192.168.0.0/16"
+            },
+            "name": "calico"
+        },
+        "ingress_as_lb": true,
+        "nginx_ingress_class": "",
+        "etcd_encrypted": false,
+        "skip_management": false,
+        "docker_no_proxy": [],
+        "routable_cidr": null,
+        "image_prefix": null,
+        "aci_profile": null,
+        "description": "Testcluster fure Istio"
+    },
+    {
+        "id": "0d0b8b7e-c4a9-4063-8b67-2ad2fd7f353f",
+        "type": "vsphere",
+        "name": "stagingbgw",
+        "provider": "642af8ae-e764-4b86-9191-569c33d26213",
+        "status": "READY",
+        "kubernetes_version": "",
+        "kubeconfig": "apiVersion: v1\nclusters:\n- cluster:\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01EWXlOREV4TURNMU1Wb1hEVE13TURZeU1qRXhNRE0xTVZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTmdGCmdVV3dlRUl4TEwxMkR1UXM3WnJJK2NyMjN1cHpyTytsL1JQbzRrNGh0clBMczZVVDBqRzN0UmtzUld1UUJIN2UKWHRaRmNtWExDRmtMYVZ6Y0N3S05LZHRTMVlhaW02OEw0ZE5kQm8wV3krdHJZd2RyYjdvV0cyVHFpa2ZNNTBTagp6SVBUNGdlZlVRNU9QV0FkYlVjTmZZZG9vdkpUbkNGc01DanJzMFFVSGh0Ty9QcmtKZG9MU2tQbW0wa0p6ZkdUCkM3QlFzV05jQXRlL29sbWdpdmlwdEJycmNUVDFyR1ZHMCtkN2h6b0NrYVZSbnNKRFE1YlVZTzNGMW5OUGQ4dlYKYURGcUF1aG9XQVdPUzFJMlBEU2hBNm41akt2cUFYQU04cEVPZjl3aEdZTmpJNC9rbUdCZzQ1aTZEWXRaZmN6ZgpUNFVoN2RUOXlFRy9TWFYrKzFjQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFJRDRTMUpGQ2NoRXlKRTJ4MGVMQW1xdW15Y0IKT1I1MUsxM29xQ3ByMWZTYjgwWHQ5aFBUM0l6bVBGRGN2cE9NYnJVOXJuR2FOTjhjNFo2aWdnSGRpQkJoL3Q5NApBZ2lXNEtxYVFpYUg3WFo2MFFhWWJvQjdrd2ZOMTIrNzdtaWQraXB3dWxBYmU5ZHBaUXB4aElMOHhjUWgwS0xRCnpXRGFJRFB0VDVzZFAyWWtkTHFZRzVyTnpCdTc3Q2Q0dHJRMDFYbERoTVVqRTloV1ZLTko3WkpnMEY1aXVwUnoKdkNqcDA4UThxMUhBTEM5NjlsRDVMS2JHbWVwWE5adGZLb0dEdUY3UmNmcStLcFRidmJidm5mVU12Q1hWY25KRgpaN0J6eFBlNWEzblZoRlBnTTV1ejlIZ3RvWHdSMzV4SkNmRG5lbHFRUWxteE1aWjBVc05YZ1V2YUNPbz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    server: https://10.32.143.168:6443\n  name: stagingbgw\ncontexts:\n- context:\n    cluster: stagingbgw\n    user: admin\n  name: admin@stagingbgw\ncurrent-context: admin@stagingbgw\nkind: Config\npreferences: {}\nusers:\n- name: admin\n  user:\n    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM4akNDQWRxZ0F3SUJBZ0lJRWhVaklVOHI0Smt3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TURBMk1qUXhNVEF6TlRGYUZ3MHlNVEEyTWpReE1UQXpOVE5hTURReApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sa3dGd1lEVlFRREV4QnJkV0psY201bGRHVnpMV0ZrCmJXbHVNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQTNLSHFvc3ZxdjY5ZHhpTVYKRDBITHNqSVJBOFovMmJQN25qMUZ0NkRKY0wyUUpLTDJmRHRSV1B2Yll4WVVlKzdZYzgySDVIWHYySWsvMGNnSApxd01aaWhiMlNCSEZmbDhxTW93NHFMUG9wa3lCNjlBcmlMSFpydC9YTWtzTDA1LzRvT0dMdU5iWVhjYnc2SzZoCmJMWVV6SEJjV0FyWDN0Nm5jSWFDUFdXNzB6dFF2YjErK3h5TkdUbFpNb3RZY0JuVUhFNWVPTm1POFg1bTdtV3IKYTF5ZGF0RXoreFV4dzM1OHhLM09kT3h2MzN4NWFUUVkrMlloSXpjM3BlblQybERZM0t3VXlHOVJaR0hZcHJaZgpKUWRJVWhuU1hub1daNnA0VExKd05HMXdGNjZtdWFzQXYzT3FXRFJKK2NOeVNuWnlkbmpaeW9xaWlxbkhpVzNUCmsreklwUUlEQVFBQm95Y3dKVEFPQmdOVkhROEJBZjhFQkFNQ0JhQXdFd1lEVlIwbEJBd3dDZ1lJS3dZQkJRVUgKQXdJd0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFMNUl5M1R5cU9WbnI2YkRhdG9lVUpYem0rRGU2cVg2N0o5bwo4REloZmRrK2NFaFhpUFJqQ0IxRGIzZGo4K2ZDTEdSbG5TNVczT293bUlOWU1LQTJDVUhQbTdWeWs2bHZPRGloCk5yaXRBTDFSaEZ3ZWZZSHFPbm5zVXU3TEtxOURmOG9rNXNzRU1GVTNCWnBuTWg3ZkFQSkQzdmhUNlExdWs5TG4KMjFLa3MzM1VRSW1pTE0xREJIc013TDBmRGhpbHdGYjdEYTY2LzZ6djkrMzJaNjBDc282bVFxZS82aFZJMDR5MAp5dGdId20zRkpXS0t4R2Z6dEovUFg4V0xJRDZYcnlkQkpUSXZ3WjNNT0NZZ0dLSEF0U3hBVHVGREFDMFB4aVZCCkF0Z1lKRm5tT21aN1hVWmVTb3ovc0k5ZnBqWGtXQXY5T1BHdktMa1hPSXJVSEp2c2dmOD0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcEFJQkFBS0NBUUVBM0tIcW9zdnF2NjlkeGlNVkQwSExzaklSQThaLzJiUDduajFGdDZESmNMMlFKS0wyCmZEdFJXUHZiWXhZVWUrN1ljODJINUhYdjJJay8wY2dIcXdNWmloYjJTQkhGZmw4cU1vdzRxTFBvcGt5QjY5QXIKaUxIWnJ0L1hNa3NMMDUvNG9PR0x1TmJZWGNidzZLNmhiTFlVekhCY1dBclgzdDZuY0lhQ1BXVzcwenRRdmIxKworeHlOR1RsWk1vdFljQm5VSEU1ZU9ObU84WDVtN21XcmExeWRhdEV6K3hVeHczNTh4SzNPZE94djMzeDVhVFFZCisyWWhJemMzcGVuVDJsRFkzS3dVeUc5UlpHSFlwclpmSlFkSVVoblNYbm9XWjZwNFRMSndORzF3RjY2bXVhc0EKdjNPcVdEUkorY055U25aeWRualp5b3FpaXFuSGlXM1RrK3pJcFFJREFRQUJBb0lCQUQ1QjNsRFQwOGtGTmlQYgo4R3hldDVqdjhjY3I4eFcrYU9rTkJ5ZzYwYnpqY05JMXZmSHVWeFVSOUtVd0xOV1AzenBHSyt0MnNCaGRHa29hCjlMYjM1L1FFYUxpTGN6d21wR1NoRnJmY0ZIRWdzNlNVR0VTNVV1QzZ2eUdzOVloZzRxcWJHbTh0Q043bGJVTnIKUzVlK2hYM3Uwcy94TjFyblh6NHNab0htdkNwdFV6dGFmMUhHWGJ3UzJjcWlVRDhnRHlzTXBSUk5TRDErLzVzOQpPSnhPWXZxMDdjZWVNVjFpT1lpcWNXVGR2WEh4L0JzL1JDK3NGL1o4Y0liNWdxWkNzL0tiM2Z2ZUcxU0VCNW1TCm5hWDZDNm5MeHlQQXBZdlpOZUprVmh4czh2ZGJkcnhvdVRzMk14QnZ3NWlyRmRZRlhqNFY5emg4OE5jQU9lTngKeUM5dlJxRUNnWUVBOUxsdW0yTE5RUVdNOGpQcWpBTCtrMlNHNVRmSmxBaHJLUEtTYUVFVVBZVjg2ZG8wNXpTdApGcGtHeXhndG45NkF2Q2o5RFZBL21OcEgrVXd4eG1rYkdyODRSQzhnOWtOUGZ5N0o3TlJKV0xzUklmVGQzTkl6Ck4zSWlGa2h6K1oyWmJnSU9iNGJ1SFg4c3BWd1RZTkhNVVhjcWdEUldqQjQrTkxrdlNNaHltQzBDZ1lFQTVzeFIKRVNLSmh5Y3JsSjFkZnNLdUhDU2FLWm5iZDBDRXdRRlBPcXdNT1BRMk9zRktRcDRwYWg0SCtCNFA0eGtKWTBnUApFeHBuU0E4UW5uaVdwNFRTR09oUHQ3MklPeXUyUnhBS3pTVTh4V21OcHhwSFRyQU1RNDhFNXlwOUxKc2lXM3FjCjFkUDFxVlA0KzVZRjZvQnA4dUUxVk0zNW1KYzhaZGVFT0RDeEJWa0NnWUVBdlJFbDZ0YUNUT0hFNnJwQlVycGQKZy9IK1pjaWI2OG8xUUFWb0p6TmdOOGVSb2ZuN05VVDFGS2hWSDBNbXZJUmlZUHdweE1kaTJ1eUkvb2xuU3lxWQp6aWs5aHpBQi8wQXhnc2piS0NVNkpWc2crV0w4cFVXZ1hBM0pWLzNSMjk5dVVoYzBuK1ZXd1dNblV2bTMzdTAzCk5Sa2p0TGk2eExYNHlUTG8zUW8vdm1FQ2dZRUE1UFcyU25CZnpPTlArWnZ2bjR3VVc3ajM4dU0rZEZ4ZUZuWnQKR2dDS0U0bzVyaW9JdUhQZEUvZjg0ZWs0eTRzUDVCMGRUMDgzUEtZdFQzakR4Q1lnb3pMN3VvVGMvQTVPUXNzbwpYQUZmKzF2T2VnSzQwTmdYSW9Ka1U4dXo2Q2R5ZXh2MU1LK1ltc1hDVUJ1eGZNU3QxcFFTYXpIM05haDY4M0ZOCktzMHJIK2tDZ1lCSkNoMmZSV3ptVnpreVpQUGFjbERhbVRuSTNzeSs4MXZlakZudWYzbTM1TmhwaWJUdk4zWnYKY1BnVXJBMjNDcW1JU3RpYitBNW9IWW5xc1dZSHNoNFJUUVZGYldRb1ZFSHRsaEJXSmlrTTkrOTBkeHQxdGFCTgpVR01aMkpBQUwzY1ZBai9YWVZtdjZTWUYveXkxUG9mM1VkVml2MUhNc0syWDR3a3E1OW9vWXc9PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=\n",
+        "ip_allocation_method": "ccpnet",
+        "master_vip": "10.32.143.168",
+        "load_balancer_num": 3,
+        "subnet_id": "f2bf3ca2-7609-4639-abd2-44b6312bcaca",
+        "ntp_pools": [],
+        "ntp_servers": [
+            "ntp.bgw-online.de"
+        ],
+        "root_ca_registries": [
+            "-----BEGIN CERTIFICATE-----\nMIIE/zCCA+egAwIBAgITNQAAAByBCdZqRwKC0gAAAAAAHDANBgkqhkiG9w0BAQsF\nADBJMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxFDASBgoJkiaJk/IsZAEZFgR0YW5r\nMRowGAYDVQQDExF0YW5rLUhYTUdNVC0wOC1DQTAeFw0yMDA2MjMwOTI5MDJaFw0y\nMTA2MDMwNzU0MTZaMIGiMQswCQYDVQQGEwJERTEQMA4GA1UECBMHSGFtYnVyZzEQ\nMA4GA1UEBxMHSGFtYnVyZzEMMAoGA1UEChMDQkdXMRMwEQYDVQQLEwpJVC1CZXRy\naWViMSEwHwYDVQQDExhtZ210LXJlZ2lzdHJ5LnRhbmsubG9jYWwxKTAnBgkqhkiG\n9w0BCQEWGnJlbmUuZmlzY2hlckBiZ3ctb25saW5lLmRlMIIBIjANBgkqhkiG9w0B\nAQEFAAOCAQ8AMIIBCgKCAQEAw7eMuqwbqB1w1eq3uQUvN5S9iCtZOuXj4CjhiCBe\n2eYXd8rrtXMjdmb9dZ/56QGrQEDqVYE1KordV39dVV6J54nmRl+v6sxGsV20Z4ga\n101zMOhvJxWWwa29MJevhwyeDJiWZdjSLPtVlo82ahaGQddRHkGz3ir86uJOttJV\nElP9OpkhPGhowyIkfXToYJyfmVo26qhCO3l5TPu3/niIjuKUo37ZsuPmAdK3oMWm\nmjuOonu0n1CFU9bwoIK3heBCmiUQMvqhfMNCfdW8k1IJXsyF+Rd/qeneLwdxVSf3\nhT/Cf+VZYiHHayVmz9W6gscU+9dQgy2q+QpgdOmqvA0IQQIDAQABo4IBhDCCAYAw\nDgYDVR0PAQH/BAQDAgWgMD4GCSsGAQQBgjcVBwQxMC8GJysGAQQBgjcVCIOek06B\nqJkNhs2XCoLp+D+DvpxHgRCB0eFXhNDmawIBZQIBCzAdBgNVHQ4EFgQUmQQ46jWS\nfE6IiiGTjfJfU6wiNeYwHwYDVR0jBBgwFoAURii/sryXZuoAY2II7aUlMPSGmsww\nTQYDVR0fBEYwRDBCoECgPoY8aHR0cDovL0h4TWdtdC0wOC50YW5rLmxvY2FsL0Nl\ncnRFbnJvbGwvdGFuay1IWE1HTVQtMDgtQ0EuY3JsMG0GCCsGAQUFBwEBBGEwXzBd\nBggrBgEFBQcwAoZRaHR0cDovL0h4TWdtdC0wOC50YW5rLmxvY2FsL0NlcnRFbnJv\nbGwvSHhNZ210LTA4LnRhbmsubG9jYWxfdGFuay1IWE1HTVQtMDgtQ0EuY3J0MBMG\nA1UdJQQMMAoGCCsGAQUFBwMBMBsGCSsGAQQBgjcVCgQOMAwwCgYIKwYBBQUHAwEw\nDQYJKoZIhvcNAQELBQADggEBAHI+oRwmBHpEKXqD2EcW4NbMXqPG5Lm8xLKzImh4\ntCijCQUB2SmOreaiC9szuyTU2ryX22vM7lk5fdVEzKeKTlUZR0Lj6w65X7gp1v9i\nN7NDG67zYaGUdOaxy/v/N9xAO4Kfqx21P87/7OKAzm9E1Bvwe1JAJiLru7TuwTL2\nB9oRM/Qrjq2RpIkhZmy0GcIThIGo4GtTharEl3xEQZghJbIqRSnJ3Ycd2YdnJ3Gb\nXIcNtdx2MRH8aFVQ9JoLPinXrKhnamLQOwtECGozgDfQ6vki3gL2VujoafawUwwz\nZyigIhcUWhbM3zC1HQFU7Gv0r7/GJjm5bPJP2auYZAaTQT4=\n-----END CERTIFICATE-----",
+            "-----BEGIN CERTIFICATE-----\nMIIC9TCCAd2gAwIBAgIRANz10/jA0ZQV/lhRCQT/fpcwDQYJKoZIhvcNAQELBQAw\nFDESMBAGA1UEAxMJaGFyYm9yLWNhMB4XDTE5MDgyMzA2NTAyMVoXDTIwMDgyMjA2\nNTAyMVowFDESMBAGA1UEAxMJaGFyYm9yLWNhMIIBIjANBgkqhkiG9w0BAQEFAAOC\nAQ8AMIIBCgKCAQEAyfs1zXgn73zPdGP8sOFZrx6paPOraQz+bkRURZKX04izwZg2\n9BKkjAE24Zww2WX9B68OZvbuHajE8tN2CKrPslwi1lv6xntJ29QuiCDuD/7ennFp\nRxdx3sX304/SCVcaDugbDACeT2bFEdZPlLtg2lHav2ZIXJaWAfyXNc12e7/+22t3\nyKGlzRVy4Z+lMHAWpggwUDb48LqmurUiae75osOaBR/6+7tgqkIfrzhq6SS7oZiN\nfJNfVJ8RM8rrx82H4G/b1MmB8WDJSxu2NVNjox8OU8pYm+0iLGSlVClVfEGF0L+l\nIA3YlJ1ZHzIvM3HMVxC7Pt5wqqMSc/2OK/g4kwIDAQABo0IwQDAOBgNVHQ8BAf8E\nBAMCAqQwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMA8GA1UdEwEB/wQF\nMAMBAf8wDQYJKoZIhvcNAQELBQADggEBABMr7kmwzyO32uv1dAfdp7e26dzul5hb\nYFMDamQYMJeLgkZRWWEfwRgsW26w2eKTJgqbJsSu6AmrEcjl631RiMmYHbDkP3J6\ntyal94aNyA+TQj4tDJGVToPvru8kV6DXGrtr7Z/MlkPzBRFj1AE1v6vbRordXt7t\njSBMjelnUVrTftBdd0iAxUStAyZ1/BEmOGBKVIKp9V+3KrIwG9jgjM3qdqHnRGkd\ndnj0HPJRyULB53wZ8kv9IHvHbmlC0grSah+LbQG7G0cIEW+NCojb9/53CZzwIFpe\nybuIpB0ClhZLyS1tM6twvDw6OE7KKE0bhhn39UnxntqbjFqYWd8nNLI=\n-----END CERTIFICATE-----"
+        ],
+        "self_signed_registries": {},
+        "insecure_registries": [],
+        "docker_http_proxy": "",
+        "docker_https_proxy": "",
+        "docker_bip": "",
+        "vsphere_infra": {
+            "datacenter": "HX-Datacenter",
+            "datastore": "HxCluster-DS03",
+            "networks": [
+                "K8S_Network_852"
+            ],
+            "cluster": "HX-Cluster"
+        },
+        "master_group": {
+            "name": "master-group",
+            "size": 3,
+            "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+            "vcpus": 2,
+            "memory_mb": 16384,
+            "gpus": [],
+            "ssh_user": "ccpuser",
+            "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILjKQeO1VBLrKOzqPl0TT4wGfQSzMEQ6/gDkBLPEuve/ ed25519-key-20200507",
+            "nodes": [
+                {
+                    "name": "stagingbgw-master-gro-2598214f94",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.143.172",
+                    "public_ip": "10.32.143.172"
+                },
+                {
+                    "name": "stagingbgw-master-gro-71440e685b",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.143.170",
+                    "public_ip": "10.32.143.170"
+                },
+                {
+                    "name": "stagingbgw-master-gro-96dca42314",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.143.171",
+                    "public_ip": "10.32.143.171"
+                }
+            ],
+            "kubernetes_version": "1.16.3"
+        },
+        "node_groups": [
+            {
+                "name": "node-group",
+                "size": 3,
+                "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+                "vcpus": 2,
+                "memory_mb": 16384,
+                "gpus": [],
+                "ssh_user": "ccpuser",
+                "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILjKQeO1VBLrKOzqPl0TT4wGfQSzMEQ6/gDkBLPEuve/ ed25519-key-20200507",
+                "nodes": [
+                    {
+                        "name": "stagingbgw-node-group-4a28aa1589",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.143.174",
+                        "public_ip": "10.32.143.174"
+                    },
+                    {
+                        "name": "stagingbgw-node-group-88b3e5010a",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.143.173",
+                        "public_ip": "10.32.143.173"
+                    },
+                    {
+                        "name": "stagingbgw-node-group-fbc42dd098",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.143.175",
+                        "public_ip": "10.32.143.175"
+                    }
+                ],
+                "kubernetes_version": "1.16.3"
+            }
+        ],
+        "network_plugin_profile": {
+            "details": {
+                "pod_cidr": "192.168.0.0/16"
+            },
+            "name": "calico"
+        },
+        "ingress_as_lb": true,
+        "nginx_ingress_class": "",
+        "etcd_encrypted": false,
+        "skip_management": false,
+        "docker_no_proxy": [],
+        "routable_cidr": null,
+        "image_prefix": null,
+        "aci_profile": null,
+        "description": "Stagingcluster der BGW"
+    },
+    {
+        "id": "0da7781d-0c2c-4f42-8c52-96c2e943da97",
+        "type": "vsphere",
+        "name": "harbortest",
+        "provider": "642af8ae-e764-4b86-9191-569c33d26213",
+        "status": "READY",
+        "kubernetes_version": "",
+        "kubeconfig": "apiVersion: v1\nclusters:\n- cluster:\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01EWXlOVEV4TWpJMU1Gb1hEVE13TURZeU16RXhNakkxTUZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBSzIyCmxiVHhlaXlrYU5xdVdpK0lEZ3RDdnRCU1pEczBWQ2kxVzNadk5LbTF2d2VjMFhYeVo1UUZlTUZhNEJTT083V1AKR3Fia0pXM3NuWEFuR3RxOGVpTkxReGcrcDBxNmRDL2kyMFloOTMwenFOYlByRU5xM2tTMWRnTE1nSUwyODVDcAo0aXAybzZDWVY5aVhCL1dQOTMwaU9TaGREaXdDUFdpVnpqcUh4MHkxdTJhdHIzbFNnQmhjb1JKRWw5VytnS0hLCjlVKzNSN08wRE56TnFISGswM1RUczhhN3pNa3NTUDBBRnZJL2l0cVpUdGtpd21mVHhEOG9vVjNSZUJ2Z1JjWVkKRFpPWHNJeldlYkoxdEF6alI0eXpRd3NHdUVHaGEzajFoU3ZxWGJmUG92ODhzQ0VGcnM5VWJSZ1cwbk8vREhydQpiR25WV0RNN3VvaTZxZ1ZHZXZFQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFCWmgvb21ZOU4yUWR6eWxtV2lXZ3FsZDBlRFUKR1owanR0Sk1FTlB2ajhSWi9UcUhjZEZFWVRhQ25pWVhhdXRRcG1mSWpESzNCTHkrMmQrNnRhaVppOU9rSzhmagpNTXJHT0d4NHE4ZEt4TlhDaXliT3JsQ1VycU05ZHFyV1BQcURaL1NsNXRHSE5Yd0NzUEJqTEZydE42M05FT2dwCjFGVUJQeGlxWExYMktHNzdrdmpFMkVxZnQ3d2JQbmh0bnBtdmwwdW12UGMwQ2Vzb0Z1VVVxZzQyWUxOZVl5NzAKQUlpTkczSlBwaDBxanhBb2JpajRqT0xUTnFwM2IvejMwTnhHWVhoMFVjcW1yaDg1NlBKWXAwcEtPQlRJUWE5UQowcTJHYkt1aXVNMGdXQlFCZks4SzFUR3dhc3hFb3FXQyt0cXRVeDNvTjBpTlRZZWIyZFowM2RITWMvZz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    server: https://10.32.141.36:6443\n  name: harbortest\ncontexts:\n- context:\n    cluster: harbortest\n    user: admin\n  name: admin@harbortest\ncurrent-context: admin@harbortest\nkind: Config\npreferences: {}\nusers:\n- name: admin\n  user:\n    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM4akNDQWRxZ0F3SUJBZ0lJQkRpRUdKM2xKTkF3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TURBMk1qVXhNVEl5TlRCYUZ3MHlNVEEyTWpVeE1USXlOVEZhTURReApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sa3dGd1lEVlFRREV4QnJkV0psY201bGRHVnpMV0ZrCmJXbHVNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXV2R1hIL1Q0U3BCNTRHeW4KRkJrK3hMeWJNZDJBdFhWdUxvdm1ETld4VFE2QTNRWENNcWpac3dUeU9sVHkzSlJHcERBWnEzV2tZcXp3UjluTwpCMk1mVUFqNmlrYzcrdWV5UElWZVVTUFVUbDFuY0Zka2xXeCsyNEl1dDAzZjc0MUxFRzlGV3kxM0JRZnYrSW5sCjl4MmtqTUt1R01ocHRRckhVSzdwd1FHd2JRcnVYMm1ZNm1RR3lZWUwwaXZWZTg5dmVqNCs1bDJkbUpRNUJuMVQKbnV1eHdma2p3c0lUSXFJTkFNSWFha05URVVxRFZOdmtnb3FzbnV2QTRHR3FNY1lVTE5HZ1RCc0pzNFI4dWNFRgpvM1ZGMVoyeVEreGtPVWZsL3NOUVlQZmpTTzNXUTBFRmRMaXg1MDlXZ1dBRFVVRmNSdjFCNkFNbzlTeW9BMGxPCi9kU0Uwd0lEQVFBQm95Y3dKVEFPQmdOVkhROEJBZjhFQkFNQ0JhQXdFd1lEVlIwbEJBd3dDZ1lJS3dZQkJRVUgKQXdJd0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFBU2RTb0IxL2RpR3hEaEo2cFhnSmtIMkRnVW8rbjZEMkFIWAo2SU9VZFNHeFhwNzB2SWJ1K0JaMFkvVG5MVFlNTmM0Ukc2Mzk2V0ZFVXNaY1pNY3JvZm1iTWd0SG1sUUFmR1FqCkxoS21TVlVEcVpVcGVQYnJsRFF3WFY1V3JadzlSMlFXVURZdnJVRE9mci9UNUtKYXV4azM4dXFZNXlEQUZCTDMKNHpmSWVmcUJ1YjFpajFEZUNqTHU4eXIrL1BvN1B4VmhqRXp3UWZaNTdpdkhmajV3STcva2NoUHJSSXdSd0pYQgppUTFUd3ZocmJ3eENYd2djSUF1U1RTUnZWYkJjMXlQeGtLVmpWbmdvNzh6Tkprb1NxMklwTnliWXZ4bkk2YVFkCnM3WGVPSjllUnc3SWticGNvTTBpdTgzZEdubGZqTGY2OTJ4ZHY0a2lROUtlU3RZL3pUZz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb2dJQkFBS0NBUUVBdXZHWEgvVDRTcEI1NEd5bkZCayt4THliTWQyQXRYVnVMb3ZtRE5XeFRRNkEzUVhDCk1xalpzd1R5T2xUeTNKUkdwREFacTNXa1lxendSOW5PQjJNZlVBajZpa2M3K3VleVBJVmVVU1BVVGwxbmNGZGsKbFd4KzI0SXV0MDNmNzQxTEVHOUZXeTEzQlFmditJbmw5eDJrak1LdUdNaHB0UXJIVUs3cHdRR3diUXJ1WDJtWQo2bVFHeVlZTDBpdlZlODl2ZWo0KzVsMmRtSlE1Qm4xVG51dXh3Zmtqd3NJVElxSU5BTUlhYWtOVEVVcURWTnZrCmdvcXNudXZBNEdHcU1jWVVMTkdnVEJzSnM0Ujh1Y0VGbzNWRjFaMnlRK3hrT1VmbC9zTlFZUGZqU08zV1EwRUYKZExpeDUwOVdnV0FEVVVGY1J2MUI2QU1vOVN5b0EwbE8vZFNFMHdJREFRQUJBb0lCQURaLzdCRHk5OWUxR3ZMawplaWtQMnc2NzlYcXFHclhNRUYwZGgrbkIrcmgrTys4em1KUHdTZGM0MysxRmlxL253bGhuZFhSWkRaMSswV1lCCkIyRjc4a3NBOHhtUS90bDg1cWRpTWtieGJSbVRmVzV3NisvcisyZS9JaU5xWHBpVjFvWnFDZ3cweXZmNmdta3cKdW93NlpoaHJRUm9VZzB5Mllia1I1Uy9SY0QrNWFucTNtejBtdUdNSEF5WHB6MnFzTUZrMUlJNnFNK2NwY1p2dwpickNjUFpjMVJmWDJOREh5bjdGMDNSQmwwN3ZEWVh5eWJzOUNnSG9yZjl5SkNod2Y4a2o3WnVrM1VjWFRsTUgwCkJYL25rdzlrV3ppb1daRU1lckxDajZCd3ZqVDZxRFdWSTRKT0NCSVFmUGVrVmU5OXM2Vkl0dTdaYkxUVVVpZk8KYTUwemtaRUNnWUVBNGMyNE1JUUpoT1lzV0tCQWdobE1yRWZtOWpidFY2ZENYZmpGUmJjZ1ptQjlRdnQ1bnp0cgp5SXNzZ2pOU2FWZytmbDdpbjBHZHpuNm53dHBzOU8vV1JnaE5PeWVTSUFXb2FOd1BwSE9RUUZ2YjUrR0lwQ2d2CnJ0V1U0TFV5MldkOFFGbldpNlJFUmVyRlQ0UmVQaWsyOW14eGk5OEFIUXJpR1AzcXY5UWxHazhDZ1lFQTAvR0YKWVNkOGZrWVU3eTdaK0QwaUQrWjAyRm40VVlCRXNBWkV3dkFXeUFacHhoa1lQY1Q2NmpyV0FucGhIU2RIUjQxdgpzbWZLbU1PZ0xTL2g2Z0hJS213TGZBdnVhTzFGcDBLdkFJQmFyWW56WXB3Q3hBcDVrMVF6cnZSQXdYTWgwYml0CjZWUGdyaDlRdURwR3N5MW5zVnRidHBPMmZiSU9PVFptMlBnZXdEMENnWUJubFdlWldmakQ3cE1KVlBwQ3REaG8KRDlQenZ0N0NCd2g2ODFRTDF5WVYwTTJsbkpiK1pOUGMrM3MvZnl1ZkI4d2pUSVBKYXVCcGlkQ0xvb2U1RlF6RwpzNmc2S3J6dDA2cWQ3OVY5SzBaUlA5SnhYUlRCdVcybVZuUWxZUG9pb1VadWZzZmM1MDRxaExoZThlb0p1ZjVzCnJQS3BwM0wxMzdnNG5zTEJuU0FvSVFLQmdCZnN2YWUzODErMXZZczZlTFNEQWlOVlduOUp1TFJLakhacVhyeTYKcVhldThhWEJFM0YxbVBWejZ0Q2d5L0draTNGU1QvZU5xOXNPeWpnUG5hcnl4SXUxWXA2QUlrdUo3VUR5VUJyNApZa1FRdkg2M0tjRERoZkhSb1h2d2FwYnJ6amVFWjIxZFlKR0hTMjlnZExhcE8zbFQzTWlCYUNwTVBUck1IMVFDCnZrWHBBb0dBZGRucGh2cVViWUJNSE9HQkhhdzdvL0VEeHZmeGsrdkwra2JVeXRoblgrNzVvdnlsOURDMk9GNWgKampXVFVjTkd2YWxmMGYzSys2Zm4vY2Yvd29mdG9KSDRsYjU3R3VCcjhSLzNzRDJFdGdqdnBBMWFJdUwwSS9MRwpXcGhnRk8vZUZ4YVJnSUZYMjVBbEIrZ3k2SnBxSkprRTNGTk9YbSs2SXZBcEMrWUxBL3M9Ci0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==\n",
+        "ip_allocation_method": "ccpnet",
+        "master_vip": "10.32.141.36",
+        "load_balancer_num": 3,
+        "subnet_id": "d56dd165-fddd-44a1-a3d0-732eab265f43",
+        "ntp_pools": [],
+        "ntp_servers": [
+            "ntp.bgw-online.de"
+        ],
+        "root_ca_registries": [],
+        "self_signed_registries": {},
+        "insecure_registries": [],
+        "docker_http_proxy": "",
+        "docker_https_proxy": "",
+        "docker_bip": "",
+        "vsphere_infra": {
+            "datacenter": "HX-Datacenter",
+            "datastore": "HxCluster-DS03",
+            "networks": [
+                "K8S_Network_850"
+            ],
+            "cluster": "HX-Cluster"
+        },
+        "master_group": {
+            "name": "master-group",
+            "size": 3,
+            "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+            "vcpus": 2,
+            "memory_mb": 16384,
+            "gpus": [],
+            "ssh_user": "ccpuser",
+            "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDQvmnnj7uatOVsh2P4Kgb8bd9vXWyqkWVa6Ek4RZTJ4 ed25519-key-20200504",
+            "nodes": [
+                {
+                    "name": "harbortest-master-gro-79741c6635",
+                    "status": "ERROR",
+                    "status_detail": "updating kubernetes status for tenant master node harbortest-master-gro-79741c6635: node pending build: requeue in 30s",
+                    "status_reason": "Unknown",
+                    "phase": "Running",
+                    "private_ip": "10.32.141.38",
+                    "public_ip": "10.32.141.38"
+                },
+                {
+                    "name": "harbortest-master-gro-a7c3cedfab",
+                    "status": "ERROR",
+                    "status_detail": "updating kubernetes status for tenant master node harbortest-master-gro-a7c3cedfab: node pending build: requeue in 30s",
+                    "status_reason": "Unknown",
+                    "phase": "Running",
+                    "private_ip": "10.32.141.35",
+                    "public_ip": "10.32.141.35"
+                },
+                {
+                    "name": "harbortest-master-gro-df5e305ccd",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.141.39",
+                    "public_ip": "10.32.141.39"
+                }
+            ],
+            "kubernetes_version": "1.16.3"
+        },
+        "node_groups": [
+            {
+                "name": "node-group",
+                "size": 2,
+                "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+                "vcpus": 2,
+                "memory_mb": 16384,
+                "gpus": [],
+                "ssh_user": "ccpuser",
+                "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDQvmnnj7uatOVsh2P4Kgb8bd9vXWyqkWVa6Ek4RZTJ4 ed25519-key-20200504",
+                "nodes": [
+                    {
+                        "name": "harbortest-node-group-23f9a7d8fc",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.141.40",
+                        "public_ip": "10.32.141.40"
+                    },
+                    {
+                        "name": "harbortest-node-group-7649f55053",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.141.37",
+                        "public_ip": "10.32.141.37"
+                    }
+                ],
+                "kubernetes_version": "1.16.3"
+            }
+        ],
+        "network_plugin_profile": {
+            "details": {
+                "pod_cidr": "192.168.0.0/16"
+            },
+            "name": "calico"
+        },
+        "ingress_as_lb": true,
+        "nginx_ingress_class": "",
+        "etcd_encrypted": false,
+        "skip_management": false,
+        "docker_no_proxy": [],
+        "routable_cidr": null,
+        "image_prefix": null,
+        "aci_profile": null,
+        "description": "Harbortest der BGW"
+    },
+    {
+        "id": "29d66f09-4d16-4f15-a42d-0bd27301a290",
+        "type": "vsphere",
+        "name": "entwicklung",
+        "provider": "642af8ae-e764-4b86-9191-569c33d26213",
+        "status": "READY",
+        "kubernetes_version": "",
+        "kubeconfig": "apiVersion: v1\nclusters:\n- cluster:\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01EWXlOREE0TkRZMU1sb1hEVE13TURZeU1qQTRORFkxTWxvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTXJsCit5dWhMWTd6dFhNbkhwMmNmTExWSVhxTGJCMlRHaTNpVFp6U29Hekd1RzFIck9Ba1cxKzJpamdOYUVuMEJyTjkKbnNFMUVzdGcvb1JBWnhiYU1ZTHlLd1UwTTFBVlMzSW1ROW5tQ0hTajFhVDdzNjAzWXdhNDVaNFprVTNZWnd3Twpia1FwdlllRDFGd0d3NXYxdWhzUGcwbWZBa25keVBOVVlBUitOZEI3NXNEUi9YME9ySThsSTd3K3JEbDNQN0pVCnlid002MDVXSS9icUNUdXVhZ1htdnRjdm50TithQThVNW9ra0RvVXlqZ252b3FlWndHcHhtZzVKaGF3eURiaTcKNjdhQ3ArbW5XY0RGb0k1Y2tXOHdmTFZRdnpubGI2U1Y5dklWN3hoWGlKWGU5cGdwTmtaOURkS3ZWdXNsdXNWRQpVVVVjTjNFVEFaL1piWGQvNTVFQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFNbXB3a0dPSHMrVHZINlpINTdlaXh1Z05QMDIKVkNnZWV6SVlNUVBQbWMxWEdtZE53SmdzTW5IcmVkaFhSUmtxcUx3ZS9peHJkcEhVSDZ1Z3hpSzhHaEtlMC9hdQozd015Qm5qYVM1S1VZT1FJYlRacHZpZU5QeDhYZmRPUmFsRHp0WU1GcTFZSkdDSzJaaGVrL2VWdGNRVW5ER3hvClVHTTlOeWxSQ1Y1Qk80Q0wxdmF4dFJNODFJb0N0aWIrODFhS2I2SUk3TjdkeXRaWE5QRlpNTGlWRmZnViszSXIKSnBRc2dGcWZ2QXN4L0JDSVRKRG5qb3FobXFzbmhsdGhTWG8rOWR6RE1BOWxKbm9FVmFBamxhT0hGR3JoSllBegpCK0tmVG0rcFdCUVg1dW1uaEh0OXlnK2ZiOHB1elg3emdCa0hvaFVQYkFWUXhoVDZRVWo4WXZzNkMvVT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    server: https://10.32.142.171:6443\n  name: entwicklung\ncontexts:\n- context:\n    cluster: entwicklung\n    user: admin\n  name: admin@entwicklung\ncurrent-context: admin@entwicklung\nkind: Config\npreferences: {}\nusers:\n- name: admin\n  user:\n    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM4akNDQWRxZ0F3SUJBZ0lJWGZoZVh1cU5ISmd3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TURBMk1qUXdPRFEyTlRKYUZ3MHlNVEEyTWpRd09EUTJOVE5hTURReApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sa3dGd1lEVlFRREV4QnJkV0psY201bGRHVnpMV0ZrCmJXbHVNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQTNyUjNHRXZ4TzVNdG5lUXEKRDNNTDk2YVVkUzdkTlh1S0VabFlmNnFGZ0pQMlBXbXZERlFyR1EvelVodWs2TmtRc3hhenNESDAzYndUM1dvbApWMEw0cmpKYm9mKzZMYzZOanVVU2VPNmlxZUF1dGF1bmQzL243MU5iK0JIc1NRWnh2ZEQ1TFJ3NDR1MUdhRytICmwxaFhmSzl5dlc5WUg0RGI4R2ZuZSs2dGtEREpyeFU3M1BTbElkRHI2RURNdEt2ZlBMdG1Kc1dFbmcyV3duZUoKcm83Q2V5R0NpSHIzQUUzaDNpZUxrOUxWMXgxK2RYZ2lQWkovZWtlUUFCTXhBdVNhQWNOaE9nZjJUcDl2V01DMQp6bS9SNUpwaGdDQkwwMjM4S3Y1Q3o4Q2p3eUJWamxuQ0tKOFdRaW5lZ2syKzZ0OXUySkxhaW9KYm52WW5SYkZTCmRPRzRxd0lEQVFBQm95Y3dKVEFPQmdOVkhROEJBZjhFQkFNQ0JhQXdFd1lEVlIwbEJBd3dDZ1lJS3dZQkJRVUgKQXdJd0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFENzlDYU1iK0Z0V0RHc1d5aXExdlJxYXhQUldsVGZyN05uVAo2MzVQdi9ZSmZ4ODdtQVdyNkVyZEpJYVpoTk9WbXB0R2FxMG5ST25DVUNRNnBOQU11WGxpK2FUM3BrWE5oUms3CmV5cEo5TXVvendKM2Q1QmQyYUxIT0xXTEZaRmMwdERxVk9KbkVHU1I1bnp3ZWxzc29kaVlSZ25uRktIR240N0kKQ1phY09LUkQ1bVl0bUl1dUMrYk12YnFZUkFEcFZJUVo0Z1RWalJpeFlPcU9taWsvVUl6d2tBUUdRcnN0VGhNNApLbzRCTUdqZ3JLUHN0bUtnQTdzU3FJSktEbjBXd01LZkRHNkhMMHRRRmMxNkh6VEdoT2pLeDdGeS9HTnFGVTgxCnFDZHNhcjJSQWpjZUc1RHppOXJBbW9MR2VSdUV1MzlqUWZFMlo1bjBXbzM0VUp3YldaZz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcFFJQkFBS0NBUUVBM3JSM0dFdnhPNU10bmVRcUQzTUw5NmFVZFM3ZE5YdUtFWmxZZjZxRmdKUDJQV212CkRGUXJHUS96VWh1azZOa1FzeGF6c0RIMDNid1QzV29sVjBMNHJqSmJvZis2TGM2Tmp1VVNlTzZpcWVBdXRhdW4KZDMvbjcxTmIrQkhzU1FaeHZkRDVMUnc0NHUxR2FHK0hsMWhYZks5eXZXOVlINERiOEdmbmUrNnRrRERKcnhVNwozUFNsSWREcjZFRE10S3ZmUEx0bUpzV0VuZzJXd25lSnJvN0NleUdDaUhyM0FFM2gzaWVMazlMVjF4MStkWGdpClBaSi9la2VRQUJNeEF1U2FBY05oT2dmMlRwOXZXTUMxem0vUjVKcGhnQ0JMMDIzOEt2NUN6OENqd3lCVmpsbkMKS0o4V1FpbmVnazIrNnQ5dTJKTGFpb0pibnZZblJiRlNkT0c0cXdJREFRQUJBb0lCQVFDOXl6YWo4alNIL1FvbgpRVWZIR3RqY0dZN3p2eGl1ZDdaWEFVUzJxSEJWLzhNZTIyNWZKMndEVStDZDNRbFJsNHZ2MUMwV3Y3eGJLK29TCkRGLytXZ2p0QytXanpmaXhDUk1DOEo0cGlkWCt5QnVHbjk5OHEvalJzVXp6d1BLSjJZQWRzSFpxeDE2RHBvc1cKZmRZa1dSbFdIWCsvaWFDa1dJRVlCTFQyblpZMUJvZ1Z2bXJDZDkza2xTUUpsK3V2WnNlU0lWUzB3aU96M3A2ZgpxVHpqYTdERk5rL2xQL1NHNXRUMndIQWM1YklvMU5ZSWoybFVHWmVzK0dGdGhuYVBQTzU5dGtBbEs1RVZ1NlBHCjR2YmV1VmJ6VS9FWUd0dXl4WnJYeDFLNVRsZUlrckFvbXkxelNQMkpwTVBLWng5VjIwWkp5dW52ck81eURLL20Ka08rTkNKb2hBb0dCQVBJdHdZYWI0ZktQaDYrMXZvWTA5WGowUFFuMU93UEVyWmh3b1doY3lMNEFEeGNJQjVjegowREZnRGFpaS9rV0N2dUVhUGErK2hSR2l1S0YrNWVhTmJ5c1UzR2VzdEozdnF2VjBDUkVVd1kxa1pYa3MyOW1pCjdqY3Y4dWx3dGp2UlZENXo4dit2UHNvMTNNWldIWjZycjYxL25LU1JWeHBLbzNKNGw4VmhDRkwxQW9HQkFPdHEKTWpXTmVsSVRucWEwejExZFhINVZYQ3dYNmtkbUlsTCtwNnM1M1BQaVdqK0ZKUmoxOXo3ZVZLdkpFdFM1QjE0WQoyaHhpQ005VTFkKzM4UXRjOTNPSWt3T2V3ejhqRytNL2thV2lZSVhsVG0wL2JoVjNVV25NYVIzdDBvQlZmUDVJCktxSHJjSzhkSThNNzlkb2RPRDVLTytIRlhKNlFOTmxxL1dYL2x0a2ZBb0dCQUxRVVNmOHFFbzBuSlNJRzVyRXMKMkFza3NlNmhwMHhhQnl0L05NWkJtQk9RUDZoRWxFQmVpc1RzUTd2TjEzMGdoNGNpMkJQQ2UzaHRveFNUSTZpWQpLcjNDT1ZIdUhqQUNjd0VwVTBTY1JvQTQweXVUcTdiZGJIMGs3bCtmTENLMnVRbm5kaDJoMWZMT3NtZll5UldmClhIYUttWlBWYnd0aHpML2w1QlVrM2VleEFvR0JBSVlQZHNKS2JCTWJleWlDSk9pTlJ5UG1abFB4MW9lTVlSV1UKVVZWUDRVUzliUmxwTUNRVHhoWDJOSStUTlBjUTIySTVrdFBBL0RWZG9XSUNkUEU4b3VvWEoybFRXdXEwaXFnUgp4bFpscnNQeFBvVTJMdkZvZm1OYWRhNEdoZTV4UUhucURPVWlsNHdSY3hFMkx4NWpyMmpCaTNKWm14SHRHenVKCkV2Nm4yM2FQQW9HQVE4QXhkOFVCTSt1WXdDalQzdEZNek1BQlJoUVlXYzlTeVlVY2M0alBZYWxZc3lodEFJdXcKY2xqZ3pQcDkvWDZUREVaYTltR2dxRzdRWW84Ym5uL3RjdGtzVGlJUWxOMDlpRVVwOE5qVVBMa25PRzZqQVBBRwo4K1JGWVlKdXVOblYvNzJSRkFpVnFkRGhvSWFtRk85cEJyWUVVMGNvZURPTENaUzU1OXRxQTBBPQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=\n",
+        "ip_allocation_method": "ccpnet",
+        "master_vip": "10.32.142.171",
+        "load_balancer_num": 3,
+        "subnet_id": "35fdb2cc-b81a-4fbf-8e8c-eba07f7c24ab",
+        "ntp_pools": [],
+        "ntp_servers": [
+            "ntp.bgw-online.de"
+        ],
+        "root_ca_registries": [
+            "-----BEGIN CERTIFICATE-----\nMIIE/zCCA+egAwIBAgITNQAAAByBCdZqRwKC0gAAAAAAHDANBgkqhkiG9w0BAQsF\nADBJMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxFDASBgoJkiaJk/IsZAEZFgR0YW5r\nMRowGAYDVQQDExF0YW5rLUhYTUdNVC0wOC1DQTAeFw0yMDA2MjMwOTI5MDJaFw0y\nMTA2MDMwNzU0MTZaMIGiMQswCQYDVQQGEwJERTEQMA4GA1UECBMHSGFtYnVyZzEQ\nMA4GA1UEBxMHSGFtYnVyZzEMMAoGA1UEChMDQkdXMRMwEQYDVQQLEwpJVC1CZXRy\naWViMSEwHwYDVQQDExhtZ210LXJlZ2lzdHJ5LnRhbmsubG9jYWwxKTAnBgkqhkiG\n9w0BCQEWGnJlbmUuZmlzY2hlckBiZ3ctb25saW5lLmRlMIIBIjANBgkqhkiG9w0B\nAQEFAAOCAQ8AMIIBCgKCAQEAw7eMuqwbqB1w1eq3uQUvN5S9iCtZOuXj4CjhiCBe\n2eYXd8rrtXMjdmb9dZ/56QGrQEDqVYE1KordV39dVV6J54nmRl+v6sxGsV20Z4ga\n101zMOhvJxWWwa29MJevhwyeDJiWZdjSLPtVlo82ahaGQddRHkGz3ir86uJOttJV\nElP9OpkhPGhowyIkfXToYJyfmVo26qhCO3l5TPu3/niIjuKUo37ZsuPmAdK3oMWm\nmjuOonu0n1CFU9bwoIK3heBCmiUQMvqhfMNCfdW8k1IJXsyF+Rd/qeneLwdxVSf3\nhT/Cf+VZYiHHayVmz9W6gscU+9dQgy2q+QpgdOmqvA0IQQIDAQABo4IBhDCCAYAw\nDgYDVR0PAQH/BAQDAgWgMD4GCSsGAQQBgjcVBwQxMC8GJysGAQQBgjcVCIOek06B\nqJkNhs2XCoLp+D+DvpxHgRCB0eFXhNDmawIBZQIBCzAdBgNVHQ4EFgQUmQQ46jWS\nfE6IiiGTjfJfU6wiNeYwHwYDVR0jBBgwFoAURii/sryXZuoAY2II7aUlMPSGmsww\nTQYDVR0fBEYwRDBCoECgPoY8aHR0cDovL0h4TWdtdC0wOC50YW5rLmxvY2FsL0Nl\ncnRFbnJvbGwvdGFuay1IWE1HTVQtMDgtQ0EuY3JsMG0GCCsGAQUFBwEBBGEwXzBd\nBggrBgEFBQcwAoZRaHR0cDovL0h4TWdtdC0wOC50YW5rLmxvY2FsL0NlcnRFbnJv\nbGwvSHhNZ210LTA4LnRhbmsubG9jYWxfdGFuay1IWE1HTVQtMDgtQ0EuY3J0MBMG\nA1UdJQQMMAoGCCsGAQUFBwMBMBsGCSsGAQQBgjcVCgQOMAwwCgYIKwYBBQUHAwEw\nDQYJKoZIhvcNAQELBQADggEBAHI+oRwmBHpEKXqD2EcW4NbMXqPG5Lm8xLKzImh4\ntCijCQUB2SmOreaiC9szuyTU2ryX22vM7lk5fdVEzKeKTlUZR0Lj6w65X7gp1v9i\nN7NDG67zYaGUdOaxy/v/N9xAO4Kfqx21P87/7OKAzm9E1Bvwe1JAJiLru7TuwTL2\nB9oRM/Qrjq2RpIkhZmy0GcIThIGo4GtTharEl3xEQZghJbIqRSnJ3Ycd2YdnJ3Gb\nXIcNtdx2MRH8aFVQ9JoLPinXrKhnamLQOwtECGozgDfQ6vki3gL2VujoafawUwwz\nZyigIhcUWhbM3zC1HQFU7Gv0r7/GJjm5bPJP2auYZAaTQT4=\n-----END CERTIFICATE-----",
+            "-----BEGIN CERTIFICATE-----\nMIIC9TCCAd2gAwIBAgIRANz10/jA0ZQV/lhRCQT/fpcwDQYJKoZIhvcNAQELBQAw\nFDESMBAGA1UEAxMJaGFyYm9yLWNhMB4XDTE5MDgyMzA2NTAyMVoXDTIwMDgyMjA2\nNTAyMVowFDESMBAGA1UEAxMJaGFyYm9yLWNhMIIBIjANBgkqhkiG9w0BAQEFAAOC\nAQ8AMIIBCgKCAQEAyfs1zXgn73zPdGP8sOFZrx6paPOraQz+bkRURZKX04izwZg2\n9BKkjAE24Zww2WX9B68OZvbuHajE8tN2CKrPslwi1lv6xntJ29QuiCDuD/7ennFp\nRxdx3sX304/SCVcaDugbDACeT2bFEdZPlLtg2lHav2ZIXJaWAfyXNc12e7/+22t3\nyKGlzRVy4Z+lMHAWpggwUDb48LqmurUiae75osOaBR/6+7tgqkIfrzhq6SS7oZiN\nfJNfVJ8RM8rrx82H4G/b1MmB8WDJSxu2NVNjox8OU8pYm+0iLGSlVClVfEGF0L+l\nIA3YlJ1ZHzIvM3HMVxC7Pt5wqqMSc/2OK/g4kwIDAQABo0IwQDAOBgNVHQ8BAf8E\nBAMCAqQwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMA8GA1UdEwEB/wQF\nMAMBAf8wDQYJKoZIhvcNAQELBQADggEBABMr7kmwzyO32uv1dAfdp7e26dzul5hb\nYFMDamQYMJeLgkZRWWEfwRgsW26w2eKTJgqbJsSu6AmrEcjl631RiMmYHbDkP3J6\ntyal94aNyA+TQj4tDJGVToPvru8kV6DXGrtr7Z/MlkPzBRFj1AE1v6vbRordXt7t\njSBMjelnUVrTftBdd0iAxUStAyZ1/BEmOGBKVIKp9V+3KrIwG9jgjM3qdqHnRGkd\ndnj0HPJRyULB53wZ8kv9IHvHbmlC0grSah+LbQG7G0cIEW+NCojb9/53CZzwIFpe\nybuIpB0ClhZLyS1tM6twvDw6OE7KKE0bhhn39UnxntqbjFqYWd8nNLI=\n-----END CERTIFICATE-----"
+        ],
+        "self_signed_registries": {},
+        "insecure_registries": [],
+        "docker_http_proxy": "",
+        "docker_https_proxy": "",
+        "docker_bip": "",
+        "vsphere_infra": {
+            "datacenter": "HX-Datacenter",
+            "datastore": "HxCluster-DS01",
+            "networks": [
+                "K8S_Network_851"
+            ],
+            "cluster": "HX-Cluster"
+        },
+        "master_group": {
+            "name": "master-group",
+            "size": 3,
+            "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+            "vcpus": 2,
+            "memory_mb": 16384,
+            "gpus": [],
+            "ssh_user": "ccpuser",
+            "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAw2ZWBDPA31lq+fhPGG50MELz5+V8AxJnkKhP8Ld1u3 ed25519-key-20200507",
+            "nodes": [
+                {
+                    "name": "entwicklung-master-gro-43085fd907",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.142.174",
+                    "public_ip": "10.32.142.174"
+                },
+                {
+                    "name": "entwicklung-master-gro-a229f45b65",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.142.173",
+                    "public_ip": "10.32.142.173"
+                },
+                {
+                    "name": "entwicklung-master-gro-fa9d61e364",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.142.175",
+                    "public_ip": "10.32.142.175"
+                }
+            ],
+            "kubernetes_version": "1.16.3"
+        },
+        "node_groups": [
+            {
+                "name": "node-group",
+                "size": 4,
+                "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+                "vcpus": 2,
+                "memory_mb": 16384,
+                "gpus": [],
+                "ssh_user": "ccpuser",
+                "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAw2ZWBDPA31lq+fhPGG50MELz5+V8AxJnkKhP8Ld1u3 ed25519-key-20200507",
+                "nodes": [
+                    {
+                        "name": "entwicklung-node-group-1315e49a15",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.142.176",
+                        "public_ip": "10.32.142.176"
+                    },
+                    {
+                        "name": "entwicklung-node-group-8cddc6f46e",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.142.177",
+                        "public_ip": "10.32.142.177"
+                    },
+                    {
+                        "name": "entwicklung-node-group-cfd1589719",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.142.178",
+                        "public_ip": "10.32.142.178"
+                    },
+                    {
+                        "name": "entwicklung-node-group-e92ab5e230",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.142.179",
+                        "public_ip": "10.32.142.179"
+                    }
+                ],
+                "kubernetes_version": "1.16.3"
+            }
+        ],
+        "network_plugin_profile": {
+            "details": {
+                "pod_cidr": "192.168.0.0/16"
+            },
+            "name": "calico"
+        },
+        "ingress_as_lb": true,
+        "nginx_ingress_class": "",
+        "etcd_encrypted": false,
+        "skip_management": false,
+        "docker_no_proxy": [],
+        "routable_cidr": null,
+        "image_prefix": null,
+        "aci_profile": null,
+        "description": "Entwicklungscluster der BGW"
+    },
+    {
+        "id": "4da70195-c2ca-4436-a2df-9c41945d2f7c",
+        "type": "vsphere",
+        "name": "bgwproduktion",
+        "provider": "642af8ae-e764-4b86-9191-569c33d26213",
+        "status": "READY",
+        "kubernetes_version": "",
+        "kubeconfig": "apiVersion: v1\nclusters:\n- cluster:\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01EWXlOREV6TWpZME1sb1hEVE13TURZeU1qRXpNalkwTWxvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTG43Ck14TlJwdXpXZDZ5bFJXVHhBZDZRbmJwMCtBcUd6azdkT001endzTFIyVHNVMTdYc3l5TFlYY3NURUxSR0o1NTgKVUVHbXRiaWc1bjZMZ09WZUxQK09DbXdiRmpsSXZNR0hYOW1oNk1GRFVpMWc5b2JubjFDNnB5dks3OUxDV1lUQQpNNjN2ZExya1l1SE1wcnFsS3lqZVdsMTR1cEtiRSsrNnFneGlLbkl6SU9kUVhUclUzeWFKdVFwQ1ZiMlVyMFZmCnU4N2UrWm16a1JsTWhVUXl6VFlDOTZGWFZCeEYzY2Y5ZHl4aEdYdXJsWFd5cnpZVk9pa3hnL3pHaTQxd2luRFYKdUR5V1hXRitqZGwvY1JuREVBVk15bzdBYlhyUDZFeSt4eGczYnhPSTF2Q0wzaFI2eHpNVmZtMGlGWXNEOFBENgpuc0JYMXdjZ3lOZDQvdm93b3ZjQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFKNmxKZVpLcXVhK0ptMUE1Uko3czU4YUY2QkkKTDZ5SFNCMFhjOVU0eDhlcHNidFhheVlhTEJpS1puMHFuTlQ4MUZTOVNuOHp6YWhSWlpMK25kazdFaEg1TDh3bApNMjBvYUJjUmV0TzBsZDVQbHlvQzg3NE1GUlFpbFJ6THJFZFhvVklHRFhpc2YvWGxleklKMHl1TjhDR3FlNXk2Ckl4VFh6bmxaZ21mclFEQ0NHYlU0OEc4a0pnNklrb2d4dW4waEVzTDQydDBxeFh1R0ZaRitPeGxETFUwcytDbnYKdWZiS1J6VkdpSFJ2NDUycDhucVRyZGVYZnZoZU5tQ0RhTHQ1eHVBMDgxVXpsYm1iaVhITmNoZldrakJTQzc5Zgplb1NvRklOZDVkaEhRZDY0MERzZjlrQktOVnF3K3NNeGZSSVVCTVRma1Q3NmR2b3ByRE5EUWdSSDY3WT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    server: https://10.32.144.161:6443\n  name: bgwproduktion\ncontexts:\n- context:\n    cluster: bgwproduktion\n    user: admin\n  name: admin@bgwproduktion\ncurrent-context: admin@bgwproduktion\nkind: Config\npreferences: {}\nusers:\n- name: admin\n  user:\n    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM4akNDQWRxZ0F3SUJBZ0lJQkpnMm9XNWZkczB3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TURBMk1qUXhNekkyTkRKYUZ3MHlNVEEyTWpReE16STJORFJhTURReApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sa3dGd1lEVlFRREV4QnJkV0psY201bGRHVnpMV0ZrCmJXbHVNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXhpWE9GUk5QR3JvRlVKWkMKWldPbG51aE1JTnRZSVpXbnBOZHVHUGJ1V09MRmFaRHpxQlNPdUQ2anJFSERVZTc0a05vOUEySGh1Q3dnbklnMQpWTVBGM2hqRWc1bzB6c0IrTXdtaTFMY2l1T0tmSXdLS1NQQXJNUDVqVzNRb2o2Qk1sSE1RMG1HSGxZSytkRWkzCmpvZ2wyTnNzQ2lWeURSTzJ4bllWcC9YZjdXWVpDSHQxVFphQlIwUnM1Rmg0ZUdRNW9xVlVFWEF5SWxNMmFuZTkKMGpIdGlzS1FvS29BL1Y0cEszRzhYdFRsREl3QmFaNHRQR1BQS3FiNC8rdVFOcCtxcHVWMmNJOVJhTFB2TG5aTwpENzZncXpjUUlvd1ZyMDcwTXdiUjUxT0txOEhqSGVzb0tHbW9ZZi9iUnZtNXlub2x3UUJDSXh4L3l0MWY0UWlsCmZxRGFMUUlEQVFBQm95Y3dKVEFPQmdOVkhROEJBZjhFQkFNQ0JhQXdFd1lEVlIwbEJBd3dDZ1lJS3dZQkJRVUgKQXdJd0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFMajZLSFNCUFRBYTBaNDJScGx6ZzMwRE9CRXdnZWVXS2swawprWXRHeTdHWXVZc0VQTGZVY2JEWVpBSUZ1T0cyTFRyYitGNVg1SjZQRlN2OWlmQjUxak5CNXE3aEtIYW56eWpEClJDa0ZTUTlwcS96YXcya0htTDMwRkcycFNYcDVYSnlMKy9vQzZMOER6ZEJIR2d1SnMwSU9YK25uV3NnV0ZrQlQKb2FBL1dIN1B5cXRWRGdtb0ZOQmNGVlRqMDdWbVQ3WTNHSkljUlR2TWYreXBMTUNseEJUeGg4NnNrTVJLc2dLWApOejBaZHpEenpjR09leFFmcUs0NGwreFhUVkVEZG9KbmZzRTlXNkVrSlFhYUVVUnZvWGtPRmJEaENuM1pCeUsxCmJsTXJuZ2s0MHN3UWdpbjZFdEdPS0d4R0FJNDI2dnAxOGhEQVAzdDBjQTc3TWtycENOZz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb2dJQkFBS0NBUUVBeGlYT0ZSTlBHcm9GVUpaQ1pXT2xudWhNSU50WUlaV25wTmR1R1BidVdPTEZhWkR6CnFCU091RDZqckVIRFVlNzRrTm85QTJIaHVDd2duSWcxVk1QRjNoakVnNW8wenNCK013bWkxTGNpdU9LZkl3S0sKU1BBck1QNWpXM1FvajZCTWxITVEwbUdIbFlLK2RFaTNqb2dsMk5zc0NpVnlEUk8yeG5ZVnAvWGY3V1laQ0h0MQpUWmFCUjBSczVGaDRlR1E1b3FWVUVYQXlJbE0yYW5lOTBqSHRpc0tRb0tvQS9WNHBLM0c4WHRUbERJd0JhWjR0ClBHUFBLcWI0Lyt1UU5wK3FwdVYyY0k5UmFMUHZMblpPRDc2Z3F6Y1FJb3dWcjA3ME13YlI1MU9LcThIakhlc28KS0dtb1lmL2JSdm01eW5vbHdRQkNJeHgveXQxZjRRaWxmcURhTFFJREFRQUJBb0lCQUFpZmRJeHVQcThIRVZ3awpiZGREc3QxcmRvU25odnBQTFBCN2Y0c09rK2pDVlp6MmRlUUdvUDlibW52UWtOTnI5dDAyNGhqWGxaOFNMSWtqClZFN1FCamhZRTVVMmpMM0NtcnRWM0FRdHhCRVBxNlUyWXhZeGZXK3dZbHFFZjQ5Z2huU2ZYVWdLZm4vL0pKS2kKNTNvSWFyMDVMSDEwaTdZTitaSkJhVWZaNTFqSldQMXBTV0JWY2d3SkpUcmdZcDhRZHJVbE42MGtHb2NKT2ptUApaaGQ1aFFPV2lPSDhqK3Vmck1VOFJzZWtmUXRpRHJadGlJYktKRWVqTVJPVFVHa0tpOGhyTEp4dkQyNGxnRUZyCmNXSkRyZjN3dzh2UERvWEdPS2krdXIrZ0ZVc1lKcGtaS3Ercmczb3RwSjRWL3JsekRxR2F3LytOWGgwelhQNkkKREpBclJBRUNnWUVBOHBnTytHTWhMZkpHTU4zWjJEOG44TnNIMnJZYkhIbDA1ekg2VCsyS0YzdGVQdG9yL0srRwplYm5BZ2JnMS9vMUNaM2pxcjV4UzNieVpiaDFtS2YxQWdIdWJzaUU5NjFCRUZqR1pIL2ErVmpyTmh4S2ViT1psCmhZMm1Tem5zT1pSQVo4WWxoWDNZam1RbEFaTVY2b3BRMkRCVjN1SjdrKzdtSHBERVJHelp5c0VDZ1lFQTBSajQKbi9UNTlYenJjMUVJQVpNVVJXZGx2NFNrZHEzcXcwMHJQU244aHZoMEUwRW9DSmlQZTB6NXdVenN3SE1wR1Z1cwp3MEJTQTVUZ21QK1JtN0NyTldSNFdiVlJEVTE5L216cDJxVks4d3Vodi9IZkZwUVF0WGlORitFMkM0SzdJdWZGClM3TzBYVmNvSjBmeEJZUTRZQzBWbVVLcEI2Sml4YUd0VFUxbEJtMENnWUJLTjc4TXVyY2g2V2NUK0N0M2Z3cm4KSXZ0cUxDQnJPN1ZLTGY0WWllR2ZnWHk1MmVGdk12di9MWmI1bUxQY0pyZFVGS2dvQmJsTVlUREhnWE1LRVpLMApQQnpNQ0dON0pGbFFPT2hSNFJrbUpHTlFtWitpVFhKdHc0SkdyWGZadmNOZWZENXFjcS9ZRUVkS0RnZThjNGg4Ck8zMXA3UHhGcStiM0h1OE15QWh4Z1FLQmdHakViMGFPVTNQS0xKcngvZVgwRU5NWmxLU2FUR0Zla09OY1ZnN20KYTY0ZzdOLzg1SmN5QWFwUkRrN3BRVExJUU02QTNaWlRNd1N5WXJxbVN3bk1RbXlWTTZ3WEtrNVZCbzBsZXlMZgpjU2RJSzdwbDhWWjV4OGwxWnBTUmRpZmNUL0dVV1ltdHQvQ1F6QUNxamp3cVhLanJ6Z2VsbTlYRWFtTUZ1RFNrClU3c2RBb0dBTDVOWGZQUzZOaXkwcmpKQXd6ZjFLbmowcjBYZkJ2allWOEhpT0ZVWXlkdlc5Y2x0azNPLzI5a0YKaDZDaEV4YVRkcTh2dkhzaWRDdVdSS2lFOXBLclZwVHNsSmM2RmJSekxFSXhibXlaekVlZkxKVEF1SzRoYWkyLwpxeGRYWXk3S2JncjNxSi93Y2xZdTZycnRXeXQvb0FuQWhDakxvVU81SUVxWG1taDltUWc9Ci0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==\n",
+        "ip_allocation_method": "ccpnet",
+        "master_vip": "10.32.144.161",
+        "load_balancer_num": 3,
+        "subnet_id": "1165b4ad-8d3f-4cfa-a748-1c262e1eaf19",
+        "ntp_pools": [],
+        "ntp_servers": [
+            "ntp.bgw-online.de"
+        ],
+        "root_ca_registries": [
+            "-----BEGIN CERTIFICATE-----\nMIIE/zCCA+egAwIBAgITNQAAAByBCdZqRwKC0gAAAAAAHDANBgkqhkiG9w0BAQsF\nADBJMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxFDASBgoJkiaJk/IsZAEZFgR0YW5r\nMRowGAYDVQQDExF0YW5rLUhYTUdNVC0wOC1DQTAeFw0yMDA2MjMwOTI5MDJaFw0y\nMTA2MDMwNzU0MTZaMIGiMQswCQYDVQQGEwJERTEQMA4GA1UECBMHSGFtYnVyZzEQ\nMA4GA1UEBxMHSGFtYnVyZzEMMAoGA1UEChMDQkdXMRMwEQYDVQQLEwpJVC1CZXRy\naWViMSEwHwYDVQQDExhtZ210LXJlZ2lzdHJ5LnRhbmsubG9jYWwxKTAnBgkqhkiG\n9w0BCQEWGnJlbmUuZmlzY2hlckBiZ3ctb25saW5lLmRlMIIBIjANBgkqhkiG9w0B\nAQEFAAOCAQ8AMIIBCgKCAQEAw7eMuqwbqB1w1eq3uQUvN5S9iCtZOuXj4CjhiCBe\n2eYXd8rrtXMjdmb9dZ/56QGrQEDqVYE1KordV39dVV6J54nmRl+v6sxGsV20Z4ga\n101zMOhvJxWWwa29MJevhwyeDJiWZdjSLPtVlo82ahaGQddRHkGz3ir86uJOttJV\nElP9OpkhPGhowyIkfXToYJyfmVo26qhCO3l5TPu3/niIjuKUo37ZsuPmAdK3oMWm\nmjuOonu0n1CFU9bwoIK3heBCmiUQMvqhfMNCfdW8k1IJXsyF+Rd/qeneLwdxVSf3\nhT/Cf+VZYiHHayVmz9W6gscU+9dQgy2q+QpgdOmqvA0IQQIDAQABo4IBhDCCAYAw\nDgYDVR0PAQH/BAQDAgWgMD4GCSsGAQQBgjcVBwQxMC8GJysGAQQBgjcVCIOek06B\nqJkNhs2XCoLp+D+DvpxHgRCB0eFXhNDmawIBZQIBCzAdBgNVHQ4EFgQUmQQ46jWS\nfE6IiiGTjfJfU6wiNeYwHwYDVR0jBBgwFoAURii/sryXZuoAY2II7aUlMPSGmsww\nTQYDVR0fBEYwRDBCoECgPoY8aHR0cDovL0h4TWdtdC0wOC50YW5rLmxvY2FsL0Nl\ncnRFbnJvbGwvdGFuay1IWE1HTVQtMDgtQ0EuY3JsMG0GCCsGAQUFBwEBBGEwXzBd\nBggrBgEFBQcwAoZRaHR0cDovL0h4TWdtdC0wOC50YW5rLmxvY2FsL0NlcnRFbnJv\nbGwvSHhNZ210LTA4LnRhbmsubG9jYWxfdGFuay1IWE1HTVQtMDgtQ0EuY3J0MBMG\nA1UdJQQMMAoGCCsGAQUFBwMBMBsGCSsGAQQBgjcVCgQOMAwwCgYIKwYBBQUHAwEw\nDQYJKoZIhvcNAQELBQADggEBAHI+oRwmBHpEKXqD2EcW4NbMXqPG5Lm8xLKzImh4\ntCijCQUB2SmOreaiC9szuyTU2ryX22vM7lk5fdVEzKeKTlUZR0Lj6w65X7gp1v9i\nN7NDG67zYaGUdOaxy/v/N9xAO4Kfqx21P87/7OKAzm9E1Bvwe1JAJiLru7TuwTL2\nB9oRM/Qrjq2RpIkhZmy0GcIThIGo4GtTharEl3xEQZghJbIqRSnJ3Ycd2YdnJ3Gb\nXIcNtdx2MRH8aFVQ9JoLPinXrKhnamLQOwtECGozgDfQ6vki3gL2VujoafawUwwz\nZyigIhcUWhbM3zC1HQFU7Gv0r7/GJjm5bPJP2auYZAaTQT4=\n-----END CERTIFICATE-----",
+            "-----BEGIN CERTIFICATE-----\nMIIC9TCCAd2gAwIBAgIRANz10/jA0ZQV/lhRCQT/fpcwDQYJKoZIhvcNAQELBQAw\nFDESMBAGA1UEAxMJaGFyYm9yLWNhMB4XDTE5MDgyMzA2NTAyMVoXDTIwMDgyMjA2\nNTAyMVowFDESMBAGA1UEAxMJaGFyYm9yLWNhMIIBIjANBgkqhkiG9w0BAQEFAAOC\nAQ8AMIIBCgKCAQEAyfs1zXgn73zPdGP8sOFZrx6paPOraQz+bkRURZKX04izwZg2\n9BKkjAE24Zww2WX9B68OZvbuHajE8tN2CKrPslwi1lv6xntJ29QuiCDuD/7ennFp\nRxdx3sX304/SCVcaDugbDACeT2bFEdZPlLtg2lHav2ZIXJaWAfyXNc12e7/+22t3\nyKGlzRVy4Z+lMHAWpggwUDb48LqmurUiae75osOaBR/6+7tgqkIfrzhq6SS7oZiN\nfJNfVJ8RM8rrx82H4G/b1MmB8WDJSxu2NVNjox8OU8pYm+0iLGSlVClVfEGF0L+l\nIA3YlJ1ZHzIvM3HMVxC7Pt5wqqMSc/2OK/g4kwIDAQABo0IwQDAOBgNVHQ8BAf8E\nBAMCAqQwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMA8GA1UdEwEB/wQF\nMAMBAf8wDQYJKoZIhvcNAQELBQADggEBABMr7kmwzyO32uv1dAfdp7e26dzul5hb\nYFMDamQYMJeLgkZRWWEfwRgsW26w2eKTJgqbJsSu6AmrEcjl631RiMmYHbDkP3J6\ntyal94aNyA+TQj4tDJGVToPvru8kV6DXGrtr7Z/MlkPzBRFj1AE1v6vbRordXt7t\njSBMjelnUVrTftBdd0iAxUStAyZ1/BEmOGBKVIKp9V+3KrIwG9jgjM3qdqHnRGkd\ndnj0HPJRyULB53wZ8kv9IHvHbmlC0grSah+LbQG7G0cIEW+NCojb9/53CZzwIFpe\nybuIpB0ClhZLyS1tM6twvDw6OE7KKE0bhhn39UnxntqbjFqYWd8nNLI=\n-----END CERTIFICATE-----"
+        ],
+        "self_signed_registries": {},
+        "insecure_registries": [],
+        "docker_http_proxy": "",
+        "docker_https_proxy": "",
+        "docker_bip": "",
+        "vsphere_infra": {
+            "datacenter": "HX-Datacenter",
+            "datastore": "HxCluster-DS04",
+            "networks": [
+                "K8S_Network_853"
+            ],
+            "cluster": "HX-Cluster"
+        },
+        "master_group": {
+            "name": "master-group",
+            "size": 3,
+            "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+            "vcpus": 2,
+            "memory_mb": 16384,
+            "gpus": [],
+            "ssh_user": "ccpuser",
+            "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAID/uLVGFD+QiYRRALkNREhxeNIdlKetoEMbRXqqmZ81E ed25519-key-20200507",
+            "nodes": [
+                {
+                    "name": "bgwproduktion-master-gro-179cc80e88",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.144.163",
+                    "public_ip": "10.32.144.163"
+                },
+                {
+                    "name": "bgwproduktion-master-gro-3764b2949c",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.144.165",
+                    "public_ip": "10.32.144.165"
+                },
+                {
+                    "name": "bgwproduktion-master-gro-d0206d94c1",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.144.162",
+                    "public_ip": "10.32.144.162"
+                }
+            ],
+            "kubernetes_version": "1.16.3"
+        },
+        "node_groups": [
+            {
+                "name": "node-group",
+                "size": 3,
+                "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+                "vcpus": 2,
+                "memory_mb": 16384,
+                "gpus": [],
+                "ssh_user": "ccpuser",
+                "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAID/uLVGFD+QiYRRALkNREhxeNIdlKetoEMbRXqqmZ81E ed25519-key-20200507",
+                "nodes": [
+                    {
+                        "name": "bgwproduktion-node-group-03113ae693",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.144.166",
+                        "public_ip": "10.32.144.166"
+                    },
+                    {
+                        "name": "bgwproduktion-node-group-0ca2c2bfce",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.144.164",
+                        "public_ip": "10.32.144.164"
+                    },
+                    {
+                        "name": "bgwproduktion-node-group-801467b4a7",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.144.167",
+                        "public_ip": "10.32.144.167"
+                    }
+                ],
+                "kubernetes_version": "1.16.3"
+            }
+        ],
+        "network_plugin_profile": {
+            "details": {
+                "pod_cidr": "192.168.0.0/16"
+            },
+            "name": "calico"
+        },
+        "ingress_as_lb": true,
+        "nginx_ingress_class": "",
+        "etcd_encrypted": false,
+        "skip_management": false,
+        "docker_no_proxy": [],
+        "routable_cidr": null,
+        "image_prefix": null,
+        "aci_profile": null,
+        "description": "Produktionscluster der BGW"
+    },
+    {
+        "id": "5b52313c-ee83-4407-839b-33144974802f",
+        "type": "vsphere",
+        "name": "vbgstaging",
+        "provider": "642af8ae-e764-4b86-9191-569c33d26213",
+        "status": "READY",
+        "kubernetes_version": "",
+        "kubeconfig": "apiVersion: v1\nclusters:\n- cluster:\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01EZ3hNekEzTXpRek4xb1hEVE13TURneE1UQTNNelF6TjFvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTXFOCmNXRTZ1akl6WEw1UUp0T0ZrK2NHWDNvem5KZk9BQ3JRSVFtcThrR1V1aXJubHpCYldOa2lROEhIWlRpSHRJdWEKcldrVUh5RXVKbGNDRnZIc2UvRUtBZVZuUVRCNEx1WjY5cnFWMFFZcER5ODg3cjhmck81Smw0Zlk0cG1LOUc4awp4N2JORFRVallRNEM5VkJ5UFVoTkFYUUlUc252Y0VxNUtTQmxnZHNlSVNGWDRjdVQ2djRsVFhRblF3TE4vTkNkCkVSL2FrbkNyMFFIUkVmcWhGaXhBRjYyMTluR0dtZ05xYlFhbDZwblFjZDVvTkczeko3ak9BY3F0S0dwbGcyMnoKcG4zOE1MTnRlRUNMS3h0dU53V2tsZWlvVERwRlBNZXhIbGVPaUlVOCtvenNKcVM0ejViSjc5YllDSGNvbVVkOAoyc3VHWXN4dkRjRUduRitsa2MwQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFFUStOUllTUHJiSk10U1lMcXQ3MjhxY0RCdXYKMUYzeGhqaUVLcEVlVFlZVHkvQlpaTWNpK0lkNVFpUDRVWjZWaDBOTE01UXI5YjNuSXk3YVBrSGxoYXptRzZtVAo3S1RqNWp2bGhzK0JvWDBnRVNRRnVzVkkyZVBXd2hPOWNBbmxOTER5STJSZkxIZXZwRG9GWXhHVHU5U3JVc3U2CkFyZEIvVW1yZzFDZXNROUtCK0F0eTNFcFU5NEtoOVh5Q2J3UHdOb3NCbjlMWUpUZGhsRXkyZjVURm1LQ2hmVFQKWDJSNW00MVRReUpCaFV2cStkMHZENkZ6OXRXWnhhcDR6UVRMaUdsR0RHR3JjekNmL09ycmVBV0lUTWJ2M0JQUwplODJ6N0M4UW0wMWhrYlZYWDlwUmNDZXNqMlBiOTRpdU9oNEpIUGRjelJoQXV5Q244NFk0ejF4TFkrWT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    server: https://10.32.50.172:6443\n  name: vbgstaging\ncontexts:\n- context:\n    cluster: vbgstaging\n    user: admin\n  name: admin@vbgstaging\ncurrent-context: admin@vbgstaging\nkind: Config\npreferences: {}\nusers:\n- name: admin\n  user:\n    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM4akNDQWRxZ0F3SUJBZ0lJZjRzOHpIalpiOFl3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TURBNE1UTXdOek0wTXpkYUZ3MHlNVEE0TVRNd056TTBNemhhTURReApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sa3dGd1lEVlFRREV4QnJkV0psY201bGRHVnpMV0ZrCmJXbHVNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXEwOUNoZWRIRnkwOHk3eTAKWURvTUFMWDdoQWhlR2M2RTlnWEZkZW9TM2lFNmVrb0JsM25JUURDRjAya3RNWHhvR0dvRnVOSEVZbWVDQTNjQwpsTFI0dmlaYmZBWWlYNi82cnZDT1E2UkdMQ1VLZGhGYmM4NG12bVp4dkNHbXNPOWVESHg1S3BkNm9CYVU0R3lJCnlldEI0S0hPQmFpc3ZoTjZ6Z1d1OXF4cnpvWjRwb3ZobzZGT2Z6L3Q3Y2JldUpZOGsreTFZYUhjUjRnT0FMRjYKRXhkaHVIM09SWUJjUGNlSGZZT2pkczN1bzVSMmZTRWxNaExSM0tpOVNBckswcXBYcGNWMjFod1Y4a2pDZ0tocgowcno4eU9XZ1ZPK25vSDVHVTBEOStnUHRDNDFwOVJIZjhCQ0FISnlmbjFBZGVHUU5sTjhnSXF2Q2wrMkdzdXVJCjhNK0l0d0lEQVFBQm95Y3dKVEFPQmdOVkhROEJBZjhFQkFNQ0JhQXdFd1lEVlIwbEJBd3dDZ1lJS3dZQkJRVUgKQXdJd0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFGY1M1bEpYdFhxcVJ0NkpSRm1CNG1tMmlmVUk5dnhubVUwNApJVTZIVmRxd2RmZTErZmNadkd6bkdtSXozWGp1cGtwQThzczZHTThoZnVIK2k2TFJtQVdVZ3B6YjAvbUlKVmVnCkpjdjlVZUUzY2Z5aVhINGdQQm5FdGh5TjJYWHlpT2RNVEJhb1djd1o3Zm5YZkpLTmp1TUZmUmhaZTQ3Ukw3ZHMKRGt1MmJmRnBtM2k4RkZrN0syTXJDVWs5emtGR0VNQTE0S21kWngxSythV0RsblRDV2g3R1VhSXluS0VLTDlOTwpLaERBRGgwRlRKakNwR2ZnTkN3SG1nR0puc2NESnliTnROUjZoZHYwaGg3U3lHTVJUdzFMOFQrNWpDb01QV3JjCkJxcWZublNMU1ZjaVRFZ29JcGp1UWh4WnZnS21NNXdvU2VjVUN3MmNxSUxUREc3UHBWaz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcFFJQkFBS0NBUUVBcTA5Q2hlZEhGeTA4eTd5MFlEb01BTFg3aEFoZUdjNkU5Z1hGZGVvUzNpRTZla29CCmwzbklRRENGMDJrdE1YeG9HR29GdU5IRVltZUNBM2NDbExSNHZpWmJmQVlpWDYvNnJ2Q09RNlJHTENVS2RoRmIKYzg0bXZtWnh2Q0dtc085ZURIeDVLcGQ2b0JhVTRHeUl5ZXRCNEtIT0JhaXN2aE42emdXdTlxeHJ6b1o0cG92aApvNkZPZnovdDdjYmV1Slk4ayt5MVlhSGNSNGdPQUxGNkV4ZGh1SDNPUllCY1BjZUhmWU9qZHMzdW81UjJmU0VsCk1oTFIzS2k5U0FySzBxcFhwY1YyMWh3VjhrakNnS2hyMHJ6OHlPV2dWTytub0g1R1UwRDkrZ1B0QzQxcDlSSGYKOEJDQUhKeWZuMUFkZUdRTmxOOGdJcXZDbCsyR3N1dUk4TStJdHdJREFRQUJBb0lCQUhsb0xLOFZYNDZQWXR6SgpHZFJ3anYwWisreHd1YS8wYXNxcEFHNDJ1N1J0UERKYXJKSWJuczNQRmFqa2kwRGMrREVGUXBUZkpSelFXcFgyCkRBQXpmcmJVSEZYalN3MGhmTG5xaGdodUxjVXZZeUNWNEloTCs2MUlrU1pSZXY4K1JScjRSQzdwTitDbzRFM0UKM1pTc2cvMmM3cE9ZSFFTQWJiSUEyU1M4d1pLVkZQK1FJT0ZLc1Zza2IvY1hGbGVqaU04UWRyNE9kdFpOZ1VlUApEZlp4eVM1ZVZRRkI5RXZPRUhBNmVMcFY4cDRMbzh1bUxEbkVqTlRHTUxmVWlXVVBjMDRDcEluN0hkbDVDUUZxCkZHa29MdWx0ekZBcGl4S2UxWHFqVkdCY0R4SW8wS3A3bG0rMUNWd0RwMWFTY3I4SmtNenp6Z0UvSEI2Z0JNVFkKd2ZLV3c0RUNnWUVBdzhpeXBZTGtMMytLUEJjODRhOTAvOVZFdWNGdE44NVQ1dWRmeWhpY0RPK0IybHVJSzRGVgpPYnNWMTROU1hmU0pNRWtWa0ljZk41OHVIWTdiWGpGRFBFeDRZQzVWUzlSZWV4c21BWUluUnBma2s3RlpLaE5jCitxMVhwbHVNcmxwM25BdEkwNDEwY2pWZFJDaFMxY0JFck8xQ3ZVTzVodzhUMWJIZS9ZZzRwaGNDZ1lFQTMvK0sKbHlROFRxcG1UQVFkbU5FSUdlS05pZGxORGdJOFVzLzlFc0NUa0NLVFJzMWtJcTZ5dVZ2WmhrekNPMTlkUjRJTQpUeGswYzJXWlh4VEY1bTZVVzBRdytiUSsvY1VkbEhMZEx5ZlQxRHVWTWtNN1ZIR010VjNzV0pvUXBBcUZGL1paCnpmd1g2NHhSMDBkUVRXTmZLL2htTUd2YXF1M1dITE1QV2VmR2RtRUNnWUVBaGRXc1NYZ3doRWVyTjJpck5adTcKWHlkcTA1Qm1HTC95bXVXUGxaYzlGWnFrS2FCb2RWVHo3WUwyYTF4WjhlQTM1OG9OODc1cW1KczM2dnk4K0thMApUNFAyeGNqbWhlK21wb0RvZWg5K3VjTWJmZHErR1FVamlqajBzY1BqWjB4d2R6cy9qVjRsTyswKzFGaThSMkluCmtBNmdrTUM3RXBnNzl0aWdscStJQ2dFQ2dZRUFxc2o3c2lFK21mdng0eU9BTFhPeTZZbUN3UWVkYUlEcjNYZ1gKVEtUbjNZMS9IUXljdkpUV1Q5MW9ESzJacWdzYjQ5bVQ2UHNlc3AxVVF0cGp5VDJtZjYrT1o5UzE4bWJJRnRjOQpMU2NBcTJDQ2NNQXlERUJIT0VGVVlubVZGbjJ1M0laSUVuV1RCMVVGVGtHaFNGL3J3R3F6LzFjOGNmYkV1VDBOCkIwOWdVZ0VDZ1lFQXArdGVyaXhkeWY1a2hrS2x1b2dQamVmQ1lqOTVRYlJHUitOcXRkLzU5M0FtbmdFMjdJdEQKbUVaeUF4RnFYRExYd0phK0xGVlQrdUlUWkt4ZjJrY1FWd1BBVGcyNkFPZDVLOXBNNXl1YXNUdDNoeXIrc3ZVVwpSb2Y0N3pHWWpNRHhUbFJHQkJWRzlabU5uRDc4VkUycFhSRFd0MmwzeURVdXFEck9qT3NpL2trPQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=\n",
+        "ip_allocation_method": "ccpnet",
+        "master_vip": "10.32.50.172",
+        "load_balancer_num": 3,
+        "subnet_id": "0ae74014-b7b8-4407-b133-e383a0ff423e",
+        "ntp_pools": [],
+        "ntp_servers": [
+            "ntp.bgw-online.de"
+        ],
+        "root_ca_registries": [
+            "-----BEGIN CERTIFICATE-----\nMIIE/zCCA+egAwIBAgITNQAAAByBCdZqRwKC0gAAAAAAHDANBgkqhkiG9w0BAQsF\nADBJMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxFDASBgoJkiaJk/IsZAEZFgR0YW5r\nMRowGAYDVQQDExF0YW5rLUhYTUdNVC0wOC1DQTAeFw0yMDA2MjMwOTI5MDJaFw0y\nMTA2MDMwNzU0MTZaMIGiMQswCQYDVQQGEwJERTEQMA4GA1UECBMHSGFtYnVyZzEQ\nMA4GA1UEBxMHSGFtYnVyZzEMMAoGA1UEChMDQkdXMRMwEQYDVQQLEwpJVC1CZXRy\naWViMSEwHwYDVQQDExhtZ210LXJlZ2lzdHJ5LnRhbmsubG9jYWwxKTAnBgkqhkiG\n9w0BCQEWGnJlbmUuZmlzY2hlckBiZ3ctb25saW5lLmRlMIIBIjANBgkqhkiG9w0B\nAQEFAAOCAQ8AMIIBCgKCAQEAw7eMuqwbqB1w1eq3uQUvN5S9iCtZOuXj4CjhiCBe\n2eYXd8rrtXMjdmb9dZ/56QGrQEDqVYE1KordV39dVV6J54nmRl+v6sxGsV20Z4ga\n101zMOhvJxWWwa29MJevhwyeDJiWZdjSLPtVlo82ahaGQddRHkGz3ir86uJOttJV\nElP9OpkhPGhowyIkfXToYJyfmVo26qhCO3l5TPu3/niIjuKUo37ZsuPmAdK3oMWm\nmjuOonu0n1CFU9bwoIK3heBCmiUQMvqhfMNCfdW8k1IJXsyF+Rd/qeneLwdxVSf3\nhT/Cf+VZYiHHayVmz9W6gscU+9dQgy2q+QpgdOmqvA0IQQIDAQABo4IBhDCCAYAw\nDgYDVR0PAQH/BAQDAgWgMD4GCSsGAQQBgjcVBwQxMC8GJysGAQQBgjcVCIOek06B\nqJkNhs2XCoLp+D+DvpxHgRCB0eFXhNDmawIBZQIBCzAdBgNVHQ4EFgQUmQQ46jWS\nfE6IiiGTjfJfU6wiNeYwHwYDVR0jBBgwFoAURii/sryXZuoAY2II7aUlMPSGmsww\nTQYDVR0fBEYwRDBCoECgPoY8aHR0cDovL0h4TWdtdC0wOC50YW5rLmxvY2FsL0Nl\ncnRFbnJvbGwvdGFuay1IWE1HTVQtMDgtQ0EuY3JsMG0GCCsGAQUFBwEBBGEwXzBd\nBggrBgEFBQcwAoZRaHR0cDovL0h4TWdtdC0wOC50YW5rLmxvY2FsL0NlcnRFbnJv\nbGwvSHhNZ210LTA4LnRhbmsubG9jYWxfdGFuay1IWE1HTVQtMDgtQ0EuY3J0MBMG\nA1UdJQQMMAoGCCsGAQUFBwMBMBsGCSsGAQQBgjcVCgQOMAwwCgYIKwYBBQUHAwEw\nDQYJKoZIhvcNAQELBQADggEBAHI+oRwmBHpEKXqD2EcW4NbMXqPG5Lm8xLKzImh4\ntCijCQUB2SmOreaiC9szuyTU2ryX22vM7lk5fdVEzKeKTlUZR0Lj6w65X7gp1v9i\nN7NDG67zYaGUdOaxy/v/N9xAO4Kfqx21P87/7OKAzm9E1Bvwe1JAJiLru7TuwTL2\nB9oRM/Qrjq2RpIkhZmy0GcIThIGo4GtTharEl3xEQZghJbIqRSnJ3Ycd2YdnJ3Gb\nXIcNtdx2MRH8aFVQ9JoLPinXrKhnamLQOwtECGozgDfQ6vki3gL2VujoafawUwwz\nZyigIhcUWhbM3zC1HQFU7Gv0r7/GJjm5bPJP2auYZAaTQT4=\n-----END CERTIFICATE-----",
+            "-----BEGIN CERTIFICATE-----\nMIIC9TCCAd2gAwIBAgIRANz10/jA0ZQV/lhRCQT/fpcwDQYJKoZIhvcNAQELBQAw\nFDESMBAGA1UEAxMJaGFyYm9yLWNhMB4XDTE5MDgyMzA2NTAyMVoXDTIwMDgyMjA2\nNTAyMVowFDESMBAGA1UEAxMJaGFyYm9yLWNhMIIBIjANBgkqhkiG9w0BAQEFAAOC\nAQ8AMIIBCgKCAQEAyfs1zXgn73zPdGP8sOFZrx6paPOraQz+bkRURZKX04izwZg2\n9BKkjAE24Zww2WX9B68OZvbuHajE8tN2CKrPslwi1lv6xntJ29QuiCDuD/7ennFp\nRxdx3sX304/SCVcaDugbDACeT2bFEdZPlLtg2lHav2ZIXJaWAfyXNc12e7/+22t3\nyKGlzRVy4Z+lMHAWpggwUDb48LqmurUiae75osOaBR/6+7tgqkIfrzhq6SS7oZiN\nfJNfVJ8RM8rrx82H4G/b1MmB8WDJSxu2NVNjox8OU8pYm+0iLGSlVClVfEGF0L+l\nIA3YlJ1ZHzIvM3HMVxC7Pt5wqqMSc/2OK/g4kwIDAQABo0IwQDAOBgNVHQ8BAf8E\nBAMCAqQwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMA8GA1UdEwEB/wQF\nMAMBAf8wDQYJKoZIhvcNAQELBQADggEBABMr7kmwzyO32uv1dAfdp7e26dzul5hb\nYFMDamQYMJeLgkZRWWEfwRgsW26w2eKTJgqbJsSu6AmrEcjl631RiMmYHbDkP3J6\ntyal94aNyA+TQj4tDJGVToPvru8kV6DXGrtr7Z/MlkPzBRFj1AE1v6vbRordXt7t\njSBMjelnUVrTftBdd0iAxUStAyZ1/BEmOGBKVIKp9V+3KrIwG9jgjM3qdqHnRGkd\ndnj0HPJRyULB53wZ8kv9IHvHbmlC0grSah+LbQG7G0cIEW+NCojb9/53CZzwIFpe\nybuIpB0ClhZLyS1tM6twvDw6OE7KKE0bhhn39UnxntqbjFqYWd8nNLI=\n-----END CERTIFICATE-----"
+        ],
+        "self_signed_registries": {},
+        "insecure_registries": [],
+        "docker_http_proxy": "",
+        "docker_https_proxy": "",
+        "docker_bip": "",
+        "vsphere_infra": {
+            "datacenter": "HX-Datacenter",
+            "datastore": "HxCluster-DS05",
+            "networks": [
+                "VBG_Network_970"
+            ],
+            "cluster": "HX-Cluster"
+        },
+        "master_group": {
+            "name": "master-group",
+            "size": 3,
+            "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+            "vcpus": 2,
+            "memory_mb": 16384,
+            "gpus": [],
+            "ssh_user": "ccpuser",
+            "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPK02T97R26jUl3tVLsEGBd5OrfPtIlRaEJZEB0yGKMS ed25519-key-20200407",
+            "nodes": [
+                {
+                    "name": "vbgstaging-master-gro-54189cc879",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.50.174",
+                    "public_ip": "10.32.50.174"
+                },
+                {
+                    "name": "vbgstaging-master-gro-613f6de3e6",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.50.175",
+                    "public_ip": "10.32.50.175"
+                },
+                {
+                    "name": "vbgstaging-master-gro-9e100ec9e3",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.50.173",
+                    "public_ip": "10.32.50.173"
+                }
+            ],
+            "kubernetes_version": "1.16.3"
+        },
+        "node_groups": [
+            {
+                "name": "node-group",
+                "size": 3,
+                "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+                "vcpus": 2,
+                "memory_mb": 16384,
+                "gpus": [],
+                "ssh_user": "ccpuser",
+                "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPK02T97R26jUl3tVLsEGBd5OrfPtIlRaEJZEB0yGKMS ed25519-key-20200407",
+                "nodes": [
+                    {
+                        "name": "vbgstaging-node-group-1da7742c4f",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.50.177",
+                        "public_ip": "10.32.50.177"
+                    },
+                    {
+                        "name": "vbgstaging-node-group-5938b03dc0",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.50.176",
+                        "public_ip": "10.32.50.176"
+                    },
+                    {
+                        "name": "vbgstaging-node-group-e91590e5fd",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.50.178",
+                        "public_ip": "10.32.50.178"
+                    }
+                ],
+                "kubernetes_version": "1.16.3"
+            }
+        ],
+        "network_plugin_profile": {
+            "details": {
+                "pod_cidr": "192.168.0.0/16"
+            },
+            "name": "calico"
+        },
+        "ingress_as_lb": true,
+        "nginx_ingress_class": "",
+        "etcd_encrypted": false,
+        "skip_management": false,
+        "docker_no_proxy": [],
+        "routable_cidr": null,
+        "image_prefix": null,
+        "aci_profile": null,
+        "description": "Stagingcluster der VBG"
+    },
+    {
+        "id": "5fbc71c1-931c-481b-bd8f-1c3e1846b636",
+        "type": "vsphere",
+        "name": "coremediaentw",
+        "provider": "642af8ae-e764-4b86-9191-569c33d26213",
+        "status": "DELETING",
+        "kubernetes_version": "",
+        "kubeconfig": "apiVersion: v1\nclusters:\n- cluster:\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01EWXhOakEzTWpRME1Gb1hEVE13TURZeE5EQTNNalEwTUZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBT2dtCjJFN091d0FQaTF3ZUUxaXJMckVQc3dXVVYxSkJ5OXZ4WkxPbzEyanNEeEE5SktYa1BmSS9GamUwYXNhOVZVWGsKUXVkbFplRFZHeHFVRkM2TGh5ejhXNDFmU2YvRkttMW1pRm9BTGRzUkxOVXYxVmtuem1KOXZ1MmFWUFpaOFVBTgpiOWNYQmJWUGxzSHhURUxIc1h4UHZZdnNMdEVLdWwvS1dpZHlacmVDRjN6bTNCcS9EV283Qk9kajQ3c3VxNk0rCkZySzZ0NWFmRFNhYTYrY1FKRHp0eXZkNVFvdk5aVlhwZlN5dVZkeVc3WFRlbVZmV0FTNjdwOEVTNThTRG0rUzAKV0x6dzQ0dGZFSGFaemovUlVQVlEwM0JGV2h3dVZMQU1URFVsSlBjV3d0ZWJLZlFpV2JJRmlGUXArYzMwRnhQYgpGM0tVdkZ1T1NvMnh2L1laeUUwQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFCR0gzWW9NQnVTVnFkUnEvZ0ZIZkp2MEJ3Mm4KWnRwVHpzb2pBS2hnb25IZHMrK3Z3cGNMWTU4eGE2eUlFaHdQVUZHeHNlUkxhZTVBcjNsZjVBN2ZldTZjM3crKwowTDdrU0lLUTR6UUdzS21rL2V5VTVRWm1IemVFRmF4Vk1zdldpdnpmeGZQZWRoWkhYY0t6dmhNeFJTY3U0OFFXCmx0UGN1MnNtejdIc2Y2Y2NZcktFQnlXVksxOG40NHRQaGYvM3NGM3B5SXo5elNqc0plWWNQeUtlR1htVHA2SXkKbm0yZTlmVTY2WjI5T0R0VVVFSnJ1WG9XSlZHVHpoZnlDV3d0S1JuOTFPQk04aEtJZ0x5N3VGUHNQdy93cmRrawpBeEZFOXVFb1VReXNkOVVpeDJPYUNFV2Jsdy9JMlA1TDdSZUlpd2psNi93SFlzQnV4WnFiYWZERjkrVT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    server: https://10.32.30.150:6443\n  name: coremediaentw\ncontexts:\n- context:\n    cluster: coremediaentw\n    user: admin\n  name: admin@coremediaentw\ncurrent-context: admin@coremediaentw\nkind: Config\npreferences: {}\nusers:\n- name: admin\n  user:\n    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM4akNDQWRxZ0F3SUJBZ0lJV1FTSTFzeSs1d1F3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TURBMk1UWXdOekkwTkRCYUZ3MHlNVEEyTVRZd056STBOREZhTURReApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sa3dGd1lEVlFRREV4QnJkV0psY201bGRHVnpMV0ZrCmJXbHVNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXZoakl4enowU01wMG5KU2MKVWdONFlObjN2dkNZaVZqZnYwUmNNZGpPN1ZybUdhL1NvcENSWVdtajloRnhyZk5rbWhMWkJpb2NkcFVMb094ZAo5Y1R4Z0NkOVFDMmVFQVp0ZGh4WHF0WTQ3MzlkMmZQYTRPRmtIdU5yK0ZaZS9SMHR5Q1ZSOWZtTS83VDJacnJsClkwVEEzd01Cam9hQXZEQlhjZUxwdEU4eWc0TUpTL2dxZWVmV1c0RFBGRGlkWm5EOXNlZ2pIYjhOMFlOak8vNEMKcm9OdzBybVVRTldFd1pEbGpvR09nTlVHQmYxYy9RdmF0ZVBGZGpJTmthZGVzVzI5YkF3TFhRNmJ3dVdDUzhxagp3ZHVwQldnSTB0N0tiMW9YVVdXNjZ1M0VWaUtGTmovZ0lqYWV1TFVoMDBtNUJ3NjJIM2dZbnNjTThNUmNQMlFyClAwdmpSd0lEQVFBQm95Y3dKVEFPQmdOVkhROEJBZjhFQkFNQ0JhQXdFd1lEVlIwbEJBd3dDZ1lJS3dZQkJRVUgKQXdJd0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFOdE4vQzBmRUVKMnlBNzJUT1FVM1Y4TCsvMjRSMWcxYXYyKwpzNzR5VEQ4RFZYT3ExeFpjd3JrcG51NUtUZ28vYkFlNVovTDgyTm5qQnluOHlHWDNQTDkrcjdDdUx4a29YL0IwCkZhWGlLalZzeUx0NUNhcEtEcEk4WDUxbnBKdkQrdTZES2xjeTA0d2VTdStyUk9zTWp1Y0tFL0NDN3cyTTFia2IKb2tFQnNKbVhrVkdYQWdSV3RicmZCVzl6dDhOZUVGRHB4djhWV0l4M2FHdHhVTU9TK2lTTkVlN0ZXdU1sK0plYwp0dk5DQW1tRXNuQ1BJTEVWY25WdHFsNmx5V1ZwODNYdEJWc3p5VHYwUksrK3YyZkNzemJDa3gxUmR2NUZHODJmCnNlNDVMcmdYdk1zamZPU2MyRGJ2K2lmMUJ4TVp3UDJ1c0RXRkpiOTkzUWNPVWZqbS9CTT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcEFJQkFBS0NBUUVBdmhqSXh6ejBTTXAwbkpTY1VnTjRZTm4zdnZDWWlWamZ2MFJjTWRqTzdWcm1HYS9TCm9wQ1JZV21qOWhGeHJmTmttaExaQmlvY2RwVUxvT3hkOWNUeGdDZDlRQzJlRUFadGRoeFhxdFk0NzM5ZDJmUGEKNE9Ga0h1TnIrRlplL1IwdHlDVlI5Zm1NLzdUMlpycmxZMFRBM3dNQmpvYUF2REJYY2VMcHRFOHlnNE1KUy9ncQplZWZXVzREUEZEaWRabkQ5c2VnakhiOE4wWU5qTy80Q3JvTncwcm1VUU5XRXdaRGxqb0dPZ05VR0JmMWMvUXZhCnRlUEZkaklOa2FkZXNXMjliQXdMWFE2Ynd1V0NTOHFqd2R1cEJXZ0kwdDdLYjFvWFVXVzY2dTNFVmlLRk5qL2cKSWphZXVMVWgwMG01Qnc2MkgzZ1luc2NNOE1SY1AyUXJQMHZqUndJREFRQUJBb0lCQUZOWlRKZEhHNWphNC94UAprS2JKREx2eWRoVUxLdVoxeUV6MXJUTFI3QkRZSFRIQURLdm9sVVhQNnVzV1JQRFBXaG5RRDhZTEtzVzNuZ3lsCjlxQ3ZCSEI3WUFpR3Q5b3c1MGUxTDU4aEpIK21LY0ZKa1h1dWQ1YXZnb1MxWWhxNjgzcmhHaW11akdzRnJrL20KdkhNbER5ZjVDbkt5ZUxtS3ZKeWJzSHExaXVGc0RrNVJ0S3pQSXJZcUhFVHdYMUpmSTBIMzM4SzN5UWhjRVpibgpyVFhYTkVrZW9Kcy9NcVk5YmZJK3FZNEd5bllGeHNzREVsWGRIb09GOHI2ZHY2SmRTWFovUUI1QkJDTFVnS2lkCkpmQ2ZXVFdrNnFYMDFRdVh6OGVYakZSVlZKdVRTdi9CK1B6RGZ6V3d2Z1YzMk1lcHc1NGU4c0tVN0xzcjdwSFUKVFo3b3M3a0NnWUVBNVF2OERMOVpQNEt6eGdJNGNVM2hyWjZ5U1ovVjUvNEYxWGo0Z0xpUkVGNWFxZmh6cFN2VApZSzR4dm54MndJOUEyRkoxaDBteGFUMWNMejRoLzhIcmtPa05YQzVVU2d5VWs0dHEweVVFQmlkN0ZYUW1LblNKCklXWThXZDRyUktuYjNhdEVseURnN0dMRVN2TlpFZ2VyNlpLWnlqbmpLbFd6aFpzYWdlZ29pdXNDZ1lFQTFIZHYKTDAwMXJENWRkSTZSeDArTkMxZFlYWTJ6bHM4SStKbEZodFJQeHc1OC9vK01renNlQjA2TDE5blEySGtLcmJHMAo2cEI0V0pCSU1mb0kzWXBTSVJNUWxmNEhzTHBkTWlvd0tpWnVKN29RMVYvaVRScS9VNDYxeHRQSDVlbldpZDNZCkt3NDJmUmdJV0FiUHFQMFpzcjN2SUtIOXFqOGVlTFVabzFNdCtoVUNnWUVBNUloMnJvbGxsVGJtQkpWR2w5YXIKYkQ1QmliQlBEN0NuUlgzMEJRc2l3b0JDV2dFcDhnMnVWSEs1ODJQZ1lQVU9NRWptTjF4U0JiMVJjMW05TnFEWQpWN2dRdW44SFh2TDZjOVRSZTJjZGdyNTEwc3dYSUpreUVmOGVERlRlT3g1MzM4NzVHd21WSW9iUmNDOHFHaEZKCmVEM3I4SmlkamlvQWV6aHMxRjA5eG8wQ2dZRUFoQ2tlMGkrVzJXT1p3bTBFcFJRSXlpczAza3pNajF5TldnWU4KUjRjOWNMYkViWnhoZHh2bzIrYXgranlWT25KZ2dCYndVSkE1SyszajJxS0xiVE1qVDB1S242SjZxaVhpM3RkNwpTbHpKWEpEUzg4ZEcvMnRKNC9IN2hJZ3I2Z29BMTVWVlo4TFpoZ3F5OWY2V29hbCttTDZveG9XOVFtOHN4eXp2Cm03YWIvTmtDZ1lBWDhBNkxEM0hVOHdEUmgwSXlpQ0huZkNwWjBQRmZmenFTaWFEQWRBaFhTVkRUYnBQTUZ6WXUKMDdZM1l3RjFacFdhN0JiUmNZV3JoaThXK3BCMUsvYXQ2ait4T2QzL0k4RDhNQVRFTC9rdlZYbDNnWXlJeUZ1RgpqQVhLcmE1YUp1WHh6SGxqaG45Mm9DUVpjN0VsbTZuZ1lCNGE3T3NRQ2JyQmllVjJDUkhDVVE9PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=\n",
+        "ip_allocation_method": "ccpnet",
+        "master_vip": "10.32.30.150",
+        "load_balancer_num": 3,
+        "subnet_id": "84c9e5a6-5ed8-4631-807b-b89a85ed24a2",
+        "ntp_pools": [],
+        "ntp_servers": [
+            "ntp.bgw-online.de"
+        ],
+        "root_ca_registries": [
+            "-----BEGIN CERTIFICATE-----\nMIIF2TCCBMGgAwIBAgITNQAAABKiwOyWEsHPXAAAAAAAEjANBgkqhkiG9w0BAQsF\nADBJMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxFDASBgoJkiaJk/IsZAEZFgR0YW5r\nMRowGAYDVQQDExF0YW5rLUhYTUdNVC0wOC1DQTAeFw0yMDA1MjIxMzQ3MjBaFw0y\nMTA1MjIxMzQ3MjBaMIGiMQswCQYDVQQGEwJERTEQMA4GA1UECBMHSGFtYnVyZzEQ\nMA4GA1UEBxMHSGFtYnVyZzEMMAoGA1UEChMDQkdXMRMwEQYDVQQLEwpJVC1CZXRy\naWViMSEwHwYDVQQDExhtZ210LXJlZ2lzdHJ5LnRhbmsubG9jYWwxKTAnBgkqhkiG\n9w0BCQEWGnJlbmUuZmlzY2hlckBiZ3ctb25saW5lLmRlMIIBIjANBgkqhkiG9w0B\nAQEFAAOCAQ8AMIIBCgKCAQEAuw8U32PoTfcCPR6Zs/6zU/RzXJ16Xt/sX+NbdYjs\ntrN5iTwu0PGyQtgUw7CePtt+bG36+2P2K5rMLdroDYYc/EMrOItas8OcTxrJmtmU\nyowq0mNoWal3T8m9ROjljq3V993cog5qAbY8UN77gxUwhWCoSQDC3xPsLovzzKSV\nPIejWoMdtPSfDqcejItCDl7PJWUxd0YK8J4u5NZ3eQ1lPnjvAHlmfaH25mwSLWPe\n7UComBTRfk0wZ0FHHA4i1B12XKs8SgX4j2EO1UVU9fWGR8xopvbIEISEKC0V79HN\nBf48b4nCjSJjQnXg68/EYrwdi5L3VpLOD59QZyk5VLWSZQIDAQABo4ICXjCCAlow\nDgYDVR0PAQH/BAQDAgWgMD4GCSsGAQQBgjcVBwQxMC8GJysGAQQBgjcVCIOek06B\nqJkNhs2XCoLp+D+DvpxHgRCB0eFXhNDmawIBZQIBBDAdBgNVHQ4EFgQUuu4LIVGT\nCMoGXK9fcG5rWnOqM0QwHwYDVR0jBBgwFoAURii/sryXZuoAY2II7aUlMPSGmsww\ngdAGA1UdHwSByDCBxTCBwqCBv6CBvIaBuWxkYXA6Ly8vQ049dGFuay1IWE1HTVQt\nMDgtQ0EsQ049SHhNZ210LTA4LENOPUNEUCxDTj1QdWJsaWMlMjBLZXklMjBTZXJ2\naWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPXRhbmssREM9bG9j\nYWw/Y2VydGlmaWNhdGVSZXZvY2F0aW9uTGlzdD9iYXNlP29iamVjdENsYXNzPWNS\nTERpc3RyaWJ1dGlvblBvaW50MIHCBggrBgEFBQcBAQSBtTCBsjCBrwYIKwYBBQUH\nMAKGgaJsZGFwOi8vL0NOPXRhbmstSFhNR01ULTA4LUNBLENOPUFJQSxDTj1QdWJs\naWMlMjBLZXklMjBTZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9u\nLERDPXRhbmssREM9bG9jYWw/Y0FDZXJ0aWZpY2F0ZT9iYXNlP29iamVjdENsYXNz\nPWNlcnRpZmljYXRpb25BdXRob3JpdHkwEwYDVR0lBAwwCgYIKwYBBQUHAwEwGwYJ\nKwYBBAGCNxUKBA4wDDAKBggrBgEFBQcDATANBgkqhkiG9w0BAQsFAAOCAQEAiOpY\niyZ6yyVIarziVaM+blvtWEFSd1XjcfJ9DGLSe/c7fWncQHii9RBNgeQSuvHI7IVO\nuGGF5NiKdXgc/ztf4Qw97aHXeUy5+6Soz1L6SgkMx4b0TLGioxEQHF2KQtRL7tH0\n5wlqRKSl0OHvrS42gfbvV10G6kP5PgpWwaDHMvS/5WWsJx9+VaDy1xWttcfUROq/\nMI1/Bb18q83WBa2MDwnAl8huoS9S4EsJ8KEotFRWRqoGkREMAR7qHf3S4oMgOzGu\nVwUTUEuu091+dHsPpTODRE957tUKpXIl7dqsXlEHy8Lzf9EZMTMN8klvKUwuZiX2\nk9wCx24cucxl0xFSmA==\n-----END CERTIFICATE-----",
+            "-----BEGIN CERTIFICATE-----\nMIIC9TCCAd2gAwIBAgIRANz10/jA0ZQV/lhRCQT/fpcwDQYJKoZIhvcNAQELBQAw\nFDESMBAGA1UEAxMJaGFyYm9yLWNhMB4XDTE5MDgyMzA2NTAyMVoXDTIwMDgyMjA2\nNTAyMVowFDESMBAGA1UEAxMJaGFyYm9yLWNhMIIBIjANBgkqhkiG9w0BAQEFAAOC\nAQ8AMIIBCgKCAQEAyfs1zXgn73zPdGP8sOFZrx6paPOraQz+bkRURZKX04izwZg2\n9BKkjAE24Zww2WX9B68OZvbuHajE8tN2CKrPslwi1lv6xntJ29QuiCDuD/7ennFp\nRxdx3sX304/SCVcaDugbDACeT2bFEdZPlLtg2lHav2ZIXJaWAfyXNc12e7/+22t3\nyKGlzRVy4Z+lMHAWpggwUDb48LqmurUiae75osOaBR/6+7tgqkIfrzhq6SS7oZiN\nfJNfVJ8RM8rrx82H4G/b1MmB8WDJSxu2NVNjox8OU8pYm+0iLGSlVClVfEGF0L+l\nIA3YlJ1ZHzIvM3HMVxC7Pt5wqqMSc/2OK/g4kwIDAQABo0IwQDAOBgNVHQ8BAf8E\nBAMCAqQwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMA8GA1UdEwEB/wQF\nMAMBAf8wDQYJKoZIhvcNAQELBQADggEBABMr7kmwzyO32uv1dAfdp7e26dzul5hb\nYFMDamQYMJeLgkZRWWEfwRgsW26w2eKTJgqbJsSu6AmrEcjl631RiMmYHbDkP3J6\ntyal94aNyA+TQj4tDJGVToPvru8kV6DXGrtr7Z/MlkPzBRFj1AE1v6vbRordXt7t\njSBMjelnUVrTftBdd0iAxUStAyZ1/BEmOGBKVIKp9V+3KrIwG9jgjM3qdqHnRGkd\ndnj0HPJRyULB53wZ8kv9IHvHbmlC0grSah+LbQG7G0cIEW+NCojb9/53CZzwIFpe\nybuIpB0ClhZLyS1tM6twvDw6OE7KKE0bhhn39UnxntqbjFqYWd8nNLI=\n-----END CERTIFICATE-----"
+        ],
+        "self_signed_registries": {},
+        "insecure_registries": [],
+        "docker_http_proxy": "",
+        "docker_https_proxy": "",
+        "docker_bip": "",
+        "vsphere_infra": {
+            "datacenter": "HX-Datacenter",
+            "datastore": "HxCluster-DS04",
+            "networks": [
+                "K8S_CoreMedia_950"
+            ],
+            "cluster": "HX-Cluster"
+        },
+        "master_group": {
+            "name": "master-group",
+            "size": 3,
+            "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+            "vcpus": 2,
+            "memory_mb": 16384,
+            "gpus": [],
+            "ssh_user": "ccpuser",
+            "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMU679iJDV86KSZ6BD4bfbmuc0WLd6KHjABq/LfhjF1n ed25519-key-20200515",
+            "nodes": [],
+            "kubernetes_version": "1.16.3"
+        },
+        "node_groups": [
+            {
+                "name": "node-group",
+                "size": 3,
+                "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+                "vcpus": 2,
+                "memory_mb": 16384,
+                "gpus": [],
+                "ssh_user": "ccpuser",
+                "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMU679iJDV86KSZ6BD4bfbmuc0WLd6KHjABq/LfhjF1n ed25519-key-20200515",
+                "nodes": [],
+                "kubernetes_version": "1.16.3"
+            }
+        ],
+        "network_plugin_profile": {
+            "details": {
+                "pod_cidr": "192.168.0.0/16"
+            },
+            "name": "calico"
+        },
+        "ingress_as_lb": true,
+        "nginx_ingress_class": "",
+        "etcd_encrypted": false,
+        "skip_management": false,
+        "docker_no_proxy": [],
+        "routable_cidr": null,
+        "image_prefix": null,
+        "aci_profile": null,
+        "description": "Entwicklungscluster fuer CoreMedia"
+    },
+    {
+        "id": "6a37c39e-eee1-4ae7-9836-2ee3c82ccd1d",
+        "type": "vsphere",
+        "name": "bgwstaging",
+        "provider": "642af8ae-e764-4b86-9191-569c33d26213",
+        "status": "DELETING",
+        "kubernetes_version": "",
+        "kubeconfig": "apiVersion: v1\nclusters:\n- cluster:\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01EWXhOakExTlRNeU9Wb1hEVE13TURZeE5EQTFOVE15T1Zvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTmtUCjIwOXJjRjJGblI1Z0lrSU1ianZnaGFRWlRjbTR6YS9LdTRGT2luRTVBU3lrV2NodXB3VDdQSFNzWmlBekRkVW0KVENSR3I5WmFPanFKRjU1QUJIMnB5dTRWYW81bW12S0NxdEUrc3FrWDE2VFhMWmlZNmpzbVVnd1JrR1cxRDd4cgordDBWK2pGKzJoTTNXQi90OHhsNFVFVjUzMTNsZllBb0RVUEdVVXViY3pRdlRsNXlQOHU3bGt3Ni9RUEVtd3QvCjRmRFYvMUFGU2hsRUM3MjRSVkJSbDJIL1Z6TzNNYnhQa2FJYUtBWGpyam4yMVFOQVp4eDFZQ25HY0hJRnF2bVoKZDM4MWdPK093U2ZMMnVvMko4b2hTU1V3bDM3ZktrMHl3UVRIVC80RUZNRC9JTmJkUUtaNllXVHE2SEd5RUZxLwp5TTdweWNLZXV3R1AwYWFOVVhVQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFBLzFoaExOcDFZbXBQd1R6aW9WSzd0MEZQWngKd3V1eG1DbDBvaWVncUhPdlFqeG9KQzVuanlRamxld3NVQUV0RDAwSVdtSVluRWRoRloyd1RGbHRqcWlPdzNlTgpjb0tocWdwTk55ZElXeCthVWloSTNHek1uS2ovU1g3akhUeDZXTW1YTkpOdlFhdFVEQ3RlK1hTQVhvK2VLTWxFCkZiS3c4enhjKzZ3SWhSZ04yeWduRnEzQk1STWlUcC9KQ3Nxb2FQMVZtMXlwclJNM054eEtzTGVNbkdFQjNJM3MKUGdzeFN6MWNrTTQxbkZCMFBGMmNmTGhVOVh4VlQ5MVorRmhKVStuSE1HQUFuYTNUd2lwb0lub29sOXF1UCtBZAp3MFJ4UVAxNXBYNzR6WE9JZWFuUCtQQ09kSHRuby9VajJtRVM4TTdoU3R1V3JTblVWTXBLb3VjaHpoVT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    server: https://10.32.143.150:6443\n  name: bgwstaging\ncontexts:\n- context:\n    cluster: bgwstaging\n    user: admin\n  name: admin@bgwstaging\ncurrent-context: admin@bgwstaging\nkind: Config\npreferences: {}\nusers:\n- name: admin\n  user:\n    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM4akNDQWRxZ0F3SUJBZ0lJZW9McmpJWE96NEF3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TURBMk1UWXdOVFV6TWpsYUZ3MHlNVEEyTVRZd05UVXpNekJhTURReApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sa3dGd1lEVlFRREV4QnJkV0psY201bGRHVnpMV0ZrCmJXbHVNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQTVPd08xWHdRYlp3UFgvdi8Kd2h0c0FxcEZEc0h4cjBaVUZvNWZFU2U1OVlvWFdMdC82NXpDK3hTR3J3aGdMa3lJNW5JQTM5cWRkVkhrSDM1QwpxbTV2SEo3WGp2aGJlbVNJL0Z5QVNEYXV1YUs1TlhQY3B5c0JKQ05kTmlSc1VQMVF3V3dsakNsNktMZVVmSmdMCm85Q2JSa0hOa0Ftb20xS1BEYkphVThraU1scEZ3L0xXUVl1a28zMVo3RnZvVmhmcUlmZDRtL1hzaGt2VksrS1UKaTIyMmlySy9mTVFvaWpXUHpHeDR4UzFuWUlkdWNyYTVrUFQ4QkFRNmpzUkQvTU9ORlZyRFUrei83cG5wSkgxWQpzbEtGNisxN0t2R2s0Z1hPWmtwcDFhU1VUMmFJWFFaWCtTOU1zSTMzTEpFeEZzWk1DTHJIVHc0Y2wrdmVWK0g0Ck9EZGNCUUlEQVFBQm95Y3dKVEFPQmdOVkhROEJBZjhFQkFNQ0JhQXdFd1lEVlIwbEJBd3dDZ1lJS3dZQkJRVUgKQXdJd0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFGbUJnQmF2SmlRTExOZFlhNnRuT2gwV3phVk85dklKbXpGTQpDVjlMODlXODNvTW9TYU1MVnVyOHloNXQxN3A0RkUzSnNNZjMzSHBHMytCMFJCRklJN2F1OVJjOHM0NnJoMWpMCmJJb0RGT3E1ZGcrdlhhZ0RFbkMwZ1U2SlJOT3czWEgyaU9RYW5xQXhzRisrWk5PU250WWhUbFAvcDk0VXhJaXgKa242RFIrN0pmalZlRm9OWUJzQS9VUDFvbXBqRmJaQ29jOVlYTGJPZDBYSjIraUNkZy9mQWx0cUZkYlUyLzBnVgp3Qk16V0hZMkQvK1IxaVV0MTRrQUlnem5pM056OHU4WFAzT2RGdEk1VXB6QnlzNVhHYjdJRE0xZ3EzcDN5ZytUCml6cnJOL0E1V0w2aUx1ejV4dDg1amxubnVwblhVN1NORjlaVTgrUkZDUWhDSGUyR2d1az0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb2dJQkFBS0NBUUVBNU93TzFYd1FiWndQWC92L3dodHNBcXBGRHNIeHIwWlVGbzVmRVNlNTlZb1hXTHQvCjY1ekMreFNHcndoZ0xreUk1bklBMzlxZGRWSGtIMzVDcW01dkhKN1hqdmhiZW1TSS9GeUFTRGF1dWFLNU5YUGMKcHlzQkpDTmROaVJzVVAxUXdXd2xqQ2w2S0xlVWZKZ0xvOUNiUmtITmtBbW9tMUtQRGJKYVU4a2lNbHBGdy9MVwpRWXVrbzMxWjdGdm9WaGZxSWZkNG0vWHNoa3ZWSytLVWkyMjJpcksvZk1Rb2lqV1B6R3g0eFMxbllJZHVjcmE1CmtQVDhCQVE2anNSRC9NT05GVnJEVSt6LzdwbnBKSDFZc2xLRjYrMTdLdkdrNGdYT1prcHAxYVNVVDJhSVhRWlgKK1M5TXNJMzNMSkV4RnNaTUNMckhUdzRjbCt2ZVYrSDRPRGRjQlFJREFRQUJBb0lCQUEzSWtOUVYxajlqU0NHMQpZSjdsVzhtRlN3Y3Fja3psWlNhK2g4YldwNEc3UU5DYzZZVGNPWGs0c1N0VXk4Vzk0ZmhPSVBOWmpHV0Yrc0JTCnI5em5MVldCMHVUTzIyTXhMblpUYzMzbG5QdWNhcDVuVFgvYlBRUmFCTUMvekszTHN0TVNtZWdvanl4b2NVNVgKTVV3NXdUK25zcUxia2dWWUlUam41anhwUGQvZUptc08zKy9rUUk5ODFPUUU2d01kRlBxNkQ1SU9keDlvVUk3UAprdEdFck9PREJtQm5kWHhxQVJrNlFzVTFlZHpXaTZyeUVPV0JIMTQ5MDlObTlrUk10aWlFN1ZobmZHOHNBTTdRCktjUURjaGYrOXQwUTBCSFlsY1ZUSllMMVpNN3o5UFMyRU9KT1VnUW9lYUNMRFJBSHc2Rnlsbm1KaTRXNDRrOW4KdmMrby9Ea0NnWUVBNTYxODI5ckZCRGR3dFdtRERhVW1QN2NJNmNQYTdBV1JNTGEwRFMyRlprS2ZDRnlBQ3ZZZgovUUJVbkllWlRPWFQzQURsa1hSUC9MdGZOYTFvTXVudGdKekkzUG1WejUybG45SXdlaENJSlFFVDRweTJJZ1o3CnVpRkl2YjYwVjU4bHRRNlJKZEdCcW9sc2IvdXZvTWI0K0lsV1lpSmlQTm9WSlpEVWhGbndqL2NDZ1lFQS9QU0QKQkx0Y2x4akp5OFZLMXN2dEhreGZiREZmVGZrTG5CU2pWRTI0cXhoMnVSdit0SjRidEJCQkh4alh3NmV5NC9ZdQpWQ0FsaGtSSkJWSE5udkNsNFpLMWx4NDJMV3REOUlwcmRCZ3MybWF4dE5icUZVM3dGcjJkdFkzOTRFaG0rbks0CjBxSTNKaldBWS9aUnNkamxXaXFGT2pmMVg5cWVCS25hNW5wUTdPTUNnWUJOekx5NU4rWWhYRnpGRHdHcmUySTAKMDBweTlncDJhQWd4eTZqN0krWkFTTzhPNThFMzdSOGczeE9LM1I1bDdHZ1E0VncyVkZEb0ZpUUs2b2lyVUZNcApkWDBlZDlJUFBtbDRHaVdkV0IvZ0RWU1lMUGdjeFFDWHFNVzhzbVh0WnN4SzJQRjFPYjNKZnd5akxtbjBHOTFQCjJRN2hOWnEzeEtTRlVQV00zSWNrVVFLQmdHejd1K2N5QWpablM2b3JtbzdvMVlTVVN4aUdQUldQRTExdjF0N2YKall6SndYMEhmcm02MVJ6RFZBdGQzTGhEYkdPakVWclZidFZtWGorWWV3cmJpOXlnSlBTeTQ0eTJCbFU1dmdvSwowR2hZam4vbmlIc2RWUyszQ2xmS2tYTXNQcEh4RTRoTXM0NFd4dlpLamZBZUR0TEdOeGhhTzdITXN3QTNYa1NtCnRtOFpBb0dBWUJxTkIrb1dKajZnZUdNQnpGdlpEemVGeldic3V3VnppTzliRzJkUTVkL29ZYkRwRVdjditVY3YKNzFROEJlRm1XekpKRVNIM3lIRFpsQjN1YU5PUDVoTTJUbEIzd3dxVjN6RlRIVkV0dVlPU0xoenJLZGlFNUI5dApMbHVqQWlqek81TnU1WFMzZFBOV0pQVVYraTQ2dkdyTmtrWXR0SlhteVJiVW9KUVRpT0U9Ci0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==\n",
+        "ip_allocation_method": "ccpnet",
+        "master_vip": "10.32.143.150",
+        "load_balancer_num": 3,
+        "subnet_id": "f2bf3ca2-7609-4639-abd2-44b6312bcaca",
+        "ntp_pools": [],
+        "ntp_servers": [
+            "ntp.bgw-online.de"
+        ],
+        "root_ca_registries": [
+            "-----BEGIN CERTIFICATE-----\nMIIF2TCCBMGgAwIBAgITNQAAABKiwOyWEsHPXAAAAAAAEjANBgkqhkiG9w0BAQsF\nADBJMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxFDASBgoJkiaJk/IsZAEZFgR0YW5r\nMRowGAYDVQQDExF0YW5rLUhYTUdNVC0wOC1DQTAeFw0yMDA1MjIxMzQ3MjBaFw0y\nMTA1MjIxMzQ3MjBaMIGiMQswCQYDVQQGEwJERTEQMA4GA1UECBMHSGFtYnVyZzEQ\nMA4GA1UEBxMHSGFtYnVyZzEMMAoGA1UEChMDQkdXMRMwEQYDVQQLEwpJVC1CZXRy\naWViMSEwHwYDVQQDExhtZ210LXJlZ2lzdHJ5LnRhbmsubG9jYWwxKTAnBgkqhkiG\n9w0BCQEWGnJlbmUuZmlzY2hlckBiZ3ctb25saW5lLmRlMIIBIjANBgkqhkiG9w0B\nAQEFAAOCAQ8AMIIBCgKCAQEAuw8U32PoTfcCPR6Zs/6zU/RzXJ16Xt/sX+NbdYjs\ntrN5iTwu0PGyQtgUw7CePtt+bG36+2P2K5rMLdroDYYc/EMrOItas8OcTxrJmtmU\nyowq0mNoWal3T8m9ROjljq3V993cog5qAbY8UN77gxUwhWCoSQDC3xPsLovzzKSV\nPIejWoMdtPSfDqcejItCDl7PJWUxd0YK8J4u5NZ3eQ1lPnjvAHlmfaH25mwSLWPe\n7UComBTRfk0wZ0FHHA4i1B12XKs8SgX4j2EO1UVU9fWGR8xopvbIEISEKC0V79HN\nBf48b4nCjSJjQnXg68/EYrwdi5L3VpLOD59QZyk5VLWSZQIDAQABo4ICXjCCAlow\nDgYDVR0PAQH/BAQDAgWgMD4GCSsGAQQBgjcVBwQxMC8GJysGAQQBgjcVCIOek06B\nqJkNhs2XCoLp+D+DvpxHgRCB0eFXhNDmawIBZQIBBDAdBgNVHQ4EFgQUuu4LIVGT\nCMoGXK9fcG5rWnOqM0QwHwYDVR0jBBgwFoAURii/sryXZuoAY2II7aUlMPSGmsww\ngdAGA1UdHwSByDCBxTCBwqCBv6CBvIaBuWxkYXA6Ly8vQ049dGFuay1IWE1HTVQt\nMDgtQ0EsQ049SHhNZ210LTA4LENOPUNEUCxDTj1QdWJsaWMlMjBLZXklMjBTZXJ2\naWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPXRhbmssREM9bG9j\nYWw/Y2VydGlmaWNhdGVSZXZvY2F0aW9uTGlzdD9iYXNlP29iamVjdENsYXNzPWNS\nTERpc3RyaWJ1dGlvblBvaW50MIHCBggrBgEFBQcBAQSBtTCBsjCBrwYIKwYBBQUH\nMAKGgaJsZGFwOi8vL0NOPXRhbmstSFhNR01ULTA4LUNBLENOPUFJQSxDTj1QdWJs\naWMlMjBLZXklMjBTZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9u\nLERDPXRhbmssREM9bG9jYWw/Y0FDZXJ0aWZpY2F0ZT9iYXNlP29iamVjdENsYXNz\nPWNlcnRpZmljYXRpb25BdXRob3JpdHkwEwYDVR0lBAwwCgYIKwYBBQUHAwEwGwYJ\nKwYBBAGCNxUKBA4wDDAKBggrBgEFBQcDATANBgkqhkiG9w0BAQsFAAOCAQEAiOpY\niyZ6yyVIarziVaM+blvtWEFSd1XjcfJ9DGLSe/c7fWncQHii9RBNgeQSuvHI7IVO\nuGGF5NiKdXgc/ztf4Qw97aHXeUy5+6Soz1L6SgkMx4b0TLGioxEQHF2KQtRL7tH0\n5wlqRKSl0OHvrS42gfbvV10G6kP5PgpWwaDHMvS/5WWsJx9+VaDy1xWttcfUROq/\nMI1/Bb18q83WBa2MDwnAl8huoS9S4EsJ8KEotFRWRqoGkREMAR7qHf3S4oMgOzGu\nVwUTUEuu091+dHsPpTODRE957tUKpXIl7dqsXlEHy8Lzf9EZMTMN8klvKUwuZiX2\nk9wCx24cucxl0xFSmA==\n-----END CERTIFICATE-----",
+            "-----BEGIN CERTIFICATE-----\nMIIC9TCCAd2gAwIBAgIRANz10/jA0ZQV/lhRCQT/fpcwDQYJKoZIhvcNAQELBQAw\nFDESMBAGA1UEAxMJaGFyYm9yLWNhMB4XDTE5MDgyMzA2NTAyMVoXDTIwMDgyMjA2\nNTAyMVowFDESMBAGA1UEAxMJaGFyYm9yLWNhMIIBIjANBgkqhkiG9w0BAQEFAAOC\nAQ8AMIIBCgKCAQEAyfs1zXgn73zPdGP8sOFZrx6paPOraQz+bkRURZKX04izwZg2\n9BKkjAE24Zww2WX9B68OZvbuHajE8tN2CKrPslwi1lv6xntJ29QuiCDuD/7ennFp\nRxdx3sX304/SCVcaDugbDACeT2bFEdZPlLtg2lHav2ZIXJaWAfyXNc12e7/+22t3\nyKGlzRVy4Z+lMHAWpggwUDb48LqmurUiae75osOaBR/6+7tgqkIfrzhq6SS7oZiN\nfJNfVJ8RM8rrx82H4G/b1MmB8WDJSxu2NVNjox8OU8pYm+0iLGSlVClVfEGF0L+l\nIA3YlJ1ZHzIvM3HMVxC7Pt5wqqMSc/2OK/g4kwIDAQABo0IwQDAOBgNVHQ8BAf8E\nBAMCAqQwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMA8GA1UdEwEB/wQF\nMAMBAf8wDQYJKoZIhvcNAQELBQADggEBABMr7kmwzyO32uv1dAfdp7e26dzul5hb\nYFMDamQYMJeLgkZRWWEfwRgsW26w2eKTJgqbJsSu6AmrEcjl631RiMmYHbDkP3J6\ntyal94aNyA+TQj4tDJGVToPvru8kV6DXGrtr7Z/MlkPzBRFj1AE1v6vbRordXt7t\njSBMjelnUVrTftBdd0iAxUStAyZ1/BEmOGBKVIKp9V+3KrIwG9jgjM3qdqHnRGkd\ndnj0HPJRyULB53wZ8kv9IHvHbmlC0grSah+LbQG7G0cIEW+NCojb9/53CZzwIFpe\nybuIpB0ClhZLyS1tM6twvDw6OE7KKE0bhhn39UnxntqbjFqYWd8nNLI=\n-----END CERTIFICATE-----"
+        ],
+        "self_signed_registries": {},
+        "insecure_registries": [],
+        "docker_http_proxy": "",
+        "docker_https_proxy": "",
+        "docker_bip": "",
+        "vsphere_infra": {
+            "datacenter": "HX-Datacenter",
+            "datastore": "HxCluster-DS02",
+            "networks": [
+                "K8S_Network_852"
+            ],
+            "cluster": "HX-Cluster"
+        },
+        "master_group": {
+            "name": "master-group",
+            "size": 3,
+            "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+            "vcpus": 2,
+            "memory_mb": 16384,
+            "gpus": [],
+            "ssh_user": "ccpuser",
+            "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILjKQeO1VBLrKOzqPl0TT4wGfQSzMEQ6/gDkBLPEuve/ ed25519-key-20200507",
+            "nodes": [],
+            "kubernetes_version": "1.16.3"
+        },
+        "node_groups": [
+            {
+                "name": "node-group",
+                "size": 3,
+                "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+                "vcpus": 2,
+                "memory_mb": 16384,
+                "gpus": [],
+                "ssh_user": "ccpuser",
+                "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILjKQeO1VBLrKOzqPl0TT4wGfQSzMEQ6/gDkBLPEuve/ ed25519-key-20200507",
+                "nodes": [],
+                "kubernetes_version": "1.16.3"
+            }
+        ],
+        "network_plugin_profile": {
+            "details": {
+                "pod_cidr": "192.168.0.0/16"
+            },
+            "name": "calico"
+        },
+        "ingress_as_lb": true,
+        "nginx_ingress_class": "",
+        "etcd_encrypted": false,
+        "skip_management": false,
+        "docker_no_proxy": [],
+        "routable_cidr": null,
+        "image_prefix": null,
+        "aci_profile": null,
+        "description": "Staging Cluster der BGW"
+    },
+    {
+        "id": "9557bfde-8081-4294-b368-9997cb5b534e",
+        "type": "vsphere",
+        "name": "managementcluster",
+        "provider": "642af8ae-e764-4b86-9191-569c33d26213",
+        "status": "READY",
+        "kubernetes_version": "",
+        "kubeconfig": "apiVersion: v1\nclusters:\n- cluster:\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01EVXdPREE0TlRnMU1sb1hEVE13TURVd05qQTROVGcxTWxvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTWlXCjJvM1AyNlQzWDVaZmptMHVkNlZLK21DMVRDQ21IKzV1T2daa0ROQ2dhUmxWQlZpOXlTWWo4bmZxaXdUNmUyNFMKeDQzbkJNNGIzRkkrSTFIb28zMWJuS2x1cFc3eGJjeTZ4dm1LL2djYUgzM2E0ZWszYkFOK0VKV05QU09RK3lRRApoQ2dGTCtRYnF1NnIyek55VkVsdjFQVWRzOFNrY2FDT2toN3NuOWh6ZnZCY0pNMEIzWWd2MkYzdEZnRXN1eCswCkpubnIvUUIza01oN25EakRJZFdJaERqVmw2TmFkKzBxWnlVZmpiTnY3bzg2ay9LRGdnVzNxSVg5M1NpV0lQbCsKMCtOWVlyZWNQV1JhMW9OYzdKOStjakRYVmVidmU3aWpINlVCWVJTbTBqUjRud0pVdzRPK3NhVmYyRnZGczJXWQovVk1yRHc5RFhsakw5V2tzbDcwQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFGSEsyYnNGOEhVSWpqK1NKVVFsZm94YlNBcEoKeksveDlMOW9XbG9KMTNSMTRwcXgyOStlUG80WnlpWEZ3ZGhCSlZ4WkRoa21IeXFMZU5yeFJxdTF1UUhhS2FiTwpPb2xEaTdZYWJVb2tUdWl6VE1BeVFUMGFzazV1SWYzTDk4c0JWTzRKTVphUkdFWkZYNVNFSmE0clM5NWFkVENVCkdnTUlNLzZzUHNMWnRON0lxRStBOW0zNlZaam5Ucnd4ZmZTRk43VDhWeVFQWmhuSDRvenFSWnhJMTJVbUl1U0EKYTlOemR6QTF4R1U5aUgvdzhacnhJOVdya2owa3VhTlFpVGd0VHlyZk1ueTIwd2JSVUNQUGdjVU1Eb1hUSEwrRAp2NVZ1aVBQSjJ6aEpTb3draEdiQXppOE5YL0t3cGRabEgzUFdzNGVRK2RveWoxNVZyYkJ4YVRXM2VSQT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    server: https://10.32.141.1:6443\n  name: managementcluster\ncontexts:\n- context:\n    cluster: managementcluster\n    user: admin\n  name: admin@managementcluster\ncurrent-context: admin@managementcluster\nkind: Config\npreferences: {}\nusers:\n- name: admin\n  user:\n    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM4akNDQWRxZ0F3SUJBZ0lJVk9pWjdHMkpScGt3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TURBMU1EZ3dPRFU0TlRKYUZ3MHlNVEExTURnd09EVTROVE5hTURReApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sa3dGd1lEVlFRREV4QnJkV0psY201bGRHVnpMV0ZrCmJXbHVNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXkzc3NvQlRtK0NKNUcwb2MKYlRiTWlMTlNxdm9KblRhK2VHc2M2NWxxNS8yb2VjOGdvdnQ2V3FxYU03RmtaaDNldGFnM3FCaWVZcFd5L0JvOApQT1VwV1BlL3NnNDF2RGUvc2d5MDBCM3hXbm1SNzZYd0FMTlI5V24xRExXdHVJL2hYYm9MckFkendDdTY2dDNFCjR5Tm1PaFFhNEROM3NkdTdzaDdxQzdjN21BcU45WWNNMHFFRE9KTDVtTVhsNlZUcURNcVFBeTdOMFJzUG90NTUKTU1qVmxjakFKMWJVZ0VwUnIreXVYV2UxNUtJUWl2NjFYOVBoL3hESDI3eDd0YTRTSjI1UlJURFAyK0lqV1U3RgpLK1ZRYXRYQ3l1QVg1eWlaaDZmZ0NSWDBPaVBmTktyQ05IS3Y3cmp3TzhiMWpqM3R0ZXpySlNzdWxNRzhzTWtKCmlzSEtEd0lEQVFBQm95Y3dKVEFPQmdOVkhROEJBZjhFQkFNQ0JhQXdFd1lEVlIwbEJBd3dDZ1lJS3dZQkJRVUgKQXdJd0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFDck9rT2F4TjJ6Y1FOUzh1T1J2eGQrcUE4elF4V0p1K3ExdQpUdUhmK2o4aHNJL3hsalp5a1RxcitRa3dqRjhYRmxpRFNzR2RKVjNTNzkvMEYyMHRXNWNRSnU4ZlVWSTN0UXNlCmIrdEJIa0tSVHA5K0tEWFZBZThnOHpFNW5uMVRVMno1TzVPdm9nYTFkR2RhZnlNMXlJSEIybi8wYXNNcjBkbDIKcVJPb3RZbTRpUTI4NDJIam90a1A2KzhLUitnSlBEK3o0SkpPNGdKbFZkMkVhYUFSY1prK1hGRmpoWm1XdGlIdgpoNngyaTNKUjZSdWdBRzMreHNwdU41bmg0Qk9uNDJ4MlBLOWpqa0RuMUVmWkNMTWs4bTl6QlJ1WG9QdUdBSlo0ClROK1F4cEN4VTNMeDlJQWZUWFhGdDRDRWx6VElQMVdadTZuejdORFVQdU9aNldVQUlHRT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb2dJQkFBS0NBUUVBeTNzc29CVG0rQ0o1RzBvY2JUYk1pTE5TcXZvSm5UYStlR3NjNjVscTUvMm9lYzhnCm92dDZXcXFhTTdGa1poM2V0YWczcUJpZVlwV3kvQm84UE9VcFdQZS9zZzQxdkRlL3NneTAwQjN4V25tUjc2WHcKQUxOUjlXbjFETFd0dUkvaFhib0xyQWR6d0N1NjZ0M0U0eU5tT2hRYTRETjNzZHU3c2g3cUM3YzdtQXFOOVljTQowcUVET0pMNW1NWGw2VlRxRE1xUUF5N04wUnNQb3Q1NU1NalZsY2pBSjFiVWdFcFJyK3l1WFdlMTVLSVFpdjYxClg5UGgveERIMjd4N3RhNFNKMjVSUlREUDIrSWpXVTdGSytWUWF0WEN5dUFYNXlpWmg2ZmdDUlgwT2lQZk5LckMKTkhLdjdyandPOGIxamozdHRlenJKU3N1bE1HOHNNa0ppc0hLRHdJREFRQUJBb0lCQUN3dHVSbWtrQ1V0cnVlcQo1cE1idzdxbVhIdDh3QnVmS0NtUzcvdURHci8xeGQ5MGhoeDh4eXJxUVlLWnNEZXZvb3dFVXRrdlJ5d1dYbjczCjN6NUZidjIvQktMUERRR3BoUGhPWSsrUG9MaEpEdE5lVHNhSUtISkZLQXd6WWQxaGQ4Zld2ZlFDeGpIaURMb3oKbml6R29jcFlWU0Y2YXpGMWlNSDZqa3d1NDBSMkdzdk9hU0tIZkV1TjRZZzFrV05Jam1yVVh1NUplZGtnWit1RQo5SHNheEhUTjFrbHkxSnpOb1plWDRHSytVU21DWGEvcXR4SzdVVUJOVlYzdHRzdXJnQUthQ0lBbW1yd2FEVHFICmNqQTVyMklBekNDNitqUmc2TDlWbnZLVkZOc24zL2JXeUZ4WGpDMUZPT3laRWE0bmhOVXAxTVVZb2d5cEhwSmsKL0l2STJCa0NnWUVBMDhzUTV0UzNOZm1wcFMzS2c4YlBtWld6K2RCUk1RWXBEYjcvd2lVUWthS2gwT29mS3FleQplS0xXRnhFRGdKZVF3UmZocUJJT0xvM2ljVndJclV3OER3cEZnQTV4cGU5NmhENExOTm1yNGQ1eUlXaFAwKzZvCjI3c2V2QTF4ZE9LVVFPME9rZjlJTmxQdWkySXhvZVJaSThmalhFTExlY2svMzdMaC9SMCtndTBDZ1lFQTlmUDIKTm1JVUVSYzRITmM4RFVFRWFVQWNPT3RYcWZPZWovT21sTzdXemdZUzQvUVA2MWRwQzRmeGVaNlFTZlZVK1BwUAowdTU3anYrU2w1R3hQUTFndndPNEFsaGFVdW5JS0ZXcmdWdTFSaHY1dXdObnJaTHZjcW1TWFhaQTdNd3ZyNU1iClQrZ0ZOSmZDeDdLME5veXNDMGZJM0xkcnl6bVlBYXJGcUZQZU5Xc0NnWUJYcDgvUytXN3FVKzQyZ3dFeUVQS1MKNmphV3lmVVFpVEFzbEVSZUllRDlwWVc3WldxSXlPZEFyb1JVLzZHbmN4TmlGM1E1ajE5M1BSbmZPT3dPYldMZQpCcTVGRmJWTHJCWFU3YWpOc3RsRW5rQTJPMm51bVBRaUhRdlhZT2o0SzE2WWtJUmJRSUN1bTRZN0FlVHcwQVZrCm5iSW4yUzFGdGxsTlNFZm43bGFVOFFLQmdEZ25pamhpYmpoMHQ3QUdDRVR5YWtKcGk4Z0hHNDNHL0pYYlNGWksKcmFwK1FvUGZMbDlLSnNhbU5DRFRiaGdrdGxEZVBhbG9IN2ZIYkQzRTJ0V1luMVVkVVQ3ZjAwZUk3dFVlc2ppbgpxcHltT0g5VlNLK2RrNlAzU1Y2amFERm9jUjdDRklOSzh4MU41UC9aTWtJZUhnMjVSd2Yxck52S2U0VXQ2MUVDClRRS2ZBb0dBTE1OTGl0V2luTksra2g5V2JrMlFsRTlTUXpsWHljb3hjRk1LWW5IS1hhczlzVzc5bUlRanBJVW8KVHBDY0VRdWZmT201Mkl6azUvVW1qNmJvbkx0cllCbndpUEFIRldNUkpqQ003Z0Zzd1d0aUtiV3FqWXNXVklrUApGMmxUNVdkc0NnbEo1eFYvSWlvT0RtTGJxRExFdkgwTGFUckNGaUtPTGZ3azNJVFNNbUk9Ci0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==\n",
+        "ip_allocation_method": "ccpnet",
+        "master_vip": "10.32.141.1",
+        "load_balancer_num": 3,
+        "subnet_id": "d56dd165-fddd-44a1-a3d0-732eab265f43",
+        "ntp_pools": [],
+        "ntp_servers": [
+            "ntp.bgw-online.de"
+        ],
+        "root_ca_registries": [],
+        "self_signed_registries": {},
+        "insecure_registries": [],
+        "docker_http_proxy": "",
+        "docker_https_proxy": "",
+        "docker_bip": "",
+        "vsphere_infra": {
+            "datacenter": "HX-Datacenter",
+            "datastore": "HxCluster-DS01",
+            "networks": [
+                "K8S_Network_850"
+            ],
+            "cluster": "HX-Cluster"
+        },
+        "master_group": {
+            "name": "master-group",
+            "size": 3,
+            "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+            "vcpus": 2,
+            "memory_mb": 8192,
+            "gpus": [],
+            "ssh_user": "ccpuser",
+            "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOtrxBki/6PGSPYT7vaRqLcBVJ6X+pj+0bGZOSIr70hK ed25519-key-20200507",
+            "nodes": [
+                {
+                    "name": "managementcluster-master-gro-49031bb95f",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.141.6",
+                    "public_ip": "10.32.141.6"
+                },
+                {
+                    "name": "managementcluster-master-gro-b8f10728f0",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.141.5",
+                    "public_ip": "10.32.141.5"
+                },
+                {
+                    "name": "managementcluster-master-gro-feb293d82d",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.141.4",
+                    "public_ip": "10.32.141.4"
+                }
+            ],
+            "kubernetes_version": "1.16.3"
+        },
+        "node_groups": [
+            {
+                "name": "node-group",
+                "size": 5,
+                "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+                "vcpus": 2,
+                "memory_mb": 8192,
+                "gpus": [],
+                "ssh_user": "ccpuser",
+                "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOtrxBki/6PGSPYT7vaRqLcBVJ6X+pj+0bGZOSIr70hK ed25519-key-20200507",
+                "nodes": [
+                    {
+                        "name": "managementcluster-node-group-65e45e3ef3",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.141.3",
+                        "public_ip": "10.32.141.3"
+                    },
+                    {
+                        "name": "managementcluster-node-group-b18342405f",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.141.2",
+                        "public_ip": "10.32.141.2"
+                    },
+                    {
+                        "name": "managementcluster-node-group-b20a69a48d",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.141.7",
+                        "public_ip": "10.32.141.7"
+                    },
+                    {
+                        "name": "managementcluster-node-group-edc5bf9a27",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.141.8",
+                        "public_ip": "10.32.141.8"
+                    },
+                    {
+                        "name": "managementcluster-node-group-f74a5ae621",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.141.17",
+                        "public_ip": "10.32.141.17"
+                    }
+                ],
+                "kubernetes_version": "1.16.3"
+            }
+        ],
+        "network_plugin_profile": {
+            "details": {
+                "pod_cidr": "192.168.0.0/16"
+            },
+            "name": "calico"
+        },
+        "ingress_as_lb": true,
+        "nginx_ingress_class": "",
+        "etcd_encrypted": false,
+        "skip_management": false,
+        "docker_no_proxy": [],
+        "routable_cidr": null,
+        "image_prefix": null,
+        "aci_profile": null,
+        "description": "Managementcluster"
+    },
+    {
+        "id": "ab6aa032-9f84-43c2-b438-013a8f4368eb",
+        "type": "vsphere",
+        "name": "troubleshoot",
+        "provider": "642af8ae-e764-4b86-9191-569c33d26213",
+        "status": "READY",
+        "kubernetes_version": "",
+        "kubeconfig": "apiVersion: v1\nclusters:\n- cluster:\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01Ea3lNakE1TWpnek5Gb1hEVE13TURreU1EQTVNamd6TkZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTUUyCmJPcE96cUFIOUwrY2ZuQjJjTzQvMkRma05GSXM0WHV0OW5sU3JaN3ZQb0tSWW5sV0V1ZXVYNFpHcXJBa251TmYKTUhwZklBdjdTRkVOaDlzOXNuVHBhVGltV1kzd0txU3Z1enljVGZNY3BGK0lUQnJaSmJEVTBtSlR0VHhpNzNYUQpwdi8xcHZtRTB6U3JERytoL0FrbjZPbnFrdzlacThyb3UyMmFHd21mcXVYejUzSEw4NDllRUdDNEFEV3pQdFlYCldJcDJJOU1GSWdwb0JqcDZ5U3VuNFBVcS9wN3lyc2pGbm5jS2FaV1h5czNSZGFCc0dHaHhCUHZ3ME1DUkwvYzAKVy9RRER5UUR6eDlkMWlNTEVRZ1FMTm1xRVc3S2FLZUh1ZS9ScXp0ZXZhc2xFMGpLWW9VNGc3bHBEYzV6c1licgo4YW9nWFpnOC9XYUlvN1NXYmNNQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFGcWRxdkFOMkk4OGFkaWIveWFQWUxSSThYclMKVFd5OTBjSmF5cUdjd3FWWHRLekpQNGlySWtaek5PVEpoQkdLRWpYa25JNUI2V0VBZFJZd25jNENMcld3VlNGcwpoK2loa1RkUnpOYmIxeXY1M3gzQW84SG5PRytYV2JSSzdFVnFHU1YySTg1NHlROS9PYWFWTERZMXNYc2U1YS84ClFxM3l6aEhtei9PMlBiT29NTDlDQ0pyOWZsVDBYWjBPc3B2VjZqVW9RSnExN1E4QmN5dHlFbGZFTWt5K3ljOHAKd1ViZ1pZQlJtUjhvWTRnK3NNemhQZGpiNlFqMVVZVXlmR0FFZWlsTUhIeUMvOGJGYUV3U3lRVE1VUUIwWFlhQQpiNGhlc2JnWDlVZHVFZmxSQ29BcTFlbERXMDQxSEg4TUg3alRvWlk5eW9pTGdGYWJmSUlSWS8vZzZNQT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    server: https://10.32.141.56:6443\n  name: troubleshoot\ncontexts:\n- context:\n    cluster: troubleshoot\n    user: admin\n  name: admin@troubleshoot\ncurrent-context: admin@troubleshoot\nkind: Config\npreferences: {}\nusers:\n- name: admin\n  user:\n    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM4akNDQWRxZ0F3SUJBZ0lJWUVTNFg5ck9lbkl3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TURBNU1qSXdPVEk0TXpSYUZ3MHlNVEE1TWpJd09USTRNelZhTURReApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sa3dGd1lEVlFRREV4QnJkV0psY201bGRHVnpMV0ZrCmJXbHVNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXdmeEFiNUZ5M3dtZTJta3IKa3JzeFF2Zk04Ulg4TENMaUwwZUFoaTdYbEJWTFZWNG90YXNFckFqelVHOU8wQmR0WWxGamltc1NVaEROa052bQpIcTdOekdVSmlBSS9SYTM1MC9HQmVDVjJpRHdTOW9JZERmNkR1ZFJLU25rWVlFREx1MXRJN0RtTG1uMldxMTJ0Ci9lS0RnaVR4d1A2bXd2REJUbjBYcndFNm5xWTdNWDZ5VCttdHg0R25WYVdYdzUvRHhOTHNqNmFadWtSMTUwUUsKUSsrNDRTNU5kQ2JNbDZtSVRiY3RuVkNndUYrZ2Y5ZHdjNHNvTTRXR2M4RVZGbnJ5NDJ2UndZcWVsWGFpdGpjdwpCc2RXNVFzQWNpU2VsT0VhRG1QM21kT3B6dDF6U2ZGT3ZSV3prK3dscnkrTHQvV3pDVG05TkNEbzJYbGh3U2NHCi8reFlPUUlEQVFBQm95Y3dKVEFPQmdOVkhROEJBZjhFQkFNQ0JhQXdFd1lEVlIwbEJBd3dDZ1lJS3dZQkJRVUgKQXdJd0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFCd3dZUmpySk80RW94UW1YSE1zaGZ5NDNPR05KRm5nRkt3NgpGQlZNUStVZ2Y2dDBuem1ocXluSy9DcnNCQmFPK2ZBbnNMNlFWc1dlbGdnbndWemx0eXZZR1JwOFlUdy9RYVB0CitrZURvZmxqQkN2R1QwbWplOTh2NlJBUEVrdGRkUFE5TDdaTjRoSjFzS2c4elRqdmtLREt0ajN3MkpzUlhmZEEKbklQVzVYNVB3UjlnN3FwWnBuSWcwUjVoelB2UVFGLzNVNXZ5ak5sRkR4dkQrUXdHZGlCUFM3Tm5TeFBJMUxvMAplVUkrWnM5L3VMdkpZN1JQYlRpc05nTTd4dkJmMWFoUk9tT1R0L1BWanB5YTRzc1NWVDMwYVhvTVR2M29jeERjCmFVRHJqK3BJV1VFeWJJUUdtamkxNnRPaUhVaWIxQy95aFZxZm9hYmhDNERRZkErRkJqTT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcEFJQkFBS0NBUUVBd2Z4QWI1Rnkzd21lMm1rcmtyc3hRdmZNOFJYOExDTGlMMGVBaGk3WGxCVkxWVjRvCnRhc0VyQWp6VUc5TzBCZHRZbEZqaW1zU1VoRE5rTnZtSHE3TnpHVUppQUkvUmEzNTAvR0JlQ1YyaUR3UzlvSWQKRGY2RHVkUktTbmtZWUVETHUxdEk3RG1MbW4yV3ExMnQvZUtEZ2lUeHdQNm13dkRCVG4wWHJ3RTZucVk3TVg2eQpUK210eDRHblZhV1h3NS9EeE5Mc2o2YVp1a1IxNTBRS1ErKzQ0UzVOZENiTWw2bUlUYmN0blZDZ3VGK2dmOWR3CmM0c29NNFdHYzhFVkZucnk0MnZSd1lxZWxYYWl0amN3QnNkVzVRc0FjaVNlbE9FYURtUDNtZE9wenQxelNmRk8KdlJXemsrd2xyeStMdC9XekNUbTlOQ0RvMlhsaHdTY0cvK3hZT1FJREFRQUJBb0lCQVFDbUZvUlZBZ09JVTRSZgpISXppSk1RWXduSUdPUHlnRFgzN1hRejkxajFkM0oyVGlmcnhFR3YvbitvemhCbkdzVWhHVmNrVVNuaDFLMDNXCktYRHQ5RnpnRStJRlFXZExFWnBGalJGOC9SWnZybi9ONzdsUXNnbTJvYnk1NXRTb0ZOSmFwOTNYNDYxVHFSUEgKeFgyalVyMm1RRnQ5RW90VmZTMEZOcldBY1Z6dlY0TmJSYXFSRlNpZ3lvU1lmbStUbE1qMmlVMmUwblVjNkIxNwpyNEJkclhPUmR6OXJMMGEwOG9aa1pFZ0dNRnFueFNVYndxd0pQbENzSnNBZlpSb1ZxRlJJeWFxcnZuVWlNaUQ5CnpsTGVVVjI5Vi9La3ArUmJMQWE5czl6NGkrQ0l3L0lRMkRDWlpqZm1sTm11WUplVU9QdTdaYXJmOTEyRHd1bDEKNThwdjJNZ0JBb0dCQVA4c0VVelhaRzRiclNrU2xjU2swblVCdzVMQm9LSkh6dkV6bDc2ZndVTzVseTVDUnFZcwpiSjVKZlFRbHFlUHhSZXJSMm9WTGNxUHRSOXRYK1J4T2ZKQ2VhRXFIUjYzTEg4T1gyWlZYcy9sNzA2a2pPRTBWCmZER2dXazZZQTAxM0lmMEdzQlV4SXBPRWFRdzBXZEQyVUdCTFVVVHNBQWtrcUhWMEtKQ2hIdG1KQW9HQkFNS2QKWFpvM2UwYmU2ZHRSdUdrZW90YlpkYXhtY0w0NGNHOG1nc2M4NXA5L2JkL2xQQjRUOXU1d0VWK0NvcmYrOGFZTgozczdzNjh3ZzU5ZFJDNFlOMXpaU0JENFBYdVQyUUJUOWw5cEhpL2xENDRwcjdZU25pbXRxTVlwd0VtR21lYmNpCmxCSFVRaXpHMG5Jb0FuTU5NZXBXR2FRZ2pjdnlSd3R1SVAwRHdzMHhBb0dBUUEyTXpqQW5TcWh4NENTRktkYUIKNmRNbWg3bEpIRk5RTkNYU1NveUprL21MWkpaSWE4QXRCOUxFcWZ6V1Y1eWlBMTdvTHB1UXpHdHNwVGZCRllUeQpLYzlKdUtPYXI1cVVmNkduZ2FDQlVmZnVXciszaTBvQVllaXhvcGJ3QlVzSlloMkNwOThzb2NFVUtYY2VzS0NUCjdvZ1pmMmFLWDhFdTlFVFRSZkxiN3BrQ2dZRUF2ZTZHNDNNeVJNQll5MHErQnhsM0l1ZW9DRkVSeHhPZDUxeFcKVmN3QjU3ZWRxOTAxQnNYRlFIN3U5Wit3M3BGWmxRNEVYVDZzQWRRN2I5QVF4d3ZLOWFDbHMwdWMrU2U2OHNGcgo2Z1BaZjdQWjVjWGZVSStTYjdKOEZ2ZTVlTVBZRmZzUk56VklRQnJxVjY3a2RSUnptcGZjL21rbStkdkJxazRZCnM5VnYwSUVDZ1lBM0k5amF4UDZaVlFsSmR2Skt4YmlXaDlPWUNYcjR3YkhSWE1TRWhKelkyRmxqMVF4N1Q2aGQKcVd3bWNHanF0SW9TU3hMdS9Qa3l5NEV1azZnbXcvbDRWZFhaSlZzNHJUeDNYNWZFYTZjQ1JXMmNuY0lxMTVSOApobldBYjRpU2FTTTZ3WHRyZDR1b28rRHZERERLaUNYU2FicHhXSFd6bTlOV3JOeE9VbFUzZUE9PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=\n",
+        "ip_allocation_method": "ccpnet",
+        "master_vip": "10.32.141.56",
+        "load_balancer_num": 3,
+        "subnet_id": "d56dd165-fddd-44a1-a3d0-732eab265f43",
+        "ntp_pools": [],
+        "ntp_servers": [
+            "ntp.bgw-online.de"
+        ],
+        "root_ca_registries": [],
+        "self_signed_registries": {},
+        "insecure_registries": [],
+        "docker_http_proxy": "",
+        "docker_https_proxy": "",
+        "docker_bip": "",
+        "vsphere_infra": {
+            "datacenter": "HX-Datacenter",
+            "datastore": "HxCluster-DS02",
+            "networks": [
+                "K8S_Network_850"
+            ],
+            "cluster": "HX-Cluster"
+        },
+        "master_group": {
+            "name": "master-group",
+            "size": 3,
+            "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+            "vcpus": 2,
+            "memory_mb": 16384,
+            "gpus": [],
+            "ssh_user": "ccpuser",
+            "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDQvmnnj7uatOVsh2P4Kgb8bd9vXWyqkWVa6Ek4RZTJ4 ed25519-key-20200504",
+            "nodes": [
+                {
+                    "name": "troubleshoot-master-gro-73c281c28e",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.141.54",
+                    "public_ip": "10.32.141.54"
+                },
+                {
+                    "name": "troubleshoot-master-gro-f45e3b4437",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.141.57",
+                    "public_ip": "10.32.141.57"
+                },
+                {
+                    "name": "troubleshoot-master-gro-ff2ce09b80",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.141.55",
+                    "public_ip": "10.32.141.55"
+                }
+            ],
+            "kubernetes_version": "1.16.3"
+        },
+        "node_groups": [
+            {
+                "name": "node-group",
+                "size": 2,
+                "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+                "vcpus": 2,
+                "memory_mb": 16384,
+                "gpus": [],
+                "ssh_user": "ccpuser",
+                "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDQvmnnj7uatOVsh2P4Kgb8bd9vXWyqkWVa6Ek4RZTJ4 ed25519-key-20200504",
+                "nodes": [
+                    {
+                        "name": "troubleshoot-node-group-3c3588ae16",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.141.58",
+                        "public_ip": "10.32.141.58"
+                    },
+                    {
+                        "name": "troubleshoot-node-group-df9bdd0af6",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.141.59",
+                        "public_ip": "10.32.141.59"
+                    }
+                ],
+                "kubernetes_version": "1.16.3"
+            }
+        ],
+        "network_plugin_profile": {
+            "details": {
+                "pod_cidr": "192.168.0.0/16"
+            },
+            "name": "calico"
+        },
+        "ingress_as_lb": true,
+        "nginx_ingress_class": "",
+        "etcd_encrypted": false,
+        "skip_management": false,
+        "docker_no_proxy": [],
+        "routable_cidr": null,
+        "image_prefix": null,
+        "aci_profile": null,
+        "description": ""
+    },
+    {
+        "id": "b090687d-b4bd-4c44-aab1-7534e769f295",
+        "type": "vsphere",
+        "name": "coremediaentwicklung",
+        "provider": "642af8ae-e764-4b86-9191-569c33d26213",
+        "status": "READY",
+        "kubernetes_version": "",
+        "kubeconfig": "apiVersion: v1\nclusters:\n- cluster:\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01EWXlOREV5TlRVMU5Gb1hEVE13TURZeU1qRXlOVFUxTkZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTmFrCm10MXZmWkpZNnZFN2VHZ28xN2hkOUNwaWQwZVduS05jU3c3blRRREFXQVVRR2JVQW0wSWk3UE5ZVHI1WEhQUEIKQWtXdXNvM3RjV3BvVkFUbWNremxHWnNLeWE2WmZZT2pleXhIN0JhRml0MEpPZ1dwT3ZNeUZVZk5qUWJxWWs4OAp2U3VHQ08xbnQzV01VdFFaTmxSU2Z6SUVSQnNWUjhUSC9Wd0JvWWJ6ZkUvVDN6eUJSbjc3SzY0MXcxZGNDVjA1CmR2Sy9vcFI3Sm1lUVEyamlIVERJaEZ5WXNYc1BMYmNaWWFZMHB3V0FsTHlCK2Jzc01WdVFoWlEwbkVwTHd2Uk4KRmYvRlI5MTJaemp1RnVqNmJIaExxSDlJR285dEFBclc3Y0xYQ0F0UXVRTTBiU2ptTHQwTHI5VzA0bXU1bDNDUgpPNUZUcFA0UXlOZnJZQnJCK0FjQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFNVW1INGM4N0lVbWVlWnF3amNDVjExK2RpSHEKVkhaRFBkT0hJaVNoclh1eS9kZWpiOWVoVnpDU1VpS2htcGxPamJHdUdYRWt1dWFWREE1LzJRUklvOEM0eVZCbwo2QVFUK3h0V2k2cmU1aW5oRGdtejEwdlRmSkxpV01oMnpUeGNaQlVZSktsbmZyYlhlODM1T3VzQWIvYVJJQlhjCkY0djVmMlFZUTR6TjVHRUJHbzMzcS83L09wVmxqcFdDNGdDUWV2TkFXYnZ3RllTWGUxemsxUEozcEg4dnVIb24KWkxoRWM3TTdiMnRDbG5sbWt0UklqTmlNQ3NoMVQya1Z3czVEUVQzTVhJaVNLRExXcnNyUXRiQmlnT1orU1JIUgp4eEVyYTJEYWU2R0xEalZzTzcwL0QwYzJ3NEs0RHFRUFNZT2xjcncwMVZYRjZVVkZvZVgwMGU3Rjdlbz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    server: https://10.32.30.161:6443\n  name: coremediaentwicklung\ncontexts:\n- context:\n    cluster: coremediaentwicklung\n    user: admin\n  name: admin@coremediaentwicklung\ncurrent-context: admin@coremediaentwicklung\nkind: Config\npreferences: {}\nusers:\n- name: admin\n  user:\n    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM4akNDQWRxZ0F3SUJBZ0lJYUZjN3FBeEVVWGd3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TURBMk1qUXhNalUxTlRSYUZ3MHlNVEEyTWpReE1qVTFOVFphTURReApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sa3dGd1lEVlFRREV4QnJkV0psY201bGRHVnpMV0ZrCmJXbHVNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXUzQyt0MGJzQUdYcUJySDQKajBNKzczdzk3TVN3QmMyU1czd2V2VHlmdU9wUE5hZmVwUVZXeVdPTVVVVVBXSzllTGtXbmtuOW95UVNkbTgwWQoxLzRDdE0xYURVczdMSjBMK1E0TzNSMVppdG9RcnphalZrWjB1amhGS0IwTlo1YVFZMDEyY2J4M1VuWi9sa1JLCit6ZmxDcmhvcGxJZ0gwRlRrMzU0VEkxenlEMzZqOWhSV2Vkd2tiemhtL1ROS3pyVHdnekFmRUx1Q1RFdk92VEcKbk5WRXl3Z2F5VVFPTTJoYThVbWNXY0JxY3Ird0JQWnlnMUxVdHpxSk5mZ09FalZlL2F5TGFqeWxNc1JpdW1wNgpTTmdTL0dxUUJhb0FMaVcyVllLSFcrZys1T1ArajhKbFA1OHY5MzlWaFpvUHhWcVh4cXJ6R1RZMktUdXhEd0FnClErSkw2UUlEQVFBQm95Y3dKVEFPQmdOVkhROEJBZjhFQkFNQ0JhQXdFd1lEVlIwbEJBd3dDZ1lJS3dZQkJRVUgKQXdJd0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFMVGczVmlRcmVZeXljakJoNzg5UzM5NHV5UDEyeVV3SS9BeApwNkRSbE9QODBBTUN1clB0WWVuN0J3ZkY2Y0dJUkZsY0FlRXFoK25mbVBWR3pmdmxiQloyQXRVMjJJcEpBNDlJCmNlZVEvRHlTUE5CNFVndnlXbHcxSWdZZVdCcTFFamlLQVFtcVZUcUNDQUMxWEZHYkpodzV1VDlFOWR6STBOcDEKeE5BWFdJcHhYTmhTYjNDV1NEU1l1dEVwQWtYY0RpQ1ZCMlg0U0tGUkltRFNBK0d1SHdYZG9tdmFhVlN0aFloYQpKeXdlNlE2T0xXbTczdDBybHZrZU1Rc2szNjRYUjZQbWI2eGZ5S05RdCtPRFhaWHpDR0dYd3E2MFFvMmZHa3hCCnUwbGsyb21FTzc0VUFMcUFrQnhyM21QbUNLWlEyUEpPRlF2L3c3a25PTVBmUXZXT055bz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb2dJQkFBS0NBUUVBdTNDK3QwYnNBR1hxQnJINGowTSs3M3c5N01Td0JjMlNXM3dldlR5ZnVPcFBOYWZlCnBRVld5V09NVVVVUFdLOWVMa1dua245b3lRU2RtODBZMS80Q3RNMWFEVXM3TEowTCtRNE8zUjFaaXRvUXJ6YWoKVmtaMHVqaEZLQjBOWjVhUVkwMTJjYngzVW5aL2xrUksremZsQ3Job3BsSWdIMEZUazM1NFRJMXp5RDM2ajloUgpXZWR3a2J6aG0vVE5LenJUd2d6QWZFTHVDVEV2T3ZUR25OVkV5d2dheVVRT00yaGE4VW1jV2NCcWNyK3dCUFp5CmcxTFV0enFKTmZnT0VqVmUvYXlMYWp5bE1zUml1bXA2U05nUy9HcVFCYW9BTGlXMlZZS0hXK2crNU9QK2o4SmwKUDU4djkzOVZoWm9QeFZxWHhxcnpHVFkyS1R1eER3QWdRK0pMNlFJREFRQUJBb0lCQUFMUjdXeWdlb2gvQUFoZAp3Um1XcjJtMitzK0hIZ2JZVXUxaGJxejJMb2ovclhWbk15aFVianZWYlpVRGJ2bXNtY1FrZENMMkc4TjZlRXlSCngxL29pRzNqOFFqbUt0dSsrU0VrSHdFZ29lbys0YVZoTXcvbk8zWlp4bUNXSDArQnFtWjBFZVlnS2NOcDJQMlAKeFhrR0hFSVBDRFFJWkVkVUdrZkx6VStKaVVabjhiVm8zUjAvMXdUKzVhZHhESnFGQm04Q3pXRHN3bFMzU1JJVQp3aHFUczh3WmxqTGh5Rk5Sd29vTld0TWV5cjB1c0FiU09RWWVBa3hLOGtGNy93QXhZU3RsNlB4SVdKV1pmamdrCjlpQzFQVjVDd0tJenVzOWdENjRmeTRDK0hsSW11WU9XS0RXOWxYWUhzZlVaVmpNeDZFUm52eFdqNDlBbk0wNUkKcm5YeUNDRUNnWUVBNXNxZkUvSG9yVng4RHY2UFZsWmx0YTZqc0FNdzc0SVhzNUhDT2ZlZkFLYmcrOVFneGh1TgpTdWJTNlZBVkZuKyt1MjRsdlh1d0ZSNmlBSzRDTVRUV0VHRlduMk1kbU02ZjlvZm5jVkh5S1RKUC9hcUtpaW1ICkswM0l4bUFFc09EUE9BaU56QW5XYjl0RkRINjZZQU9hOHlnQ2IxZU9lU2RwY21vTVZOQndIY1VDZ1lFQXorbngKY2RLM2pZR2JocmFvY0RGYjRVL1lGa0Y1QUwyNDlFdkYrVmhwRHJVd1krWVZkNVIxVW81aXZVekJMSDNNTWYyUQo0STlxanpuRUFuS2EzVlcrZjcxSjRSSzRBZ1VZaHNZeWVrQkhoQ1JzNTBTek1Lc1VKSytXQldOU1p3QXN2N0pqCjU2VjdFVGR5NDVBazduTlBudE9leC9DbjRWaEdzNTBxcE55NjI5VUNnWUJjQzgvcVNuNzhOWGlkR2xYY24xU3QKWTF1UlpaUnMwYnZXT0huNFdKUW4xR2JDeVZYUTdVZ3E2V2lRK1FtUUVaN21iZ1hMVHJ0cGtQQVh5VTdDaFVvaQorazlyL2tIZG9mc1dmaG1HanFKQVgvcWJOeHRPQTBZUHRWUXdHamVFdkFTcFduQURRcUV0dDR3UWNiS3ZmSUNlCkhnVHFsMGNSZHZDTlcxSlR1VllkNlFLQmdHYnFMaEZoZEdvZkZaVUJKUzhqdjQ4dnJvNlZxZ2VyNGJsTEtKdmMKSDJTZ1cydVhvRmlvcThwSm9LYURMN3VPS1YwMVhsbEpwRDF4SW96em5hU2hwTUltT0VPb3VGeUhtVFJkTnU4OApraW5ldmVsY0lEYWUrRUdRaUhueVIvK2tIb0psRXY2KzhzUDY1bXV1RmhuU0NqOWNFT1IzUXlKUVIrN3doUU5HCkgxaGhBb0dBRXVlckZEL2dSZVJTREtVWE9ONEI1NHBSWUtpZnFNNDMzVjdMUVh6ZndIT0k5NE0zNU45dURVWksKTXVTQkgvUTllaEo1QlZYZGRJUmZvRXEyQ2p3RHBra0RRb1lrSW9rL09qVE9sUExYb0R4MFdnTWpGdnBjZjRlZgpUQ3VqM0NJekZmaTZUVkpJdkJUb3JZdEhubmRMam1vMS94ajhPdUpXR0dkY0FzcmNBVzA9Ci0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==\n",
+        "ip_allocation_method": "ccpnet",
+        "master_vip": "10.32.30.161",
+        "load_balancer_num": 3,
+        "subnet_id": "84c9e5a6-5ed8-4631-807b-b89a85ed24a2",
+        "ntp_pools": [],
+        "ntp_servers": [
+            "ntp.bgw-online.de"
+        ],
+        "root_ca_registries": [
+            "-----BEGIN CERTIFICATE-----\nMIIE/zCCA+egAwIBAgITNQAAAByBCdZqRwKC0gAAAAAAHDANBgkqhkiG9w0BAQsF\nADBJMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxFDASBgoJkiaJk/IsZAEZFgR0YW5r\nMRowGAYDVQQDExF0YW5rLUhYTUdNVC0wOC1DQTAeFw0yMDA2MjMwOTI5MDJaFw0y\nMTA2MDMwNzU0MTZaMIGiMQswCQYDVQQGEwJERTEQMA4GA1UECBMHSGFtYnVyZzEQ\nMA4GA1UEBxMHSGFtYnVyZzEMMAoGA1UEChMDQkdXMRMwEQYDVQQLEwpJVC1CZXRy\naWViMSEwHwYDVQQDExhtZ210LXJlZ2lzdHJ5LnRhbmsubG9jYWwxKTAnBgkqhkiG\n9w0BCQEWGnJlbmUuZmlzY2hlckBiZ3ctb25saW5lLmRlMIIBIjANBgkqhkiG9w0B\nAQEFAAOCAQ8AMIIBCgKCAQEAw7eMuqwbqB1w1eq3uQUvN5S9iCtZOuXj4CjhiCBe\n2eYXd8rrtXMjdmb9dZ/56QGrQEDqVYE1KordV39dVV6J54nmRl+v6sxGsV20Z4ga\n101zMOhvJxWWwa29MJevhwyeDJiWZdjSLPtVlo82ahaGQddRHkGz3ir86uJOttJV\nElP9OpkhPGhowyIkfXToYJyfmVo26qhCO3l5TPu3/niIjuKUo37ZsuPmAdK3oMWm\nmjuOonu0n1CFU9bwoIK3heBCmiUQMvqhfMNCfdW8k1IJXsyF+Rd/qeneLwdxVSf3\nhT/Cf+VZYiHHayVmz9W6gscU+9dQgy2q+QpgdOmqvA0IQQIDAQABo4IBhDCCAYAw\nDgYDVR0PAQH/BAQDAgWgMD4GCSsGAQQBgjcVBwQxMC8GJysGAQQBgjcVCIOek06B\nqJkNhs2XCoLp+D+DvpxHgRCB0eFXhNDmawIBZQIBCzAdBgNVHQ4EFgQUmQQ46jWS\nfE6IiiGTjfJfU6wiNeYwHwYDVR0jBBgwFoAURii/sryXZuoAY2II7aUlMPSGmsww\nTQYDVR0fBEYwRDBCoECgPoY8aHR0cDovL0h4TWdtdC0wOC50YW5rLmxvY2FsL0Nl\ncnRFbnJvbGwvdGFuay1IWE1HTVQtMDgtQ0EuY3JsMG0GCCsGAQUFBwEBBGEwXzBd\nBggrBgEFBQcwAoZRaHR0cDovL0h4TWdtdC0wOC50YW5rLmxvY2FsL0NlcnRFbnJv\nbGwvSHhNZ210LTA4LnRhbmsubG9jYWxfdGFuay1IWE1HTVQtMDgtQ0EuY3J0MBMG\nA1UdJQQMMAoGCCsGAQUFBwMBMBsGCSsGAQQBgjcVCgQOMAwwCgYIKwYBBQUHAwEw\nDQYJKoZIhvcNAQELBQADggEBAHI+oRwmBHpEKXqD2EcW4NbMXqPG5Lm8xLKzImh4\ntCijCQUB2SmOreaiC9szuyTU2ryX22vM7lk5fdVEzKeKTlUZR0Lj6w65X7gp1v9i\nN7NDG67zYaGUdOaxy/v/N9xAO4Kfqx21P87/7OKAzm9E1Bvwe1JAJiLru7TuwTL2\nB9oRM/Qrjq2RpIkhZmy0GcIThIGo4GtTharEl3xEQZghJbIqRSnJ3Ycd2YdnJ3Gb\nXIcNtdx2MRH8aFVQ9JoLPinXrKhnamLQOwtECGozgDfQ6vki3gL2VujoafawUwwz\nZyigIhcUWhbM3zC1HQFU7Gv0r7/GJjm5bPJP2auYZAaTQT4=\n-----END CERTIFICATE-----",
+            "-----BEGIN CERTIFICATE-----\nMIIC9TCCAd2gAwIBAgIRANz10/jA0ZQV/lhRCQT/fpcwDQYJKoZIhvcNAQELBQAw\nFDESMBAGA1UEAxMJaGFyYm9yLWNhMB4XDTE5MDgyMzA2NTAyMVoXDTIwMDgyMjA2\nNTAyMVowFDESMBAGA1UEAxMJaGFyYm9yLWNhMIIBIjANBgkqhkiG9w0BAQEFAAOC\nAQ8AMIIBCgKCAQEAyfs1zXgn73zPdGP8sOFZrx6paPOraQz+bkRURZKX04izwZg2\n9BKkjAE24Zww2WX9B68OZvbuHajE8tN2CKrPslwi1lv6xntJ29QuiCDuD/7ennFp\nRxdx3sX304/SCVcaDugbDACeT2bFEdZPlLtg2lHav2ZIXJaWAfyXNc12e7/+22t3\nyKGlzRVy4Z+lMHAWpggwUDb48LqmurUiae75osOaBR/6+7tgqkIfrzhq6SS7oZiN\nfJNfVJ8RM8rrx82H4G/b1MmB8WDJSxu2NVNjox8OU8pYm+0iLGSlVClVfEGF0L+l\nIA3YlJ1ZHzIvM3HMVxC7Pt5wqqMSc/2OK/g4kwIDAQABo0IwQDAOBgNVHQ8BAf8E\nBAMCAqQwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMA8GA1UdEwEB/wQF\nMAMBAf8wDQYJKoZIhvcNAQELBQADggEBABMr7kmwzyO32uv1dAfdp7e26dzul5hb\nYFMDamQYMJeLgkZRWWEfwRgsW26w2eKTJgqbJsSu6AmrEcjl631RiMmYHbDkP3J6\ntyal94aNyA+TQj4tDJGVToPvru8kV6DXGrtr7Z/MlkPzBRFj1AE1v6vbRordXt7t\njSBMjelnUVrTftBdd0iAxUStAyZ1/BEmOGBKVIKp9V+3KrIwG9jgjM3qdqHnRGkd\ndnj0HPJRyULB53wZ8kv9IHvHbmlC0grSah+LbQG7G0cIEW+NCojb9/53CZzwIFpe\nybuIpB0ClhZLyS1tM6twvDw6OE7KKE0bhhn39UnxntqbjFqYWd8nNLI=\n-----END CERTIFICATE-----"
+        ],
+        "self_signed_registries": {},
+        "insecure_registries": [],
+        "docker_http_proxy": "",
+        "docker_https_proxy": "",
+        "docker_bip": "",
+        "vsphere_infra": {
+            "datacenter": "HX-Datacenter",
+            "datastore": "HxCluster-DS02",
+            "networks": [
+                "K8S_CoreMedia_950"
+            ],
+            "cluster": "HX-Cluster"
+        },
+        "master_group": {
+            "name": "master-group",
+            "size": 3,
+            "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+            "vcpus": 2,
+            "memory_mb": 16384,
+            "gpus": [],
+            "ssh_user": "ccpuser",
+            "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMU679iJDV86KSZ6BD4bfbmuc0WLd6KHjABq/LfhjF1n ed25519-key-20200515",
+            "nodes": [
+                {
+                    "name": "coremediaentwicklung-master-gro-510335d8d1",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.30.162",
+                    "public_ip": "10.32.30.162"
+                },
+                {
+                    "name": "coremediaentwicklung-master-gro-5634246e44",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.30.163",
+                    "public_ip": "10.32.30.163"
+                },
+                {
+                    "name": "coremediaentwicklung-master-gro-e7dc10a293",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.30.164",
+                    "public_ip": "10.32.30.164"
+                }
+            ],
+            "kubernetes_version": "1.16.3"
+        },
+        "node_groups": [
+            {
+                "name": "node-group",
+                "size": 3,
+                "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+                "vcpus": 2,
+                "memory_mb": 16384,
+                "gpus": [],
+                "ssh_user": "ccpuser",
+                "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMU679iJDV86KSZ6BD4bfbmuc0WLd6KHjABq/LfhjF1n ed25519-key-20200515",
+                "nodes": [
+                    {
+                        "name": "coremediaentwicklung-node-group-0538202cc8",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.30.166",
+                        "public_ip": "10.32.30.166"
+                    },
+                    {
+                        "name": "coremediaentwicklung-node-group-1434167072",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.30.165",
+                        "public_ip": "10.32.30.165"
+                    },
+                    {
+                        "name": "coremediaentwicklung-node-group-96911bcba8",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.30.167",
+                        "public_ip": "10.32.30.167"
+                    }
+                ],
+                "kubernetes_version": "1.16.3"
+            }
+        ],
+        "network_plugin_profile": {
+            "details": {
+                "pod_cidr": "192.168.0.0/16"
+            },
+            "name": "calico"
+        },
+        "ingress_as_lb": true,
+        "nginx_ingress_class": "",
+        "etcd_encrypted": false,
+        "skip_management": false,
+        "docker_no_proxy": [],
+        "routable_cidr": null,
+        "image_prefix": null,
+        "aci_profile": null,
+        "description": "CoreMedia Cluster (Entwicklung)"
+    },
+    {
+        "id": "ba85fbc6-3492-49f3-bbb7-4a120f8ce315",
+        "type": "vsphere",
+        "name": "harbortenant",
+        "provider": "642af8ae-e764-4b86-9191-569c33d26213",
+        "status": "READY",
+        "kubernetes_version": "",
+        "kubeconfig": "apiVersion: v1\nclusters:\n- cluster:\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01Ea3hOREE1TXpVeE5Wb1hEVE13TURreE1qQTVNelV4TlZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBT0FTCllmd3pkRDRVdFlKY1ZtaWsreE9YSTJGQnozRjh6SVNDQTdwUTZRNkVZVzBXSG93N3d3TDB2R1hVdHNNSzVMdjgKZzQxTmxOS0FPcFYxb3oxUXBTcTRuSnpIbThBMmt2VlVOOFRDNGp5MzNGQWh2Tm42d3p1Zi9TR3BaNGlDYU1kQQpSTHI2aVdYZVI4Y2NQbFdwT3BLbVYzOWg0SlVGampHYlZnUW05RlFQRmI0NXhUK0dUMU52OXpXbVh6c1VjNHNTCi81QUlxY3pXS0pJNkZSZE96OGJXSi9IeG9TYVdLYnJBbDZmYWpvVXlycll4TUdHdU1nTHdDS3JoZFdzY0RkWkIKTDdwcWtWUDRGNi83VnJZTDF4NXR4ZVg2eFljWFBJTlZFRjBwYnNueFUxSHFIdmhZVUJTSkpjTjZSa28zNlVpTwptTU1yRkFMUWFyMW1nQ2JVMWkwQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFFMFBjcGI3MzJtdlRQMjMwYVFFMENuZVR3cXcKS0FRVkJrSHRsK2pzemNhOUVBN1ZYL1FZaWlxQXZmbFRqODh6d0ticm9FOU5kMTF5Nkt4V0FlaGVVMWZmT2x6MQpxRjlnVjBURm5Qd2dnNHdueHhlT3gzcHY2bmlCSCtRZ0QzeFlxRGdFWmRSN1I2MnlJSWJGRldDc2oxQmJyclRiClo0NS9TTkJZOEhTalY3LytLbXYzQWJlQVNYa0xHdURCV0tDbVhRS1VtNWZQQ1hEMWhqbEEyOXFMQmJ1b3Zzc3oKQlVVMndqMjd3U2Q2eHJyVGZ3S24rcG9yS1BKNloxS3NPeW5melFpbFpzdC9KalcxQ0NvcEhSU1hKNDJCUVNnNwpweHpMWCt4WVhhb0l3aWF2SEppeXErcXo5UFFlWG9XZURhREJWVGNVb2FBcVJnZjZZVXNTb0dBMmliWT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    server: https://10.32.142.192:6443\n  name: harbortenant\ncontexts:\n- context:\n    cluster: harbortenant\n    user: admin\n  name: admin@harbortenant\ncurrent-context: admin@harbortenant\nkind: Config\npreferences: {}\nusers:\n- name: admin\n  user:\n    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM4akNDQWRxZ0F3SUJBZ0lJR0F0dnl1Q3ZxcHN3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TURBNU1UUXdPVE0xTVRWYUZ3MHlNVEE1TVRRd09UTTFNVFphTURReApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sa3dGd1lEVlFRREV4QnJkV0psY201bGRHVnpMV0ZrCmJXbHVNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXV0Yys0ekVyVVhOWUllOHcKZmFpSkc4djNNNVNkeXV1ZkJDUDYxb09lVWQ2SjJsczZNRlU4WWxQWjdHNzNJSHVpNnhTUGFRKzdJSWhBaXNlRwo5bHJKSHc3Zy9BcGhDYkZrSjFrL1dtSVlFbzA4NDhjYlpsRjhFeWNDYStsZFUzZ0kxUS9FS1RKVHVLNG1DVitUCjBXOFc1OTJvOEFjeHdEN3RIaFhMRjd0RVBaWkppRzIxTVJzN2FWMStjTGxQWExuZTdudUxkNmRheE81UTNXUFIKbDRZL2NmRklJUnlVSU1mQkkwZVhiUzJiNW9yTXE4UUYvRmp5U2V3NmJoUHUrdnIwVWtWdS9mbXl3ZDFBc2xReQptNS9PRHovdmtibGFiNFFYSEVGTGUzRGRzUFBuZ21jZVR3ZThqUkdzZGtqREsva1NocDIxUnhwWUtLQWdvVEh2CjZDZXo3UUlEQVFBQm95Y3dKVEFPQmdOVkhROEJBZjhFQkFNQ0JhQXdFd1lEVlIwbEJBd3dDZ1lJS3dZQkJRVUgKQXdJd0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFFb3BpTFBUTzY5MTB2K3pveGhqL1loQUtwK0ZFdkZnWWg1RwpHb2JvYjhjaWxqdXJDeFZsUlhzYVFUR2JHK1ZWN0xsajdYbUk2by80WUg0cmNKcWlzTEFiZ3JDY05YTXU2eUl0CkhjYnhTRnlyZ0tqZ1hsK243VkhtcFFXNGh6ZXZueG5GekJVNXlHRGh5c1pISkZta2NvMEV1dDFOMmhSd0Q3VzIKMVh0QkNFU3FNZ1dIb3hvYnk2SjhwbUx5blRiYmVlbkIzT2t5TVNaNFlCdXNDK2F4eHBmMDVzMGRDcEREdFVGMgpjWXEzMHZGaVJaRnZXVm52U1VLUXhSK2orNnZ4S3ZadG5OamZjM2VZTWRudWdJSUxYMGZ4OFFzS20rVGRXWGhFCmZUZnhFUTJPNXdyek9uTHRBc1NRZHl2NGtwdDg2ZE43YjNNcUtySlZqZDFhY1hka0FGQT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb3dJQkFBS0NBUUVBdXRjKzR6RXJVWE5ZSWU4d2ZhaUpHOHYzTTVTZHl1dWZCQ1A2MW9PZVVkNkoybHM2Ck1GVThZbFBaN0c3M0lIdWk2eFNQYVErN0lJaEFpc2VHOWxySkh3N2cvQXBoQ2JGa0oxay9XbUlZRW8wODQ4Y2IKWmxGOEV5Y0NhK2xkVTNnSTFRL0VLVEpUdUs0bUNWK1QwVzhXNTkybzhBY3h3RDd0SGhYTEY3dEVQWlpKaUcyMQpNUnM3YVYxK2NMbFBYTG5lN251TGQ2ZGF4TzVRM1dQUmw0WS9jZkZJSVJ5VUlNZkJJMGVYYlMyYjVvck1xOFFGCi9GanlTZXc2YmhQdSt2cjBVa1Z1L2ZteXdkMUFzbFF5bTUvT0R6L3ZrYmxhYjRRWEhFRkxlM0Rkc1BQbmdtY2UKVHdlOGpSR3Nka2pESy9rU2hwMjFSeHBZS0tBZ29USHY2Q2V6N1FJREFRQUJBb0lCQUh2UmZ4eUNqaWw1SGZQSApGa1IvOXZUVDAydDhWcUdPU2lBdFUrTHE4SFZpMjhvMzRMVDlGM28yQlZvNUkwNkVnSy8zUFI2cnpSKy9DNzZzCmdaVXJEdE9sUVpYbHJ1OEVmdEhReERvNmZhZDFyOTluS0pKQzk4MmRjVzVnQlhmMk9Td3hPWmJ2Z2lvR1JyQzUKaFRVcXdHeENLZDEvZHdubTZhNmhWS2pTY21PNDNOdk5rRDY4bnUzKy9ZQ2YxaGttNXovZXhjMnNkUitOSml4RQpabVR6c2ZTdkkydzdBR3pNakdOVEE5NXV4eDhIaDBVdVJCaXU1NGtQejFHamlGUkU2VXd3OG9DZmpCb0xLRmlDClAxWUhGYUZsQlZxd1N1aW5WK2RjWENPK1VabnJEZUlTdE9PZ1dZUVZuRnpRS0dxWUZTTTJnR1RRVkkraDNNODkKa1ZWYUZnRUNnWUVBN3VKUkRTcTFEblB3RUxuSzNRd1BFeE5QWDF1bThHUlJjNVNQdjk4OFlGNXhhYmZRNFh1YQpHbWtNOExVUmFOa1ZORjVsZlBadzFTbTlHblptcGJlVVlKSnY4QWFQYTdaeXk1ZUVnMlJzMUo2bEdxbURZd25DCnh5NkFTd0ZkaEQycmRxVC9LQWZUY29LQy83Z3VKd3pqbjNzSFpUay9JZG1pOGlBbFRLNlpZNEVDZ1lFQXlEcFcKQzBSeHh4eUxFQTRCN0YxaG8zSUhLY3BOdU0xc0FkemJidTZVMThoVlhSUjNmc3lZS1lCa0MrbG11Wng2T0dQZwplYzlXRlozUFBvUDdlMGpOOENsSWtZSEV0SXFnbm0wdW51UnpjWXFlYjBRQUp4L3p1czFOdTlrQWwyU3NPbno3Clhwenk0OUxpUjBZVnVOY213Y2Z3YmNFU1RJOW1qQ2RocExMclZtMENnWUF4OWwyelhrcE9Bb3VrUStlZEFlZXAKT3JHd0pSQXVXUno4Q29kaVB3TjJ1R29LRFdyL3JnVldIc0NaRzVYUGt3K3ZTMHI0cnVaOGZ1VlJRcEJIZXJUcQoyZFhWb3RtZVVxT0IxMmZjdjBWUDF2cDdNQmNOd0wzZlFPZU9TSFBSczhCSDZVeUFoOXArcWJOU1hxZ3dmSzZpCjdXMW5pMmliNE5RR3hoaG5DR0dHZ1FLQmdDVFlkMVVEZDF5SXFCNkFOV0psbkw0VEViWmpBQUp0NnQ0ODRqUjcKdXZBcWNXcjdoVEhVUEh3R29HS0F4T0tMSlFLVGZvOXIxQStPUnNEZVVMelRIUEtBNWxYQVo0NUJwR1VDK24xSwoxT09qK3B2SEM3QW5kUlovQ1RyMEorTzBKdTFzYW1WeXhFK2dVdnVDcmlTaGt3UTk0c1NQcnVwZnlTTXBiQkorCnlrZlJBb0dCQUtvdDMzRGxHZXZiQklBRTFrODJNTFhFenZqYTlwc3pvUkZxL0NEUDYwQXVFT3NxeVlMdzkwRlkKbm1LM2JITEJxb2drRU9qcktVV3NuRHFWSVJCUUZ6aEp1THBWeGxURk1zS1AxQmFTelQwd3BKRGt0VnVVZ283VQpyY201L1ljNDZReVJMUjBZSW1sMWxTaElPNnByN01McXF1c0lWRDJhYzVrUHg3ZUJEam03Ci0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==\n",
+        "ip_allocation_method": "ccpnet",
+        "master_vip": "10.32.142.192",
+        "load_balancer_num": 3,
+        "subnet_id": "35fdb2cc-b81a-4fbf-8e8c-eba07f7c24ab",
+        "ntp_pools": [],
+        "ntp_servers": [],
+        "root_ca_registries": [
+            "-----BEGIN CERTIFICATE-----\nMIIE/jCCA+agAwIBAgITNQAAAB+SeucOM3v3hwAAAAAAHzANBgkqhkiG9w0BAQsF\nADBJMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxFDASBgoJkiaJk/IsZAEZFgR0YW5r\nMRowGAYDVQQDExF0YW5rLUhYTUdNVC0wOC1DQTAeFw0yMDA2MjUwODI3NDFaFw0y\nMTA2MDMwNzU0MTZaMIGhMQswCQYDVQQGEwJERTEQMA4GA1UECBMHSGFtYnVyZzEQ\nMA4GA1UEBxMHSGFtYnVyZzEMMAoGA1UEChMDQkdXMRMwEQYDVQQLEwpJVC1CZXRy\naWViMSAwHgYDVQQDExd0ZXN0Mi1oYXJib3IudGFuay5sb2NhbDEpMCcGCSqGSIb3\nDQEJARYacmVuZS5maXNjaGVyQGJndy1vbmxpbmUuZGUwggEiMA0GCSqGSIb3DQEB\nAQUAA4IBDwAwggEKAoIBAQDQflTGFx8MamDcU8FZmvAG48T8jxqP0OQPXOF54ejw\nmlJHJyFFOPIo9fLPJsr2t2fo7RaJh0/a/aVZDFDgQJkqQySqyH2VIAPrBrWbevif\nmlW28IFLZrMuCfvMdCwaSDzuP573y+FU+MkobbRc0Y6gJwAftQCWPMoKJSaZcG8J\nM/l9KOk9Bbp21n0FN/xGmAHea4zps5Vi+UsNeKOYisxsBqFxf875tF0u+aFwkZJe\njlQjTklLsluaga3Pv/NRjzENIYrPIXD/rxUM5p/d+B0edtcUVRVbngOpQ9kJ1/jS\nEFFtrdaifpfgJiLWluNkYtdVKx/ehZ/NZEwQ66yyKe4xAgMBAAGjggGEMIIBgDAO\nBgNVHQ8BAf8EBAMCBaAwPgYJKwYBBAGCNxUHBDEwLwYnKwYBBAGCNxUIg56TToGo\nmQ2GzZcKgun4P4O+nEeBEIHR4VeE0OZrAgFlAgELMB0GA1UdDgQWBBQf5KBn2HVQ\nY7KxwEqRmQNd9SzjbjAfBgNVHSMEGDAWgBRGKL+yvJdm6gBjYgjtpSUw9IaazDBN\nBgNVHR8ERjBEMEKgQKA+hjxodHRwOi8vSHhNZ210LTA4LnRhbmsubG9jYWwvQ2Vy\ndEVucm9sbC90YW5rLUhYTUdNVC0wOC1DQS5jcmwwbQYIKwYBBQUHAQEEYTBfMF0G\nCCsGAQUFBzAChlFodHRwOi8vSHhNZ210LTA4LnRhbmsubG9jYWwvQ2VydEVucm9s\nbC9IeE1nbXQtMDgudGFuay5sb2NhbF90YW5rLUhYTUdNVC0wOC1DQS5jcnQwEwYD\nVR0lBAwwCgYIKwYBBQUHAwEwGwYJKwYBBAGCNxUKBA4wDDAKBggrBgEFBQcDATAN\nBgkqhkiG9w0BAQsFAAOCAQEAY2uTaFPiLU3AoB55bdC8gzDvAZ95QstI5HMIRFo/\nMxuPJV51LBMjhMVr2C7uC06LST7xWpBzvL+6FBxwH7Wn7koPHIKvzgjD0TkNPmhV\nEcfM/Gu37pMksYq+J7GR3aRKxjoykSP2pZZLHXBYj6A/oCubKQByCVJas+7NELe6\nD7yFVVoW5JW1Ca2GZd+Uhtlb3TDRYuSkH+A8wxsiodHGQX8lIWuHC84e61IHhMka\nPHch87Vf2NXzT1PAo6+UQgTkHNK2eKFDj8588t4gMRUo2yBZIHi8jeEM+uq8lnjQ\nX71rWLI1STZRL+J6JScmc7iiH2m7OeLe0UinjNglJB4k9A==\n-----END CERTIFICATE-----",
+            "-----BEGIN CERTIFICATE-----\nMIIDbTCCAlWgAwIBAgIQXS16377nc7dOguz02hnG/TANBgkqhkiG9w0BAQsFADBJ\nMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxFDASBgoJkiaJk/IsZAEZFgR0YW5rMRow\nGAYDVQQDExF0YW5rLUhYTUdNVC0wNy1DQTAeFw0xOTA2MDMwNzAyNTVaFw00OTA2\nMDMwNzEyNTVaMEkxFTATBgoJkiaJk/IsZAEZFgVsb2NhbDEUMBIGCgmSJomT8ixk\nARkWBHRhbmsxGjAYBgNVBAMTEXRhbmstSFhNR01ULTA3LUNBMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEA30Iq2HTrrmuLDgLjdNid1OLiOVDfv2wwGkLp\nj5k+xnVvxTUgkAlWDzDUdxq2cM3LyoEsLDR9xvjYccsWzCKmX6dJc7qnmKBzf/fg\nQD7/UOJ7b6ItzOP631CJ4D5YdaEIgQgSinoM6OquDPeM/PN1erJNAFC3Hny6V610\nsgbh4t1s0pi7xtxozTkeu0dLj93Quz+EXom6eJieur8Detqi1UR7ddtHBzJjLAuT\n9ZsGU6fW/jpt5XhsZnVyJzcLTxO5yYb92qmfP4+DgtQ0lfQ29m9t5fkRvUQ71qcZ\nuylpr2xaoIBz2yA4huKF8U5+o25I2BsNgSb7Wucd2ZSa7kZmYQIDAQABo1EwTzAL\nBgNVHQ8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUuk0A8aPU0JoH\nkn7C4+MtD1IeYUEwEAYJKwYBBAGCNxUBBAMCAQAwDQYJKoZIhvcNAQELBQADggEB\nAAwWOXcTeODDkpqcha2i9hU02aStnBYPy5R4AyUPSSASRyc4AEzAHtp0yDZ04sw3\n/UK+1nIu55WgxcuMhT/SynYbbXgTEkel5Za+nLbpau6WJ24vRxeOwYN1bhsEOsdq\neuEbmNyFmdI01aTvEdenV+KFgwBsbiqgxmUx5sUhOlgO2wO6A7OHXrjbFawoaKTm\n3nuRtFjlypqPpMbUeFvTMT09xDTawuir7oCae/+iWW3VQQmKpHSXHglQtJDdqJWc\nDSlBA+MjqvNqg47kbeXWTyeJxBuVHCFLJkMRTEtL+qLZHaLQmWt+wASVVC3N1MIA\nozXhwU819355JlwlV9N8UN8=\n-----END CERTIFICATE-----",
+            "-----BEGIN CERTIFICATE-----\nMIIFSzCCBDOgAwIBAgITYwAAAAK1lPo4zrmfFAAAAAAAAjANBgkqhkiG9w0BAQsF\nADBJMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxFDASBgoJkiaJk/IsZAEZFgR0YW5r\nMRowGAYDVQQDExF0YW5rLUhYTUdNVC0wNy1DQTAeFw0xOTA2MDMwNzQ0MTZaFw0y\nMTA2MDMwNzU0MTZaMEkxFTATBgoJkiaJk/IsZAEZFgVsb2NhbDEUMBIGCgmSJomT\n8ixkARkWBHRhbmsxGjAYBgNVBAMTEXRhbmstSFhNR01ULTA4LUNBMIIBIjANBgkq\nhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxHeSXWTcIaLp6wrZQ5GVswMXTKhjGKvT\nMyjRJ6uLdKyFsP3Z1OevELHY9c/qBTxMhA2Y78rJc49Zxa8ktbwcWqXLkaDlYxR0\nxlQJuiNgYQw6t+tgn7nftMIIDh66AK+RAPf9/xZBervl+CB7p1Nzq9ICKZesQJRk\nXnTMtk0yS8WQEYTSunutDV7+oedj/xJKMpJ9FqGJWZVBu4epWd7TN3u4bb8OzHBZ\nCDbQXuqoela7RO8xAUgVlrDoXIQp2k6VpO3qCNMza0WJ0EoMFbyYA+qB0oDjzh42\ndgA/i9PacpiswvfXZCQN0YnEqJ0l6/Au6SVLSoJOkh57SqY8RihORQIDAQABo4IC\nKjCCAiYwEAYJKwYBBAGCNxUBBAMCAQAwHQYDVR0OBBYEFEYov7K8l2bqAGNiCO2l\nJTD0hprMMBkGCSsGAQQBgjcUAgQMHgoAUwB1AGIAQwBBMA4GA1UdDwEB/wQEAwIB\nhjAPBgNVHRMBAf8EBTADAQH/MB8GA1UdIwQYMBaAFLpNAPGj1NCaB5J+wuPjLQ9S\nHmFBMIHQBgNVHR8EgcgwgcUwgcKggb+ggbyGgblsZGFwOi8vL0NOPXRhbmstSFhN\nR01ULTA3LUNBLENOPUh4TWdtdC0wNyxDTj1DRFAsQ049UHVibGljJTIwS2V5JTIw\nU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz10YW5rLERD\nPWxvY2FsP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RDbGFz\ncz1jUkxEaXN0cmlidXRpb25Qb2ludDCBwgYIKwYBBQUHAQEEgbUwgbIwga8GCCsG\nAQUFBzAChoGibGRhcDovLy9DTj10YW5rLUhYTUdNVC0wNy1DQSxDTj1BSUEsQ049\nUHVibGljJTIwS2V5JTIwU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJh\ndGlvbixEQz10YW5rLERDPWxvY2FsP2NBQ2VydGlmaWNhdGU/YmFzZT9vYmplY3RD\nbGFzcz1jZXJ0aWZpY2F0aW9uQXV0aG9yaXR5MA0GCSqGSIb3DQEBCwUAA4IBAQBo\n6NkK778JW9Ftg9htxgysaOQbTHvvQ6TrQajkmcPw3QF1RMtpQMEycZ19gNDbMPjv\nhxw8kcaxRhfsT3lJ2WVibsLrL/1X6HglZkV5PR3M6piC2y8U5zF+GX7FNkPZzBXH\nutHRjnsz0slv9LAai8rkKr8orUgRwCxvQ05l9PoNFC770TWOSpGdSEtu5Mz8+Iwz\nNhJ97ohnFfNJfl+gl61ANmr/yFtG3ab8QKpeRWYcVYllb/79uyA2GHbFg0/tPBgN\np6muX71RDniAGzITFabScTepjLYnq2kJ3wLsTT8ubNqxqWQLxPElyiNyz9Ygrae+\n+dG+pfjC2lTtIihuPp+9\n-----END CERTIFICATE-----"
+        ],
+        "self_signed_registries": {},
+        "insecure_registries": [],
+        "docker_http_proxy": "",
+        "docker_https_proxy": "",
+        "docker_bip": "",
+        "vsphere_infra": {
+            "datacenter": "HX-Datacenter",
+            "datastore": "HxCluster-DS04",
+            "networks": [
+                "K8S_Network_851"
+            ],
+            "cluster": "HX-Cluster"
+        },
+        "master_group": {
+            "name": "master-group",
+            "size": 3,
+            "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+            "vcpus": 2,
+            "memory_mb": 16384,
+            "gpus": [],
+            "ssh_user": "ccpuser",
+            "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDQvmnnj7uatOVsh2P4Kgb8bd9vXWyqkWVa6Ek4RZTJ4 ed25519-key-20200504",
+            "nodes": [
+                {
+                    "name": "harbortenant-master-gro-1bf1732e07",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.142.195",
+                    "public_ip": "10.32.142.195"
+                },
+                {
+                    "name": "harbortenant-master-gro-63b466fab2",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.142.197",
+                    "public_ip": "10.32.142.197"
+                },
+                {
+                    "name": "harbortenant-master-gro-6a7c6a0d9f",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.142.196",
+                    "public_ip": "10.32.142.196"
+                }
+            ],
+            "kubernetes_version": "1.16.3"
+        },
+        "node_groups": [
+            {
+                "name": "node-group",
+                "size": 2,
+                "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+                "vcpus": 2,
+                "memory_mb": 16384,
+                "gpus": [],
+                "ssh_user": "ccpuser",
+                "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDQvmnnj7uatOVsh2P4Kgb8bd9vXWyqkWVa6Ek4RZTJ4 ed25519-key-20200504",
+                "nodes": [
+                    {
+                        "name": "harbortenant-node-group-2cd5835f24",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.142.194",
+                        "public_ip": "10.32.142.194"
+                    },
+                    {
+                        "name": "harbortenant-node-group-b0587f9de8",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.142.193",
+                        "public_ip": "10.32.142.193"
+                    }
+                ],
+                "kubernetes_version": "1.16.3"
+            }
+        ],
+        "network_plugin_profile": {
+            "details": {
+                "pod_cidr": "192.168.0.0/16"
+            },
+            "name": "calico"
+        },
+        "ingress_as_lb": true,
+        "nginx_ingress_class": "",
+        "etcd_encrypted": false,
+        "skip_management": false,
+        "docker_no_proxy": [],
+        "routable_cidr": null,
+        "image_prefix": null,
+        "aci_profile": null,
+        "description": "Harbortenant vor BGW"
+    },
+    {
+        "id": "fbe521c1-6a32-42d7-8cd8-abca65395382",
+        "type": "vsphere",
+        "name": "vbgproduktion",
+        "provider": "642af8ae-e764-4b86-9191-569c33d26213",
+        "status": "READY",
+        "kubernetes_version": "",
+        "kubeconfig": "apiVersion: v1\nclusters:\n- cluster:\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01EZ3hNekE0TVRZeE1sb1hEVE13TURneE1UQTRNVFl4TWxvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTEg5CnhlNDNMMStBdCtCdWw0UTg2SWJVTGpROWpHR20vWFduaEVic0VFQWdadDMxYWZDY1pSS0NCMldhZmo0VHNmdUcKWWgwbURad1lnbU8xK1ArNE9pZ1JYWTRUWktaTVZQVTBTc0RnY09uUEdaeldGNWVFTlZSNWJNNlkxUUNBNnppVQpRdURZZEZhZ3dzekVMZlFVUlI2U0Z1akhzay9nbTdqQ0lPZE1qWXZneXlLRWF5aDR6aDVmeDVJcGRPT2xEY2JwCmZ6aC9lRmVnR1ZjVUIvZU41bmhNYXQ0azRqRkZZbW1yWHIvSFFreldpWlZ1U2FWWU5ucCtGbWd4ME1ock5YRk0KWlFPK3RNcGJxM21PWDdjNHNlWVJZMFhYRkM4WnFCRlQ4bFRidEdMRkgxdVU4WE1JNXZHYXVoM1c1ZlpTT1hJMAp2c2VXdDdncWJFUFRCM0UvaktNQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFCYVlOYmRsak9mQklqZWtQWEgwRVhxWGExWmQKMUUyOGdKZGk1eG9Pdzk1bmhiQkhuN1QybkxmZjE4dHg3NkZUbXBzdk05RXVDZUwzWEE2ZUtBU2xvTFFndE05aApsbUtXVEYxWTBUb08vNGl1K2w4QmtUamZoeGFTUWx0Q1hiUHh3dm9sZ2w1OFVqWDhoQnJCS3BVVmpYNmFnRFJoCnJsdXcxOFk3b0JQYTVOcmFRWUdRSk55b05OMFRlQ0NFZFpFSW12eEZoYzlPRm85VCsvWk5PMlVySkZwTDhlZnUKZG9jSkpmY25iQzBWVTV3bVFOTFg4dWcyZk9QK3h4OXN6NlBYQVl4L28rV01uMFFNUlBTTkF1Smh2cUR3U3B4WApXRTNCYlpuWURIbUIrSjNKaGVTb2orTXpEc0RTWWcrVGNtT1F2TXl6dzgvSFViaU5WcDZmRW1KTVpEWT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    server: https://10.32.51.150:6443\n  name: vbgproduktion\ncontexts:\n- context:\n    cluster: vbgproduktion\n    user: admin\n  name: admin@vbgproduktion\ncurrent-context: admin@vbgproduktion\nkind: Config\npreferences: {}\nusers:\n- name: admin\n  user:\n    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM4akNDQWRxZ0F3SUJBZ0lJSmtSRVk4SFdVZjB3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TURBNE1UTXdPREUyTVRKYUZ3MHlNVEE0TVRNd09ERTJNVFJhTURReApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sa3dGd1lEVlFRREV4QnJkV0psY201bGRHVnpMV0ZrCmJXbHVNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXJ1YnVRbXI1ZTloUGJ2VjYKWG1CMjZ1b3B2dG1oSTNOa2pVWGZkME03WEttUjlYeERObUFzcGx0OURjMitER0JnWFdUajZFZnhSTjhLMkYxQwp6TUszdjBTZllkUDYyTjlhL0k2bUJ6WW1kNytrVWcvY3hGeVZjc1pJTzBWeEx6aUkxelNVYlo0aGRUNERyQTdQClZBT3NDQ0l1Z2JSVmJKQlRuZ2J1bVNFT0NFbEdOQ0VCRFBmQVNOODgwRWJoWjYyUEllT2d0K3hKWkNlanBiL3YKVXYvckpMMXJVc3o5YmhkaG1kQkhMbmNkVXdyQTdrV0c0Mkp6VEVnb0NmV2d0YkxxQ0tFYUZ6OVB2TVRlVlI3aQpIbWVnZVJNWU5ZQXlQTGcydEdjdHQ0TnJsL09MVDNXTTVMNUVERzFxaFNieW5Vd1pnMnkyYnRRdko3ZFA0bS9vCmJCU2xWUUlEQVFBQm95Y3dKVEFPQmdOVkhROEJBZjhFQkFNQ0JhQXdFd1lEVlIwbEJBd3dDZ1lJS3dZQkJRVUgKQXdJd0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFGUHI4eGkrMTNiK21mMEdJVjJKZldHcHZ6UTFKYUVxdGk0cAp0RlowY0JRV011dGxQMlpkYngvYmJnNEtSa1Vzd3RQR2ZIbDNrSVh4OVRhMVgrZ3Npc3E1cGtwc3VsZTdvZWcrCmJqdk11V2s3dC8wbmY4WnRwL0gxdUxCTmdYYm5vUXd5K3o5YjNPcC9hZURuVzBuTC94STlFZnFpcW8wd2NNMFMKSlNEckVkZmY1S0FRaFczdnBDc3Q0WXVES3VpTC9FTSsvYnhTdEZJd2ZheCtxTFpSNVpqSmlzU0gwcVdRM25JVApxYzlIZEhjNXhyNk1VSEd3TXhyRnRrMXdmVTV0SXh0S2FmSGNGdiszRkF1dnRJODBLbGJCS256WFRubmRTV0V1CnIxYW9wYjBmY29IcVVKaEdGRlkvNCt1SFlSRFYyRjJUMmRpb2piUWYybkpySW9uZU5pbz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=\n    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb3dJQkFBS0NBUUVBcnVidVFtcjVlOWhQYnZWNlhtQjI2dW9wdnRtaEkzTmtqVVhmZDBNN1hLbVI5WHhECk5tQXNwbHQ5RGMyK0RHQmdYV1RqNkVmeFJOOEsyRjFDek1LM3YwU2ZZZFA2Mk45YS9JNm1CelltZDcra1VnL2MKeEZ5VmNzWklPMFZ4THppSTF6U1ViWjRoZFQ0RHJBN1BWQU9zQ0NJdWdiUlZiSkJUbmdidW1TRU9DRWxHTkNFQgpEUGZBU044ODBFYmhaNjJQSWVPZ3QreEpaQ2VqcGIvdlV2L3JKTDFyVXN6OWJoZGhtZEJITG5jZFV3ckE3a1dHCjQySnpURWdvQ2ZXZ3RiTHFDS0VhRno5UHZNVGVWUjdpSG1lZ2VSTVlOWUF5UExnMnRHY3R0NE5ybC9PTFQzV00KNUw1RURHMXFoU2J5blV3WmcyeTJidFF2SjdkUDRtL29iQlNsVlFJREFRQUJBb0lCQUdMY2ZZaGxWeWU5bVFpcgpFTVFQMnFmbVBEcDRZVERjcE5XRnpVNW9Ya0YrUjladXFyOHRsWTlpMzBqU0pyNXdLNGdlNHdRRXhrZWJtMUc1ClJXemdFMlMxc1RGbTFMK0pZTENwSVFlcWdBdm44MFcvV1paVWp0VVZadmE1eGNSZlBGb0lpbTE3bUlYZ3k4cVIKaEhlRXE5VGRIVlNMVGszVE5yQjRVcDJUcFk3Z2pNeHZDak1RMmtXQkt0dk1GM2t2MG9QN0FTWkZwNG4wLzFBdgpKYlNwSVh2L3M4K1lFQTNaODd2eGxpUXhXTURPQzlXOU5qOXlNZkxvclpyVUorMS80Ui9vaDFEZEQ3eE5WaHc4CjArNVltRi9tM0JjbDVoY3NZSXJDSHpta0pWRS9YaEZEMEh0SjlzRCtOUnlaTlBRZXMvbE96cDJRaUxIbjhDbGUKQlhzRldYRUNnWUVBelBjaDdhTkQyQmpHM2FObWxPdGx1RnU1Y3c1aGlPaElndGNvdGNjQ1FYMVJiM3NEelV3ZApDZEhEZ09NN0J3TEZYbWlFWXpoMmZaV0c4MHBGbkFOV2VNRnEya0pNRGEzajJaTDhOVFJGQmNxKzVudmNUUjFQCmFUUlk2MWpoS1hxL2J3Q2hqcUszclFpejF6Wm9jbC93bmt5VHpzeStQU3NDK3ZldFVKZDhQNU1DZ1lFQTJuT0MKVlZPUlF1VXY1Szd4WEFNTFRhTzJHVEtoaEYwTDBWcDVWSEhTT0paTmZyeUg3UUMxc2VKR0YySzAvWURLM2haWQp3cHYyd2k0WklsNm1MNlJuSDBOdzZhamJleWlpZVZFeHZWY1NZd0ZET0x1SXFJV3l4dDgySWxWU2tqMnQycTMyCkxONndNU2gwbnFZK3g4dzN2UTh3TTRtbnhlaGEzWVRNWXZoZmlIY0NnWUFpa3dGL0k0NDdNcHJCSW1JWWRzalcKMjJvaDlXZ1FmeFpVTTlVakxLbTl3RlR2V0RIZy9KamRZaXYzWHQxREpuMkNtbURTbCtDcytIOG1KUDR1L2dVbApJNE5SdytNdVg0blMxcytDYmduQ20xdXVaM0JXOWIzQ2dsa0pnaG1oTkpwOE1BQVFublFiVlI5NUN5MTlOWi9TCkpCcSt4SnpHbHEzUEJkNlBmSzR4endLQmdRQ0wxVXJGa2NPM1hYdkYxOUk2QXR6V2F3Z2lvdzFPN0R5blcxRzEKSTFMYzFDRnhFZiswVHpML1ZnZGw2dEpPUDRZY21aTmhwM0pTSkM0RW1TK3A2WVAxT0RkcjZxSHIrVHZmaW9EYgpZWVFzaWQ5Y3puYVE0VnhwL3ZIcEVsTFR0OVcwMkl4dmRuQzBWdUFudWVVUUFnSmY2L3YvMFlycW5XeWt4ZUFMCkxsQUF5d0tCZ0JqM05adnYxOXRkY2IzNUlWMGt4UHhMWG5WSkk0VTlMaHFwc3NzS2xvVGRES3g3OW9qWXhmYUoKc00yYnNLNTEzamVNaUc2WVBhK3dtL1NWMlpRRURxalFHb3ZUaGV3Wnc5akpQblNENUpEOVA4aHBaMUhqcUU0KwpiaGEwQlg2REhXbGNtRzdMUXFKaGtvRmZSclUvL3FNZzRPaElKeWpkSDBwVHRDSmNlMnZNCi0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==\n",
+        "ip_allocation_method": "ccpnet",
+        "master_vip": "10.32.51.150",
+        "load_balancer_num": 3,
+        "subnet_id": "01f283e6-0c95-4d11-b42c-f224b14ec322",
+        "ntp_pools": [],
+        "ntp_servers": [
+            "ntp.bgw-online.de"
+        ],
+        "root_ca_registries": [
+            "-----BEGIN CERTIFICATE-----\nMIIE/zCCA+egAwIBAgITNQAAAByBCdZqRwKC0gAAAAAAHDANBgkqhkiG9w0BAQsF\nADBJMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxFDASBgoJkiaJk/IsZAEZFgR0YW5r\nMRowGAYDVQQDExF0YW5rLUhYTUdNVC0wOC1DQTAeFw0yMDA2MjMwOTI5MDJaFw0y\nMTA2MDMwNzU0MTZaMIGiMQswCQYDVQQGEwJERTEQMA4GA1UECBMHSGFtYnVyZzEQ\nMA4GA1UEBxMHSGFtYnVyZzEMMAoGA1UEChMDQkdXMRMwEQYDVQQLEwpJVC1CZXRy\naWViMSEwHwYDVQQDExhtZ210LXJlZ2lzdHJ5LnRhbmsubG9jYWwxKTAnBgkqhkiG\n9w0BCQEWGnJlbmUuZmlzY2hlckBiZ3ctb25saW5lLmRlMIIBIjANBgkqhkiG9w0B\nAQEFAAOCAQ8AMIIBCgKCAQEAw7eMuqwbqB1w1eq3uQUvN5S9iCtZOuXj4CjhiCBe\n2eYXd8rrtXMjdmb9dZ/56QGrQEDqVYE1KordV39dVV6J54nmRl+v6sxGsV20Z4ga\n101zMOhvJxWWwa29MJevhwyeDJiWZdjSLPtVlo82ahaGQddRHkGz3ir86uJOttJV\nElP9OpkhPGhowyIkfXToYJyfmVo26qhCO3l5TPu3/niIjuKUo37ZsuPmAdK3oMWm\nmjuOonu0n1CFU9bwoIK3heBCmiUQMvqhfMNCfdW8k1IJXsyF+Rd/qeneLwdxVSf3\nhT/Cf+VZYiHHayVmz9W6gscU+9dQgy2q+QpgdOmqvA0IQQIDAQABo4IBhDCCAYAw\nDgYDVR0PAQH/BAQDAgWgMD4GCSsGAQQBgjcVBwQxMC8GJysGAQQBgjcVCIOek06B\nqJkNhs2XCoLp+D+DvpxHgRCB0eFXhNDmawIBZQIBCzAdBgNVHQ4EFgQUmQQ46jWS\nfE6IiiGTjfJfU6wiNeYwHwYDVR0jBBgwFoAURii/sryXZuoAY2II7aUlMPSGmsww\nTQYDVR0fBEYwRDBCoECgPoY8aHR0cDovL0h4TWdtdC0wOC50YW5rLmxvY2FsL0Nl\ncnRFbnJvbGwvdGFuay1IWE1HTVQtMDgtQ0EuY3JsMG0GCCsGAQUFBwEBBGEwXzBd\nBggrBgEFBQcwAoZRaHR0cDovL0h4TWdtdC0wOC50YW5rLmxvY2FsL0NlcnRFbnJv\nbGwvSHhNZ210LTA4LnRhbmsubG9jYWxfdGFuay1IWE1HTVQtMDgtQ0EuY3J0MBMG\nA1UdJQQMMAoGCCsGAQUFBwMBMBsGCSsGAQQBgjcVCgQOMAwwCgYIKwYBBQUHAwEw\nDQYJKoZIhvcNAQELBQADggEBAHI+oRwmBHpEKXqD2EcW4NbMXqPG5Lm8xLKzImh4\ntCijCQUB2SmOreaiC9szuyTU2ryX22vM7lk5fdVEzKeKTlUZR0Lj6w65X7gp1v9i\nN7NDG67zYaGUdOaxy/v/N9xAO4Kfqx21P87/7OKAzm9E1Bvwe1JAJiLru7TuwTL2\nB9oRM/Qrjq2RpIkhZmy0GcIThIGo4GtTharEl3xEQZghJbIqRSnJ3Ycd2YdnJ3Gb\nXIcNtdx2MRH8aFVQ9JoLPinXrKhnamLQOwtECGozgDfQ6vki3gL2VujoafawUwwz\nZyigIhcUWhbM3zC1HQFU7Gv0r7/GJjm5bPJP2auYZAaTQT4=\n-----END CERTIFICATE-----",
+            "-----BEGIN CERTIFICATE-----\nMIIC9TCCAd2gAwIBAgIRANz10/jA0ZQV/lhRCQT/fpcwDQYJKoZIhvcNAQELBQAw\nFDESMBAGA1UEAxMJaGFyYm9yLWNhMB4XDTE5MDgyMzA2NTAyMVoXDTIwMDgyMjA2\nNTAyMVowFDESMBAGA1UEAxMJaGFyYm9yLWNhMIIBIjANBgkqhkiG9w0BAQEFAAOC\nAQ8AMIIBCgKCAQEAyfs1zXgn73zPdGP8sOFZrx6paPOraQz+bkRURZKX04izwZg2\n9BKkjAE24Zww2WX9B68OZvbuHajE8tN2CKrPslwi1lv6xntJ29QuiCDuD/7ennFp\nRxdx3sX304/SCVcaDugbDACeT2bFEdZPlLtg2lHav2ZIXJaWAfyXNc12e7/+22t3\nyKGlzRVy4Z+lMHAWpggwUDb48LqmurUiae75osOaBR/6+7tgqkIfrzhq6SS7oZiN\nfJNfVJ8RM8rrx82H4G/b1MmB8WDJSxu2NVNjox8OU8pYm+0iLGSlVClVfEGF0L+l\nIA3YlJ1ZHzIvM3HMVxC7Pt5wqqMSc/2OK/g4kwIDAQABo0IwQDAOBgNVHQ8BAf8E\nBAMCAqQwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMA8GA1UdEwEB/wQF\nMAMBAf8wDQYJKoZIhvcNAQELBQADggEBABMr7kmwzyO32uv1dAfdp7e26dzul5hb\nYFMDamQYMJeLgkZRWWEfwRgsW26w2eKTJgqbJsSu6AmrEcjl631RiMmYHbDkP3J6\ntyal94aNyA+TQj4tDJGVToPvru8kV6DXGrtr7Z/MlkPzBRFj1AE1v6vbRordXt7t\njSBMjelnUVrTftBdd0iAxUStAyZ1/BEmOGBKVIKp9V+3KrIwG9jgjM3qdqHnRGkd\ndnj0HPJRyULB53wZ8kv9IHvHbmlC0grSah+LbQG7G0cIEW+NCojb9/53CZzwIFpe\nybuIpB0ClhZLyS1tM6twvDw6OE7KKE0bhhn39UnxntqbjFqYWd8nNLI=\n-----END CERTIFICATE-----"
+        ],
+        "self_signed_registries": {},
+        "insecure_registries": [],
+        "docker_http_proxy": "",
+        "docker_https_proxy": "",
+        "docker_bip": "",
+        "vsphere_infra": {
+            "datacenter": "HX-Datacenter",
+            "datastore": "HxCluster-DS05",
+            "networks": [
+                "VBG_Network_971"
+            ],
+            "cluster": "HX-Cluster"
+        },
+        "master_group": {
+            "name": "master-group",
+            "size": 3,
+            "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+            "vcpus": 2,
+            "memory_mb": 16384,
+            "gpus": [],
+            "ssh_user": "ccpuser",
+            "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINApn95UWeCMVq56Wojl2vq0U/kOTr92nofyIwyhpyvt ed25519-key-20200813",
+            "nodes": [
+                {
+                    "name": "vbgproduktion-master-gro-6d1b882c01",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.51.153",
+                    "public_ip": "10.32.51.153"
+                },
+                {
+                    "name": "vbgproduktion-master-gro-ea7277b305",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.51.152",
+                    "public_ip": "10.32.51.152"
+                },
+                {
+                    "name": "vbgproduktion-master-gro-f29280fbe3",
+                    "status": "READY",
+                    "status_detail": null,
+                    "status_reason": null,
+                    "phase": "Running",
+                    "private_ip": "10.32.51.154",
+                    "public_ip": "10.32.51.154"
+                }
+            ],
+            "kubernetes_version": "1.16.3"
+        },
+        "node_groups": [
+            {
+                "name": "node-group",
+                "size": 3,
+                "template": "ccp-tenant-image-1.16.3-ubuntu18-6.1.0",
+                "vcpus": 2,
+                "memory_mb": 16384,
+                "gpus": [],
+                "ssh_user": "ccpuser",
+                "ssh_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINApn95UWeCMVq56Wojl2vq0U/kOTr92nofyIwyhpyvt ed25519-key-20200813",
+                "nodes": [
+                    {
+                        "name": "vbgproduktion-node-group-0a44f0dd84",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.51.155",
+                        "public_ip": "10.32.51.155"
+                    },
+                    {
+                        "name": "vbgproduktion-node-group-42bc9d761d",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.51.156",
+                        "public_ip": "10.32.51.156"
+                    },
+                    {
+                        "name": "vbgproduktion-node-group-54fb5b0b59",
+                        "status": "READY",
+                        "status_detail": null,
+                        "status_reason": null,
+                        "phase": "Running",
+                        "private_ip": "10.32.51.157",
+                        "public_ip": "10.32.51.157"
+                    }
+                ],
+                "kubernetes_version": "1.16.3"
+            }
+        ],
+        "network_plugin_profile": {
+            "details": {
+                "pod_cidr": "192.168.0.0/16"
+            },
+            "name": "calico"
+        },
+        "ingress_as_lb": true,
+        "nginx_ingress_class": "",
+        "etcd_encrypted": false,
+        "skip_management": false,
+        "docker_no_proxy": [],
+        "routable_cidr": null,
+        "image_prefix": null,
+        "aci_profile": null,
+        "description": "Produktionscluster der VBG"
+    }
+]
