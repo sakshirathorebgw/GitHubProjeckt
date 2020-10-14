@@ -14,6 +14,7 @@ chmod 600 ~/.ssh/*
 
 #scp $SSH_KEYPATH ccpuser@$HOST_NAME:/home/ccpuser/.ssh
 
+./ip_fetch.sh
 
 git config --global user.email "Sakshi.Rathore@bgw-online.de"
 git config --global user.name "Administrator"
