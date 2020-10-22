@@ -49,5 +49,5 @@ echo "execute piecebypiece now"
 
 #./piecebypiece.sh
 #piecebypiece_install.sh
-#./piecebypiece_testworker.sh
-#echo "script execution done"
+./piecebypiece_testworker.sh
+echo "script execution done"

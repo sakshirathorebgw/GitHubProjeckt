@@ -83,12 +83,12 @@ echo "address for certificate is :" $CN_ADDRESS
 #scp -i $SSHKEY_PATH ./cert_status1.sh ccpuser@10.32.141.35:/home/ccpuser
 #scp -i $SSHKEY_PATH ./new_server_cert.sh ccpuser@10.32.141.35:/home/ccpuser
 
-source server1.txt
+source server2.txt
 
 #read $file
- if [[ -f "server1.txt" && -s "server1.txt" ]]; then 
+ if [[ -f "server2.txt" && -s "server2.txt" ]]; then 
     echo "worker nodes dile exist and not empty"
-for server in $(cat server1.txt)
+for server in $(cat server2.txt)
 do
 #scp $CERT_PATH ccpuser@$server:/home/ccpuser
 		scp $KEY_FILE ccpuser@$server:/home/ccpuser
@@ -110,7 +110,7 @@ do
 
 sed -i -e 's/\r$//' cert_update.sh
 chmod +x cert_update.sh
-./cert_update.sh
+#./cert_update.sh
 echo "certificate update"
 ls -lrt
 echo hostname -i
