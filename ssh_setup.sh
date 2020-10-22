@@ -7,6 +7,7 @@ chmod +x $ssh_file
 keys_file=$loc/ssh-keys/keys.txt
 echo $keys_file
 cat "$keys_file" >> "$ssh_file"
+eval $(ssh-agent -s)
 ssh-add $loc/ssh-keys/management
 ssh-add $loc/ssh-keys/entwicklung
 ssh-add $loc/ssh-keys/prod
